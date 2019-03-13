@@ -1,0 +1,68 @@
+<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="http://webair.tk" resolutions="1x" timestamp="1535136445198">
+  <folder name="css">
+    <file name="site_global.css" crc="3889424000"/>
+    <file name="index.css" crc="4276692266" ref="index"/>
+    <file name="iefonts_index.css" crc="3933627720" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="310584261" ref="index"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index"/>
+    <file name="webpro.js" crc="4059564322" ref="index"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="index"/>
+    <file name="touchswipe.js" crc="4075097462" ref="index"/>
+    <file name="form_check.php" crc="4020933626" ref="index"/>
+    <file name="form_throttle.php" crc="4259590256" ref="index"/>
+    <file name="form_process.php" crc="37464564" ref="index"/>
+    <file name="form-u1011.php" crc="505426848" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="39568856" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="twitter.png" crc="4102706121" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="facebook.png" crc="317936629" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="instagram.png" crc="260457741" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="dribbble.png" crc="4050684656" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="skype.png" crc="4267061425" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="placeholder.jpg" crc="3807013573" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="placeholder-crop-u1283.jpg" crc="68317345" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="case.png" crc="320954353" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon.png" crc="4129082871" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="skill.png" crc="275994893" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="placeholder-u1138-fr.jpg" crc="344919794" ref="index"/>
+    <file name="contact.png" crc="80087821" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="4175799648" seo="true" mt="1535135281652" redirect="true"/>
+</manifest>
