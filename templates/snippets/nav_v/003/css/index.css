@@ -1,0 +1,53 @@
+﻿body {
+  background-color: #FFFFFF;
+}
+
+.accordion {
+	margin: 30px auto;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden; /* This will keep the slides from overflowing outside the accordion */
+}
+
+.accordion li {
+	/* Remove any margins & paddings */
+	margin: 0;
+	padding: 0;
+	
+	/* and hide the content when it overflows */
+	overflow: hidden;
+	
+	/* Let's add a little drop shadow to each slide to give them a "layered effect" */
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	
+	/* and now we'll add a transition to animate the switching between slides */
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+.accordion.vertical {
+	width: 200px;
+	height: 800px;
+}
+
+/* Normal State of Slides. Width Divided by # of Slides */
+/* In this case, 800px / 5 = 160px */
+.accordion.vertical li {
+	width: 200px;
+	height: 160px;
+}
+
+/* Slides that are NOT hovered */
+/* Formula (width of accordion - width of hovered slide) / (number of slides - 1) */
+/* In my example: (800px - 600px) / (5 - 1) = 50px */
+.accordion.vertical:hover li {
+	height: 50px;
+}
+
+/* Slide IS hovered -- this overrides the previous width */
+.accordion.vertical li:hover {
+	height: 600px;
+}

@@ -1,0 +1,45 @@
+:root {
+  --3DshadowD7: 0 0 1px rgba(0, 0, 0, .7), -1px 0 1px rgba(0, 0, 0, .4), 1px 1px 1px, 0 1px 1px, -1px 1px 1px, 1px 1px 1px rgba(0, 0, 0, .5), -2px 1px 1px rgba(0, 0, 0, .5), 0 2px 1px, -1px 2px 1px, -2px 2px 1px, 0 2px 1px rgba(0, 0, 0, .5), -3px 2px 1px rgba(0, 0, 0, .5), -1px 3px 1px, -2px 3px 1px, -3px 3px 1px, -1px 3px 1px rgba(0, 0, 0, .5), -4px 3px 1px rgba(0, 0, 0, .5), -2px 4px 1px, -3px 4px 1px, -4px 4px 1px, -2px 4px 1px rgba(0, 0, 0, .5), -5px 4px 1px rgba(0, 0, 0, .5), -3px 5px 1px, -4px 5px 1px, -5px 5px 1px, -3px 5px 1px rgba(0, 0, 0, .5), -6px 5px 1px rgba(0, 0, 0, .5), -4px 6px 1px, -5px 6px 1px, -6px 6px 1px, -4px 6px 1px rgba(0, 0, 0, .5), -7px 6px 1px rgba(0, 0, 0, .5), -5px 7px 1px, -6px 7px 1px, -7px 7px 1px, -5px 7px 1px rgba(0, 0, 0, .5), -8px 7px 1px rgba(0, 0, 0, .5), -6px 8px 1px, -7px 8px 1px, -8px 8px 1px, -6px 8px 1px rgba(0, 0, 0, .5), -9px 8px 1px rgba(0, 0, 0, .5), -7px 9px 1px, -8px 9px 1px, -9px 9px 1px, -7px 9px 1px rgba(0, 0, 0, .5), -10px 9px 1px rgba(0, 0, 0, .5), -8px 10px 1px, -9px 10px 1px, -10px 10px 1px, -8px 10px 1px rgba(0, 0, 0, .5), -11px 10px 1px rgba(0, 0, 0, .5), -9px 11px 1px, -10px 11px 1px, -11px 11px 1px, -9px 11px 1px rgba(0, 0, 0, .5), -12px 11px 1px rgba(0, 0, 0, .5), -10px 12px 1px, -11px 12px 1px, -12px 12px 1px, -10px 12px 1px rgba(0, 0, 0, .5), -13px 12px 1px rgba(0, 0, 0, .5), -11px 13px 1px, -12px 13px 1px, -13px 13px 1px, -11px 13px 1px rgba(0, 0, 0, .5), -14px 13px 1px rgba(0, 0, 0, .5), -12px 14px 1px, -13px 14px 1px, -14px 14px 1px, -12px 14px 1px rgba(0, 0, 0, .5), -15px 14px 1px rgba(0, 0, 0, .5), -13px 15px 1px, -14px 15px 1px, -15px 15px 1px, -13px 15px 1px rgba(0, 0, 0, .5), -16px 15px 1px rgba(0, 0, 0, .5), -14px 16px 1px, -15px 16px 1px, -16px 16px 1px, -14px 16px 1px rgba(0, 0, 0, .5), -17px 16px 1px rgba(0, 0, 0, .5), -15px 17px 1px, -16px 17px 1px, -17px 17px 1px, -15px 17px 1px rgba(0, 0, 0, .5), -18px 17px 1px rgba(0, 0, 0, .5), -16px 18px 1px, -17px 18px 1px, -18px 18px 1px, -16px 18px 1px rgba(0, 0, 0, .5), -19px 18px 1px rgba(0, 0, 0, .5), -17px 19px 1px, -18px 19px 1px, -19px 19px 1px, -17px 19px 1px rgba(0, 0, 0, .5), -20px 19px 1px rgba(0, 0, 0, .5), -18px 20px 1px, -19px 20px 1px, -20px 20px 1px, -18px 20px 1px rgba(0, 0, 0, .5), -20px 20px 1px rgba(0, 0, 0, .7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  background-color: black;
+  padding: 1em;
+}
+
+p {
+  position: relative;
+  font-weight: bold;
+  font-size: 8rem;
+  text-align: center;
+  transform: skew(50deg)rotate(-10deg)scaley(.5)translate3d(0, 0, 0)/*chrome fix*/
+  ;
+  margin-top: .2em;
+  text-shadow: -29px 20px 4px rgba(0, 0, 0, .7)
+}
+
+p:before,
+p:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  content: attr(data-text)
+}
+
+p:before {
+  color: #cff;
+  text-shadow: var(--3DshadowD7);
+  filter: blur(.1px)
+}
+
+p:after {
+  color: #fff;
+  text-shadow: 0 0 .7px, 0 0 1.1px, 0 0 1.1px
+}

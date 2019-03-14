@@ -1,0 +1,491 @@
+/* 
+----------------------------------------
+A tiny explorer of fantasy landscapes.
+----------------------------------------
+
+Works best in chrome.  Please feel free to zoom in!
+
+Generates random landscape by applying random classes to divs to change colour and shape.
+
+You can then 'save' an image copy of the result. 
+
+However, not all properties are saveable such as the border-shadow, and it might be a little inaccurate. But still prety damn awesome.
+
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+:root {
+  --skycolour1: black;
+  --skycolour2: black;
+  --staropacity: 0;
+  --universecolour: black;
+  --horizoncolour: black;
+  --lakecolour: black;
+  --lakeheight: 0px;
+  --lakeopacity:0;
+  --lakeshadow: black;
+  --hbscale1:1;
+  --hbscale1:1;
+  --cloudcolour: black;
+  --cloudheight: 20px;
+  --glow:#330033;
+  --moonrotate:0deg;
+  --colour1:#A5D6A7;
+  --colour2:#CE93D8;
+  --colour3:#9FA8DA;
+  --colour4:#81D4FA;
+  --colour5:#80DEEA;
+  --colour6:#7ACDFF;
+  --colour7:#FFF176;
+  --colour8:#FFE082;
+  --colour9:#FFCC80;
+  --pastewidth:0px;
+  --pasteheight:0px;
+}
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: var(--universecolour);
+}
+
+/* RANDOM CLASS PROPERTIES */
+/* RANDOM CLASS PROPERTIES */
+/* RANDOM CLASS PROPERTIES */
+/* RANDOM CLASS PROPERTIES */
+/* RANDOM CLASS PROPERTIES */
+.sky {
+}
+.sky div:before {
+  content:"";
+  position:absolute;
+}
+.sky div {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 650px;
+  height: 350px;
+  transition: all 0.5s;
+  background: var(--skycolour1);
+  box-shadow: 2px 300px 600px -200px var(--skycolour2) inset;
+}
+div.tone1 {
+}
+.moonbox {
+  position:absolute;
+  margin:auto;
+  max-width:650px;
+  height:350px;
+  top:0px;
+  bottom:0;
+  right:0;
+  left:0;
+  z-index:11;
+}
+.moon {
+  position:absolute;
+  top:-100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.moon div {
+  flex: 0%;
+  height: 100px;
+  min-width: 50px;
+  margin:20px;
+  transform: rotate(var(--moonrotate));
+  transition: all 0.5s;
+}
+.moon div:before { content:""; position:absolute; border-radius:0%; 
+  transition: all 0.5s;}
+.moon2 {
+  position:absolute;
+  top:-100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.moon2 div {
+  flex: 0%;
+  height: 100px;
+  min-width: 50px;
+  margin:20px;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+  opacity:0.5;
+}
+.moon2 div:before { content:""; position:absolute; border-radius:0%; border-style:solid; background:#ffffff00!important; 
+  transition: all 0.5s;}
+div.mc1:before { background:var(--colour1); border-color:var(--colour1); }
+div.mc2:before { background:var(--colour2); border-color:var(--colour2); }
+div.mc3:before { background:var(--colour3); border-color:var(--colour3); }
+div.mc4:before { background:var(--colour4); border-color:var(--colour4); }
+div.mc5:before { background:var(--colour5); border-color:var(--colour5); }
+div.mc6:before { background:var(--colour6); border-color:var(--colour6); }
+div.mc7:before { background:var(--colour7); border-color:var(--colour7); }
+div.mc8:before { background:var(--colour8); border-color:var(--colour8); }
+div.mc9:before { background:var(--colour9); border-color:var(--colour9); }
+div.ms1:before { width:1px; height:1px;  }
+div.ms2:before { width:25px; height:25px;  }
+div.ms3:before { width:40px; height:40px;  }
+div.ms4:before { width:55px; height:55px;  }
+div.ms5:before { width:85px; height:85px;  }
+div.ms6:before { width:30px; height:30px;  }
+div.ms7:before { width:5px; height:5px;  }
+div.ms8:before { width:10px; height:10px;  }
+div.mp2:before {margin:-50px; }
+div.mp3:before {margin:-30px; }
+div.mp4:before {margin: -10px; }
+div.mp5:before {margin: 0px; }
+div.mp6:before {margin: 20px; }
+div.mp7:before {margin: 40px; }
+div.mp8:before {margin: 60px; }
+div.mp9:before {margin: 80px; }
+div.mp10:before {margin: 100px; }
+
+.horizonbox {
+  position:absolute;
+  margin:auto;
+  max-width:700px;
+  height:350px;
+  top:0px;
+  bottom:0;
+  right:0;
+  left:0;
+  transform:scaleX(var(--hbscale2));
+  z-index:11;
+  overflow:visible;
+}
+.horizon {
+  position:absolute;
+  top:300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.horizon div {
+  flex: 0%;
+  height: 100px;
+  width: 100px;
+  transition: all 0.5s;
+}
+.horizon div:before { content:""; position:absolute; width:100px; height:100px; background:var(--horizoncolour); margin:0px;}
+
+.horizonbox2 {
+  position:absolute;
+  margin:auto;
+  max-width:700px;
+  height:350px;
+  top:0px;
+  bottom:0;
+  right:0;
+  left:0;
+  z-index:11;
+  overflow:visible;
+}
+.horizon2 {
+  position:absolute;
+  top:300px;
+  transform:scaleX(var(--hbscale1));
+  display: flex;
+  flex-wrap: wrap;
+}
+.horizon2 div {
+  flex: 0%;
+  height: 100px;
+  width: 100px;
+  transition: all 0.5s;
+}
+.horizon2 div:before { content:""; position:absolute; width:100px; height:100px; background:black; margin:0px;}
+div.h1 { transform: scale(0) rotate(45deg);}
+div.h2 { transform: scale(0) rotate(45deg);}
+div.h3 { transform: scale(0.6) rotate(45deg);}
+div.h4 { transform: scale(1) rotate(45deg);}
+div.h5 { transform: scale(1.5) rotate(45deg);}
+div.h6 { transform: scale(2) rotate(45deg);}
+
+.cloudbox {
+  position:absolute;
+  margin:auto;
+  max-width:700px;
+  height:350px;
+  top:0px;
+  bottom:0;
+  right:0;
+  left:0;
+  z-index:11;
+  overflow:visible;
+}
+.cloud {
+  position:absolute;
+  top:30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cloud div {
+  flex: 0%;
+  height: 80px;
+  min-width: 180px;
+  opacity:1;
+  transition: all 0.5s;
+}
+.cloud div:before { content:""; position:absolute; height:var(--cloudheight); background:var(--cloudcolour);
+  animation: float 50s linear infinite;}
+
+div.cs1:before { width:20px;}
+div.cs2:before { width:50px;}
+div.cs3:before { width:100px;}
+div.cs4:before { width:150px;}
+div.cs5:before { width:200px;}
+div.cs6:before { width:250px;}
+div.cp1:before {  transform: translateX(-100px)}
+div.cp2:before {  transform: translateX(-50px)}
+div.cp3:before {  transform: translateX(0px)}
+div.cp4:before {  transform: translateX(50px)}
+div.cp5:before {  transform: translateX(100px)}
+div.cp6:before {  transform: translateX(200px)}
+div.cp7:before { top:0px;}
+div.cp8:before { top:40px;}
+div.cp9:before { top:80px;}
+div.cp10:before { top:120px;}
+div.cp11:before { top:160px;}
+div.cp12:before { top:200px;}
+div.cad1:before { animation-delay:0s; }
+div.cad2:before { animation-delay:-6s; }
+div.cad3:before { animation-delay:-12s; }
+div.cad4:before { animation-delay:-18s; }
+
+.lake {
+  position:absolute;
+  margin:auto;
+  max-width:700px;
+  height:350px;
+  top:var(--lakeheight);
+  bottom:0;
+  right:0;
+  left:0;
+  z-index:11;
+  overflow:visible;  
+  transition: all 0.5s;
+}
+.lakesurface {
+  position:absolute;
+  top:355px;
+  width:650px;
+  height:200px;
+  z-index:30;
+  border-style:solid;
+  border-width: 2px 0 0 0;
+  transition: all 0.5s;
+}
+.lakesurface:before {
+  content:"";
+  position:absolute;
+  width:650px;
+  height:200px;
+  background:var(--lakecolour);
+  opacity:var(--lakeopacity);
+  transition: all 0.5s;
+  box-shadow: 0px 80px 100px -50px var(--lakeshadow) inset;
+}
+#stars {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  color: white;
+  width: 700px;
+  height: 350px;
+  font-family: "montserrat";
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalise;
+  z-index: 10;
+  letter-spacing:80px;
+  user-select: none;
+  opacity:var(--staropacity);
+}
+
+/* BUTTON SETTINGS */
+/* BUTTON SETTINGS */
+/* BUTTON SETTINGS */
+/* BUTTON SETTINGS */
+/* BUTTON SETTINGS */
+/* BUTTON SETTINGS */
+
+button {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 650px;
+  height: 350px;
+  background: #000;
+  border-style: solid;
+  border-width: 0px;
+  font-family: "montserrat";
+  font-size: 80px;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.5s;
+  z-index:99;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+#generate {
+  color:white;
+}
+button:hover {
+  font-size:120px;
+}
+.generate-clicked {
+  opacity: 0;
+}
+
+/* WORLD AND TITLE SETTING */
+/* WORLD AND TITLE SETTING */
+/* WORLD AND TITLE SETTING */
+/* WORLD AND TITLE SETTING */
+/* WORLD AND TITLE SETTING */
+
+.canvas {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height:350px;
+}
+.world {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 650px;
+  height:350px;
+  overflow:hidden;
+  transform:scale(0.5) translateX(-330px);
+}
+.worldbox {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 5px;
+  width: 320px;
+  height:170px;
+  background:red;
+}
+#title {
+  position: absolute;
+  margin: auto;
+  top: 200px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  color: white;
+  width: 325px;
+  height: 1px;
+  font-family: "montserrat";
+  font-size: 25px;
+  text-align: left;
+  text-transform: capitalise;
+  z-index: 10;
+}
+#save {
+  position: absolute;
+  margin: auto;
+  top: -220px;
+  bottom: 0px;
+  right: 0px;
+  left: 240px;
+  color: grey;
+  width: 80px;
+  padding:5px;
+  height: 20px;
+  text-align:center;
+  font-family: "montserrat";
+  font-size: 14px;
+  text-transform: capitalise;
+  z-index: 10;
+  cursor:pointer;
+  border-style:solid;
+  border-color:grey;
+  border-width:1px;
+}
+#save:hover {
+  color:white;
+  border-color:white;
+}
+.bottomline {
+  position: absolute;
+  margin: auto;
+  left: 0px;
+  top: 260px;
+  right: 0;
+  bottom: 0;
+  letter-spacing: 2px;
+  font-family: "montserrat";
+  text-align: left;
+  font-size: 12px;
+  width: 325px;
+  height: 1px;
+  color: grey;
+  line-height: 25px;
+}
+a {
+  position: relative;
+  letter-spacing: 2px;
+  font-family: "montserrat";
+  color: grey  ;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(-800px);
+  }
+  100% {
+    transform: translateX(800px);
+  }
+}
+
+canvas{
+  display:block;  
+  float:left;
+}
+.wrap {
+  position:absolute;
+  magin:auto;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+}
+.paste {
+  position:absolute;
+  margin:auto;
+  top:0px;
+  bottom:0px;
+  right:0px;
+  left:800px;
+  width:var(--pastewidth);
+  height:var(--pasteheight);
+  cursor:pointer;
+}

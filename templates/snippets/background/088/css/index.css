@@ -1,0 +1,21 @@
+body {
+  background: #000;
+  overflow: hidden;
+}
+
+.firefly {
+  width:4px;
+  height:4px;
+  position:absolute;
+  background-color: #ecc45e;
+  box-shadow:0px 0px 17px 2px wheat;
+  border-radius: 50%;
+}
+
+.container {
+/*   width: 30%; */
+  margin: 0 auto;
+  height: 90vh;
+  position: relative;
+
+}

@@ -1,0 +1,28 @@
+:root {
+  font-family: 'Charm', cursive;
+}
+
+* {
+  overflow: hidden;
+}
+
+body {
+  background: #FFE7BA;
+}
+
+.center {
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  pointer-events: none;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textSpan {
+  font-size: 10vw;
+  height: 80vh;
+}

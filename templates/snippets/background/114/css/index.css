@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+canvas{
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+}
+
+svg{
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(30,30,40), rgb(50,50,60) );
+}
+
+
+.cloud{
+    transform: translate(0,0);
+    animation-name: cloudSlide;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;    
+}
+
+@keyframes cloudSlide{
+    from{
+        transform: translate(0px, 0px)
+    }
+    to{
+        transform: translate(30px, 0px);
+    }
+}

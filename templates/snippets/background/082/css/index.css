@@ -1,0 +1,523 @@
+﻿@charset "UTF-8";
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #230418;
+  overflow: hidden;
+  margin: 0;
+}
+body * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.myvarthree:nth-child(1) {
+  -webkit-transform: translate3d(-150px, -150px, 0);
+          transform: translate3d(-150px, -150px, 0);
+}
+.myvarthree:nth-child(2) {
+  -webkit-transform: translate3d(150px, -150px, 0) scale(-1, 1);
+          transform: translate3d(150px, -150px, 0) scale(-1, 1);
+}
+.myvarthree:nth-child(3) {
+  -webkit-transform: translate3d(-150px, 150px, 0) scale(1, -1);
+          transform: translate3d(-150px, 150px, 0) scale(1, -1);
+}
+.myvarthree:nth-child(4) {
+  -webkit-transform: translate3d(150px, 150px, 0) rotate(-180deg);
+          transform: translate3d(150px, 150px, 0) rotate(-180deg);
+}
+
+.myvarone {
+  width: 200px;
+  height: 200px;
+}
+.myvarone:nth-child(0) {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.myvarone:nth-child(0) .myvartwo {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  border-color: red;
+}
+.myvarone:nth-child(1) {
+  -webkit-transform: scale(0.03);
+          transform: scale(0.03);
+}
+.myvarone:nth-child(1) .myvartwo {
+  -webkit-animation-delay: -0.03s;
+          animation-delay: -0.03s;
+  border-color: #ff0400;
+}
+.myvarone:nth-child(2) {
+  -webkit-transform: scale(0.06);
+          transform: scale(0.06);
+}
+.myvarone:nth-child(2) .myvartwo {
+  -webkit-animation-delay: -0.06s;
+          animation-delay: -0.06s;
+  border-color: #ff0900;
+}
+.myvarone:nth-child(3) {
+  -webkit-transform: scale(0.09);
+          transform: scale(0.09);
+}
+.myvarone:nth-child(3) .myvartwo {
+  -webkit-animation-delay: -0.09s;
+          animation-delay: -0.09s;
+  border-color: #ff0d00;
+}
+.myvarone:nth-child(4) {
+  -webkit-transform: scale(0.12);
+          transform: scale(0.12);
+}
+.myvarone:nth-child(4) .myvartwo {
+  -webkit-animation-delay: -0.12s;
+          animation-delay: -0.12s;
+  border-color: #ff1100;
+}
+.myvarone:nth-child(5) {
+  -webkit-transform: scale(0.15);
+          transform: scale(0.15);
+}
+.myvarone:nth-child(5) .myvartwo {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+  border-color: #ff1500;
+}
+.myvarone:nth-child(6) {
+  -webkit-transform: scale(0.18);
+          transform: scale(0.18);
+}
+.myvarone:nth-child(6) .myvartwo {
+  -webkit-animation-delay: -0.18s;
+          animation-delay: -0.18s;
+  border-color: #ff1a00;
+}
+.myvarone:nth-child(7) {
+  -webkit-transform: scale(0.21);
+          transform: scale(0.21);
+}
+.myvarone:nth-child(7) .myvartwo {
+  -webkit-animation-delay: -0.21s;
+          animation-delay: -0.21s;
+  border-color: #ff1e00;
+}
+.myvarone:nth-child(8) {
+  -webkit-transform: scale(0.24);
+          transform: scale(0.24);
+}
+.myvarone:nth-child(8) .myvartwo {
+  -webkit-animation-delay: -0.24s;
+          animation-delay: -0.24s;
+  border-color: #ff2200;
+}
+.myvarone:nth-child(9) {
+  -webkit-transform: scale(0.27);
+          transform: scale(0.27);
+}
+.myvarone:nth-child(9) .myvartwo {
+  -webkit-animation-delay: -0.27s;
+          animation-delay: -0.27s;
+  border-color: #ff2600;
+}
+.myvarone:nth-child(10) {
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+}
+.myvarone:nth-child(10) .myvartwo {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+  border-color: #ff2b00;
+}
+.myvarone:nth-child(11) {
+  -webkit-transform: scale(0.33);
+          transform: scale(0.33);
+}
+.myvarone:nth-child(11) .myvartwo {
+  -webkit-animation-delay: -0.33s;
+          animation-delay: -0.33s;
+  border-color: #ff2f00;
+}
+.myvarone:nth-child(12) {
+  -webkit-transform: scale(0.36);
+          transform: scale(0.36);
+}
+.myvarone:nth-child(12) .myvartwo {
+  -webkit-animation-delay: -0.36s;
+          animation-delay: -0.36s;
+  border-color: #ff3300;
+}
+.myvarone:nth-child(13) {
+  -webkit-transform: scale(0.39);
+          transform: scale(0.39);
+}
+.myvarone:nth-child(13) .myvartwo {
+  -webkit-animation-delay: -0.39s;
+          animation-delay: -0.39s;
+  border-color: #ff3700;
+}
+.myvarone:nth-child(14) {
+  -webkit-transform: scale(0.42);
+          transform: scale(0.42);
+}
+.myvarone:nth-child(14) .myvartwo {
+  -webkit-animation-delay: -0.42s;
+          animation-delay: -0.42s;
+  border-color: #ff3c00;
+}
+.myvarone:nth-child(15) {
+  -webkit-transform: scale(0.45);
+          transform: scale(0.45);
+}
+.myvarone:nth-child(15) .myvartwo {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+  border-color: #ff4000;
+}
+.myvarone:nth-child(16) {
+  -webkit-transform: scale(0.48);
+          transform: scale(0.48);
+}
+.myvarone:nth-child(16) .myvartwo {
+  -webkit-animation-delay: -0.48s;
+          animation-delay: -0.48s;
+  border-color: #ff4400;
+}
+.myvarone:nth-child(17) {
+  -webkit-transform: scale(0.51);
+          transform: scale(0.51);
+}
+.myvarone:nth-child(17) .myvartwo {
+  -webkit-animation-delay: -0.51s;
+          animation-delay: -0.51s;
+  border-color: #ff4800;
+}
+.myvarone:nth-child(18) {
+  -webkit-transform: scale(0.54);
+          transform: scale(0.54);
+}
+.myvarone:nth-child(18) .myvartwo {
+  -webkit-animation-delay: -0.54s;
+          animation-delay: -0.54s;
+  border-color: #ff4d00;
+}
+.myvarone:nth-child(19) {
+  -webkit-transform: scale(0.57);
+          transform: scale(0.57);
+}
+.myvarone:nth-child(19) .myvartwo {
+  -webkit-animation-delay: -0.57s;
+          animation-delay: -0.57s;
+  border-color: #ff5100;
+}
+.myvarone:nth-child(20) {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+.myvarone:nth-child(20) .myvartwo {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  border-color: #ff5500;
+}
+.myvarone:nth-child(21) {
+  -webkit-transform: scale(0.63);
+          transform: scale(0.63);
+}
+.myvarone:nth-child(21) .myvartwo {
+  -webkit-animation-delay: -0.63s;
+          animation-delay: -0.63s;
+  border-color: #ff5900;
+}
+.myvarone:nth-child(22) {
+  -webkit-transform: scale(0.66);
+          transform: scale(0.66);
+}
+.myvarone:nth-child(22) .myvartwo {
+  -webkit-animation-delay: -0.66s;
+          animation-delay: -0.66s;
+  border-color: #ff5e00;
+}
+.myvarone:nth-child(23) {
+  -webkit-transform: scale(0.69);
+          transform: scale(0.69);
+}
+.myvarone:nth-child(23) .myvartwo {
+  -webkit-animation-delay: -0.69s;
+          animation-delay: -0.69s;
+  border-color: #ff6200;
+}
+.myvarone:nth-child(24) {
+  -webkit-transform: scale(0.72);
+          transform: scale(0.72);
+}
+.myvarone:nth-child(24) .myvartwo {
+  -webkit-animation-delay: -0.72s;
+          animation-delay: -0.72s;
+  border-color: #ff6600;
+}
+.myvarone:nth-child(25) {
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+}
+.myvarone:nth-child(25) .myvartwo {
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+  border-color: #ff6a00;
+}
+.myvarone:nth-child(26) {
+  -webkit-transform: scale(0.78);
+          transform: scale(0.78);
+}
+.myvarone:nth-child(26) .myvartwo {
+  -webkit-animation-delay: -0.78s;
+          animation-delay: -0.78s;
+  border-color: #ff6f00;
+}
+.myvarone:nth-child(27) {
+  -webkit-transform: scale(0.81);
+          transform: scale(0.81);
+}
+.myvarone:nth-child(27) .myvartwo {
+  -webkit-animation-delay: -0.81s;
+          animation-delay: -0.81s;
+  border-color: #ff7300;
+}
+.myvarone:nth-child(28) {
+  -webkit-transform: scale(0.84);
+          transform: scale(0.84);
+}
+.myvarone:nth-child(28) .myvartwo {
+  -webkit-animation-delay: -0.84s;
+          animation-delay: -0.84s;
+  border-color: #ff7700;
+}
+.myvarone:nth-child(29) {
+  -webkit-transform: scale(0.87);
+          transform: scale(0.87);
+}
+.myvarone:nth-child(29) .myvartwo {
+  -webkit-animation-delay: -0.87s;
+          animation-delay: -0.87s;
+  border-color: #ff7b00;
+}
+.myvarone:nth-child(30) {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.myvarone:nth-child(30) .myvartwo {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+  border-color: #ff8000;
+}
+.myvarone:nth-child(31) {
+  -webkit-transform: scale(0.93);
+          transform: scale(0.93);
+}
+.myvarone:nth-child(31) .myvartwo {
+  -webkit-animation-delay: -0.93s;
+          animation-delay: -0.93s;
+  border-color: #ff8400;
+}
+.myvarone:nth-child(32) {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+.myvarone:nth-child(32) .myvartwo {
+  -webkit-animation-delay: -0.96s;
+          animation-delay: -0.96s;
+  border-color: #ff8800;
+}
+.myvarone:nth-child(33) {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+.myvarone:nth-child(33) .myvartwo {
+  -webkit-animation-delay: -0.99s;
+          animation-delay: -0.99s;
+  border-color: darkorange;
+}
+.myvarone:nth-child(34) {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+.myvarone:nth-child(34) .myvartwo {
+  -webkit-animation-delay: -1.02s;
+          animation-delay: -1.02s;
+  border-color: #ff9100;
+}
+.myvarone:nth-child(35) {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.myvarone:nth-child(35) .myvartwo {
+  -webkit-animation-delay: -1.05s;
+          animation-delay: -1.05s;
+  border-color: #ff9500;
+}
+.myvarone:nth-child(36) {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+.myvarone:nth-child(36) .myvartwo {
+  -webkit-animation-delay: -1.08s;
+          animation-delay: -1.08s;
+  border-color: #ff9900;
+}
+.myvarone:nth-child(37) {
+  -webkit-transform: scale(1.11);
+          transform: scale(1.11);
+}
+.myvarone:nth-child(37) .myvartwo {
+  -webkit-animation-delay: -1.11s;
+          animation-delay: -1.11s;
+  border-color: #ff9d00;
+}
+.myvarone:nth-child(38) {
+  -webkit-transform: scale(1.14);
+          transform: scale(1.14);
+}
+.myvarone:nth-child(38) .myvartwo {
+  -webkit-animation-delay: -1.14s;
+          animation-delay: -1.14s;
+  border-color: #ffa200;
+}
+.myvarone:nth-child(39) {
+  -webkit-transform: scale(1.17);
+          transform: scale(1.17);
+}
+.myvarone:nth-child(39) .myvartwo {
+  -webkit-animation-delay: -1.17s;
+          animation-delay: -1.17s;
+  border-color: #ffa600;
+}
+.myvarone:nth-child(40) {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.myvarone:nth-child(40) .myvartwo {
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+  border-color: #ffaa00;
+}
+.myvarone:nth-child(41) {
+  -webkit-transform: scale(1.23);
+          transform: scale(1.23);
+}
+.myvarone:nth-child(41) .myvartwo {
+  -webkit-animation-delay: -1.23s;
+          animation-delay: -1.23s;
+  border-color: #ffae00;
+}
+.myvarone:nth-child(42) {
+  -webkit-transform: scale(1.26);
+          transform: scale(1.26);
+}
+.myvarone:nth-child(42) .myvartwo {
+  -webkit-animation-delay: -1.26s;
+          animation-delay: -1.26s;
+  border-color: #ffb300;
+}
+.myvarone:nth-child(43) {
+  -webkit-transform: scale(1.29);
+          transform: scale(1.29);
+}
+.myvarone:nth-child(43) .myvartwo {
+  -webkit-animation-delay: -1.29s;
+          animation-delay: -1.29s;
+  border-color: #ffb700;
+}
+.myvarone:nth-child(44) {
+  -webkit-transform: scale(1.32);
+          transform: scale(1.32);
+}
+.myvarone:nth-child(44) .myvartwo {
+  -webkit-animation-delay: -1.32s;
+          animation-delay: -1.32s;
+  border-color: #ffbb00;
+}
+.myvarone:nth-child(45) {
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
+}
+.myvarone:nth-child(45) .myvartwo {
+  -webkit-animation-delay: -1.35s;
+          animation-delay: -1.35s;
+  border-color: #ffbf00;
+}
+.myvarone:nth-child(46) {
+  -webkit-transform: scale(1.38);
+          transform: scale(1.38);
+}
+.myvarone:nth-child(46) .myvartwo {
+  -webkit-animation-delay: -1.38s;
+          animation-delay: -1.38s;
+  border-color: #ffc400;
+}
+.myvarone:nth-child(47) {
+  -webkit-transform: scale(1.41);
+          transform: scale(1.41);
+}
+.myvarone:nth-child(47) .myvartwo {
+  -webkit-animation-delay: -1.41s;
+          animation-delay: -1.41s;
+  border-color: #ffc800;
+}
+.myvarone:nth-child(48) {
+  -webkit-transform: scale(1.44);
+          transform: scale(1.44);
+}
+.myvarone:nth-child(48) .myvartwo {
+  -webkit-animation-delay: -1.44s;
+          animation-delay: -1.44s;
+  border-color: #ffcc00;
+}
+.myvarone:nth-child(49) {
+  -webkit-transform: scale(1.47);
+          transform: scale(1.47);
+}
+.myvarone:nth-child(49) .myvartwo {
+  -webkit-animation-delay: -1.47s;
+          animation-delay: -1.47s;
+  border-color: #ffd000;
+}
+.myvarone:nth-child(50) {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.myvarone:nth-child(50) .myvartwo {
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+  border-color: #ffd500;
+}
+.myvarone .myvartwo {
+  width: 150%;
+  height: 50%;
+  border-top: 5px ridge transparent;
+  border-left: 2.5px ridge transparent;
+  -webkit-animation: 1.5s myvarone linear infinite;
+          animation: 1.5s myvarone linear infinite;
+}
+
+@-webkit-keyframes myvarone {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes myvarone {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

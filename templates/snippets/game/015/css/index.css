@@ -1,0 +1,134 @@
+
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+body {
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  color: #114b5f;
+}
+
+svg {
+  width: 104px;
+  height: 104px;
+}
+
+path,
+text {
+  fill: #1a936f;
+}
+
+.caption {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.field {
+  display: grid;
+  width: 500px;
+  height: 500px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-gap: 15px 15px;
+}
+
+.card {
+  background-color: #1a936f;
+  grid-row: span 1;
+  grid-column: span 1;
+  transition: -webkit-transform 0.1s ease-in;
+  transition: transform 0.1s ease-in;
+  transition: transform 0.1s ease-in, -webkit-transform 0.1s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__icon {
+  width: 104px;
+  height: 104px;
+}
+.card--player2 {
+  background-color: #e54b4b;
+}
+.card-fill--player2 {
+  fill: #e54b4b;
+}
+.card--active {
+  background-color: #88d498;
+  border: 1px solid #1a936f;
+  transition: background-color 0.5s ease-out;
+}
+.card--active.card--player2 {
+  background-color: #ffa987;
+  border-color: #e54b4b;
+}
+.card--found, .card--found.card--player2 {
+  background-color: #fff;
+}
+.card:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+.card:hover.card--found {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.side-bar {
+  width: 500px;
+  text-align: center;
+  margin-top: 50px;
+  padding: 0 30px;
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+  border: 2px solid #114b5f;
+  border-radius: 5px;
+  margin: 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  background-color: #114b5f;
+}
+.btn--pulse {
+  -webkit-animation: pulse 1.2s infinite cubic-bezier(0.59, 0.86, 0.98, 0.55);
+          animation: pulse 1.2s infinite cubic-bezier(0.59, 0.86, 0.98, 0.55);
+}
+.btn:hover {
+  color: #114b5f;
+  background-color: #fff;
+  transition: all 0.2s ease-in;
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px #114b5f;
+  }
+  75% {
+    box-shadow: 0 0 0 15px rgba(17, 75, 95, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px #114b5f;
+  }
+  75% {
+    box-shadow: 0 0 0 15px rgba(17, 75, 95, 0);
+  }
+}
+.svg-container {
+  display: none;
+}

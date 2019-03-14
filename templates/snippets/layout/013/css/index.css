@@ -1,0 +1,110 @@
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: inherit;
+}
+
+html {
+  --i: var(--wide, 1);
+  --j: calc(1 - var(--i));
+  --narr: 0;
+  --k: calc(1 - var(--narr));
+  font: 500 1em/ 1.25 koho, trebuchet ms, verdana, sans-serif;
+  transition: .3s;
+}
+@media (max-width: 50.25rem) {
+  html {
+    --wide: 0 ;
+  }
+}
+@media (max-width: 21.75rem) {
+  html {
+    --narr: 1 ;
+  }
+}
+@media (max-width: 12em) {
+  html {
+    font-size: 0.75em;
+  }
+}
+
+body {
+  display: grid;
+  grid-template: repeat(var(--n), 1fr)/repeat(calc(var(--i) + 1), calc(var(--k)*18.75rem + var(--narr)*100%));
+  grid-gap: 0 11.25rem;
+  place-content: center;
+  overflow-x: hidden;
+  margin-top: 1em;
+  padding-top: calc(var(--i)*4.5rem);
+  background: repeating-linear-gradient(transparent 0, transparent 4.5rem, currentcolor 0, currentcolor 9rem) 50% 1em/calc(var(--i)*2px) calc((.5*(var(--n) + .5))*13.5rem) content-box no-repeat, linear-gradient(rgba(238, 238, 238, 0.85), rgba(238, 238, 238, 0.85)), url("../images/image-10.jpg") 50%/cover;
+}
+
+article {
+  --p: var(--parity, 0);
+  --q: calc(1 - var(--p));
+  --s: calc(1 - 2*var(--p));
+  grid-row: calc(var(--idx) + 1);
+  grid-column: calc(var(--i)*var(--p) + 1);
+  position: relative;
+  margin-top: calc(var(--i)*-4.5rem);
+  border-bottom: solid 0.75rem transparent;
+  max-width: 100%;
+  min-height: 13.5rem;
+  background: linear-gradient(#f2f2f2, #f2f2f2) padding-box, radial-gradient(at 50% 0, rgba(0, 0, 0, 0.3), transparent 70%) 50% 100%/115% 0.75rem border-box;
+  color: #222;
+}
+article:before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(var(--k)*(var(--q)*-0.75rem + var(--p)*-2.25rem));
+  border-bottom: solid calc(var(--k)*0.75rem) transparent;
+  width: calc(var(--k)*21.75rem + var(--narr)*100%);
+  height: calc(4.5rem + var(--k)*0.75rem);
+  border-radius: calc(var(--k)*var(--p)*2.25rem) calc(var(--k)*var(--q)*2.25rem) calc(var(--k)*var(--q)*2.25rem) calc(var(--k)*var(--p)*2.25rem) / calc(var(--k)*var(--p)*2.25rem) calc(var(--k)*var(--q)*2.25rem) calc(var(--k)*var(--q)*3rem) calc(var(--k)*var(--p)*3rem);
+  background: linear-gradient(calc(var(--s)*90deg), var(--slist)) padding-box, linear-gradient(calc(var(--s)*90deg), var(--slist) 0.75rem, #e6e6e6 0) calc(var(--p)*100%) 0/ 17.25rem no-repeat border-box;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 300;
+  text-shadow: calc(var(--s)*-1px) 1px 2px rgba(0, 0, 0, 0.85);
+  clip-path: polygon(calc(var(--p)*100%) 0, calc(var(--q)*100%) 0, calc(var(--q)*100%) 100%, calc(var(--q)*100% - var(--s)*4.5rem) 4.5rem, calc(var(--p)*100% + var(--s)*0.75rem) 100%, calc(var(--p)*100%) 4.5rem);
+  content: attr(data-title);
+}
+article:after {
+  position: absolute;
+  top: 0;
+  left: calc(var(--q)*(100% - 4.5rem) + var(--s)*7.875rem);
+  border: solid 0.75rem transparent;
+  padding: 0.75rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  transform: scale(var(--i));
+  background: linear-gradient(calc(var(--s)*90deg), var(--slist)) content-box, linear-gradient(calc(var(--s)*90deg), var(--slist)) border-box;
+  --m: var(--mid, ) linear-gradient(red, red) padding-box, linear-gradient(red, red) border-box;
+  -webkit-mask: var(--m);
+  -webkit-mask-composite: xor;
+  mask: var(--m);
+  mask-composite: exclude;
+  content: "";
+}
+article:nth-of-type(2n) {
+  --parity: 1 ;
+}
+article:first-of-type, article:last-of-type {
+  --mid: linear-gradient(red, red) content-box ,
+  ;
+}
+
+h3, p {
+  padding: 0 0.75rem;
+}
+
+h3 {
+  margin-top: .25em;
+  font-size: 1.375em;
+  font-weight: 600;
+  line-height: 2;
+  text-transform: uppercase;
+}

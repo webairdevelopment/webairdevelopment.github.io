@@ -1,0 +1,106 @@
+:root {
+  --size: 200px;
+  --half: 100px;
+  --half-n: -100px;
+  --shadow: 25px;
+  --shadow-color: #1f1f1f;
+  --s1-bg: url("../images/image1.png");
+  --s2-bg: url("../images/image2.png");
+  --s3-bg: url("../images/image3.png");
+  --s4-bg: url("../images/image4.png");
+  --s5-bg: url("../images/image5.png");
+  --s6-bg: url("../images/image6.png");
+}
+
+html, body, .wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #4f4f4f;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cube {
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(-25deg);
+  animation: cube 15s linear infinite;
+  z-index: 1;
+}
+
+@keyframes cube {
+  0%        { transform: rotateX(0deg) rotateY(-45deg) }
+  99.99999% { transform: rotateX(360deg) rotateY(315deg) }
+  100%      { transform: rotateX(0deg) rotateY(-45deg) }
+}
+
+.shadow {
+  background: var(--shadow-color);
+  width: var(--size);
+  height: var(--size);
+  filter: blur(var(--shadow));
+  transform: rotateX(45deg) rotateZ(25deg);
+  animation: shadow 15s linear infinite;
+}
+
+@keyframes shadow {
+  0%        { transform: rotateX(55deg) rotateZ(25deg) }
+  99.99999% { transform: rotateX(55deg) rotateZ(385deg) }
+  100%      { transform: rotateX(55deg) rotateZ(25deg) }
+}
+
+.side {
+  width: var(--size);
+  height: var(--size);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.s-1 {
+  background-image: var(--s1-bg);
+  background-size: cover;
+  transform: translateZ(var(--half));
+}
+
+.s-2 {
+  background-image: var(--s2-bg);
+  background-size: cover;
+  transform: translateY(var(--half-n)) rotateX(90deg);
+}
+
+.s-3 {
+  background-image: var(--s3-bg);
+  background-size: cover;
+  transform: translateZ(var(--half-n));
+}
+
+.s-4 {
+  background-image: var(--s4-bg);
+  background-size: cover;
+  transform: translateX(var(--half-n)) rotateY(90deg);
+}
+
+.s-5 {
+  background-image: var(--s5-bg);
+  background-size: cover;
+  transform: translateX(var(--half)) rotateY(90deg);
+}
+
+.s-6 {
+  background-image: var(--s6-bg);
+  background-size: cover;
+  transform: translateY(var(--half)) rotateX(90deg);
+}

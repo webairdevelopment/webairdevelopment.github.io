@@ -1,0 +1,45 @@
+body {
+  font-family: "Helvetica", sans-serif;
+  background: black;
+}
+
+.cerchio {
+  position: relative;
+  top: calc(50vh - 30px);
+  left: calc(50vw - 30px);
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(255, 231, 0, 0.75);
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: 0;
+  color: rgba(255, 231, 0, 0.75);
+  transition: background 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.cerchio:hover {
+  background: #FFE700;
+}
+
+.cerchio.magnet {
+  border: 2px solid #FFE700;
+}
+
+.cursor-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.cursor {
+  position: fixed;
+  top: -30px;
+  left: -30px;
+}
+
+.circle {
+  transform: scale(0.8);
+  transition: all 0.2s ease-in-out;
+}

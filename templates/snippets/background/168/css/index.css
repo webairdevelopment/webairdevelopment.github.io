@@ -1,0 +1,9 @@
+#drawing-surface {
+  position: absolute;
+}
+
+* {
+  margin: 0;
+  overflow: hidden;
+  cursor: none;
+}

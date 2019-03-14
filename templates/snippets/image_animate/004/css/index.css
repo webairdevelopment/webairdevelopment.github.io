@@ -1,0 +1,54 @@
+﻿body {
+  background-color: #FFFFFF;
+}
+
+/* Styling the element first */
+
+/* Need to add the keyframe animations now */
+
+@keyframes move {
+  to { left: 50%; }
+}
+
+@keyframes cover {
+  from, 49.9% { z-index: 1; }
+  50.1%, to { z-index: 0; }
+}
+
+.flickr-spinner {
+  width: 8em;
+  height: 4em;
+  position: relative;
+  margin: 20px auto;
+}
+
+/* Using pseudo elements now */
+.flickr-spinner:before,
+.flickr-spinner:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-radius: 50%;
+  
+  /* `alternate` seems to work good but the problem
+  is both the circles are stacked...
+  starting the animation backwards on the
+  first play for one of them will fix this. */
+  /* After each cycle, the stack order changes
+  in the original animation, so lets achieve that. */
+  /* and we're done ... */
+  animation:
+    move ease-in-out 1s infinite alternate,
+    cover 2s infinite reverse;
+}
+
+.flickr-spinner:before {
+  background: #0063dc; /* blue one */
+  animation-direction: alternate-reverse, normal; /* yay! */
+}
+
+.flickr-spinner:after {
+  background: #ff0084; /* pink one */
+}

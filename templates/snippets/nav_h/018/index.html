@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div id="all-container" class="container">
+      <div id="phone" class="container">
+        <div id="header">
+          <div id="header-photo" class="header-el">
+            <i class="fa fa-camera fa-2x el"></i>
+          </div>
+          <div id="header-people" class="header-el">
+            <i class="fa fa-user fa-2x el"></i>
+          </div>
+          <div id="header-mex" class="header-el">
+            <i class="fas fa-comments el"></i>
+          </div>
+          <div id="header-heart" class="header-el">
+            <i class="fas fa-heart el"></i>
+          </div> 
+          <div id="header-bg"></div>
+          <div id="menu-icon" class="menu-icon">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div id="menu-icon-x" class="menu-icon">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+        </div>
+        <div id="el-home-box">
+          <div class="el-home-01 el-home el-home-anima"></div>
+          <div class="el-home-02 el-home el-home-anima"></div>
+          <div class="el-home-02 el-home el-home-anima"></div>
+          <div class="el-home-03 el-home el-home-anima"></div>
+          <div class="el-home-03">
+            <div class="el-home-01 el-home el-home-anima"></div>
+            <div class="el-home-01 el-home el-home-anima"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 30 -15" result="goo"/>
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/TimelineMax.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

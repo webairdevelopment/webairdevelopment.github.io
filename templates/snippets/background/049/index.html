@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <main>
+      <canvas></canvas>
+      <div class="lane">
+        <svg>
+          <rect y="50%" width="100" height="100" stroke-width="20"/>
+          <rect y="12%" width="300" height="35%" stroke-width="18"/>
+          <rect y="20%" width="50%" height="60%" stroke-width="100"/>
+          <rect y="80%" width="100" height="100" stroke-width="20"/>
+          <rect y="70%" width="50" height="50" stroke-width="20"/>
+        </svg>
+        <div class="text">
+          <h2>Squares and text</h2>
+          <p>Scroll down for more</p>
+        </div>
+      </div>
+      <div class="lane">
+        <svg>
+          <rect y="50%" width="100" height="100" stroke-width="20"/>
+          <rect y="40%" width="70" height="70" stroke-width="15"/>
+        </svg>
+        <div class="special">
+          <div class="cut-out">SQU</div>ARE
+        </div>
+      </div>
+      <div class="lane">
+        <svg>
+          <path id="square" d="M100 100 L300 100 300 300 100 300 Z"/>
+          <text width="500">
+            <textpath href="#square">
+              square square square square
+            </textpath>
+          </text>
+          <rect x="350" y="50" width="300" height="300" stroke-width="10"/>
+          <rect x="100" y="350" width="300" height="300" stroke-width="10"/>
+          <rect x="350" y="350" width="300" height="300" stroke-width="10"/>
+        </svg>
+      </div>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>

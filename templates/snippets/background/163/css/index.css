@@ -1,0 +1,8 @@
+html {
+  overflow: hidden;
+  user-select: none;
+  background-color: black;
+}
+html body {
+  margin: 0;
+}

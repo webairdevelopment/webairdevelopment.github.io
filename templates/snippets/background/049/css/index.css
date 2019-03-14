@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Allerta+Stencil|Roboto:400,700");
+:root {
+  --black: #010105;
+  --red: #c90e0e;
+  font-size: .7vw;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #030311, var(--black));
+  color: white;
+}
+main canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+}
+main h1, main h2 {
+  font-family: 'Allerta Stencil', sans-serif;
+  color: var(--red);
+}
+main p {
+  font-size: 2.4rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+}
+main .lane {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 20px 0;
+}
+main .lane svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+main .lane svg rect {
+  x: 0;
+  fill-opacity: 0;
+  stroke: white;
+  transform: translateX(-200%);
+  transform-origin: -40% 40%;
+  transition: transform 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+main .lane-displayed:nth-of-type(1) svg rect:nth-child(5) {
+  transform: translateX(87%);
+}
+main .lane-displayed:nth-of-type(1) svg rect:nth-child(4) {
+  transform: translateX(80%);
+}
+main .lane-displayed:nth-of-type(1) svg rect:nth-child(3) {
+  transform: translateX(25%);
+}
+main .lane-displayed:nth-of-type(1) svg rect:nth-child(2) {
+  transform: translateX(15%);
+}
+main .lane-displayed:nth-of-type(1) svg rect:nth-child(1) {
+  transform: translateX(10%);
+}
+main .lane-displayed:nth-of-type(2) svg rect:nth-child(3) {
+  transform: translateX(61%);
+}
+main .lane-displayed:nth-of-type(2) svg rect:nth-child(2) {
+  transform: translateX(45%);
+}
+main .lane-displayed:nth-of-type(2) svg rect:nth-child(1) {
+  transform: translateX(50%);
+}
+main .lane-displayed:nth-of-type(3) svg rect {
+  transform: translateX(350px);
+}
+main .lane-displayed:nth-of-type(3) svg rect:nth-of-type(2) {
+  transform: translateX(50px);
+}
+main .lane .text {
+  position: absolute;
+  width: 100%;
+}
+main .lane .special {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: 80%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 29rem;
+}
+main .lane .special .cut-out {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  color: black;
+  mix-blend-mode: screen;
+  overflow: hidden;
+}
+main .lane:first-of-type .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 5.6rem;
+}
+main .lane:first-of-type .text h2 {
+  background-color: white;
+}
+main .lane:first-of-type .text p {
+  position: absolute;
+  bottom: 0;
+}
+main .lane:last-of-type rect:last-child {
+  fill: white;
+  fill-opacity: 1;
+}
+main .lane:last-of-type path {
+  fill-opacity: 0;
+}
+main .lane:last-of-type text {
+  fill: white;
+  font-size: 71px;
+}

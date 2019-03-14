@@ -1,0 +1,9 @@
+
+canvas {
+  position: fixed;
+}
+
+@font-face {
+    font-family: 'Pixel'; /*a name to be used later*/
+    src: url('https://aaserver.net/fonts/Minecraft.ttf'); /*URL to font*/
+}

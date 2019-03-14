@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Alex+Brush);
+body {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  font-family: Montserrat;
+  text-align: center;
+}
+
+span:not(.fire) {
+  color: white;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: .7em;
+}
+
+.fire {
+  font-size: 12em;
+  font-family: Alex Brush, cursive;
+  animation: burning 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes burning {
+  0% {
+    text-shadow: 0 0 40px #ffef95, 0 0px 30px #ec760c, -10px -20px 40px #cd4606, 0 -40px 50px #973716, 10px -50px 60px #451b0e;
+  }
+  100% {
+    text-shadow: 0 2px 30px #ffef95bd, 2px -2px 30px #ffae34, -12px -22px 40px #ec760c, 0 -42px 50px #cd4606, 10px -50px 60px  #973716;
+  }
+}

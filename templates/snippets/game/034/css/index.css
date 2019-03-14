@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture');
+#game {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+#game div {
+  white-space: nowrap
+}
+#game b {
+  display: inline-block;
+  width: 10vmin;
+  height: 10vmin;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 1vmin 1.5vmin;
+  transition: all 0.2s;
+  box-shadow: 0 0 0 0.6vmin white;
+  position: relative;
+}
+#game b:hover {
+  box-shadow: 0 0 0 1.2vmin white;
+}
+#game b[data-pick="1"]:hover {
+  animation: kick 1s infinite
+    cubic-bezier(0.31, 0.44, 0.44, 1.65);
+}
+#game b.fall {
+  width: 6vmin;
+  height: 6vmin;
+  position: absolute;
+  animation: falling 2.8s 
+    cubic-bezier(0.31, 0.44, 0.44, 1.65);
+}
+#game p {
+  color: white;
+  display: none;
+  font-family: 'Black And White Picture';
+  width: 100vw;
+  text-align: center;
+  font-size: 16vmin;
+  animation: twist 1s infinite
+    cubic-bezier(0.31, 0.44, 0.44, 1.65);
+  text-shadow: 1vmin  1vmin 0 #e33, 
+               1vmin -1vmin 0 #93e, 
+              -1vmin -1vmin 0 #ed3, 
+              -2vmin  1vmin 0 #3b9, 
+               2vmin  1vmin 0 #e39;
+}
+@keyframes falling {
+  0% {top: -10vh;}
+  100% {top: 110vh;}
+}
+@keyframes twist {
+  0%,100% {transform: rotate(0);}
+  25%,75% {transform: rotate(-10deg);}
+  50% {transform: rotate(10deg);}
+}
+@keyframes kick {
+  0%, 100% { top: 0; transform: scaleY(1); }
+  10% { top: 0; transform: scaleY(0.85); }
+  50% { top: -1vmin; transform: scaleY(1); }
+}

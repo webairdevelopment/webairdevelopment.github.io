@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script id="fragmentShader" type="x-shader/fragment">
+      precision mediump float;
+      uniform float time;
+      uniform float width;
+      uniform float height;
+      uniform float red;
+      uniform float green;
+      uniform float blue;
+      uniform float zoom;
+      uniform float rotation;
+      const float PI = 3.141592654;
+      void main () {
+        vec2 p0 = vec2(gl_FragCoord) * zoom;
+        float a = rotation * PI / 180.0;
+        vec2 p = vec2(p0.x * cos(a) - p0.y * sin(a),
+        p0.x * sin(a) + p0.y * cos(a));
+        vec3 c = vec3(red, green, blue);
+        vec3 color = (c * 
+        sin(sin(time * 0.1) * 4.0 * PI * sin(p.x * .025)) * 
+        sin(sin(time * 0.1) * 4.0 * PI * sin(p.y * .025) ));
+        gl_FragColor = vec4(vec3(color), 1.0);
+      }
+    </script>
+    <script id="vertexShader" type="x-shader/vertex">
+      precision mediump float;
+      attribute vec2 position;
+      void main () {
+      gl_Position = vec4(position, 0, 1);
+      } 
+    </script>
+    <div class="ui"></div>
+    <script src="js/regl.js"></script>
+    <script src="js/react.production.min.js"></script>
+    <script src="js/react-dom.production.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

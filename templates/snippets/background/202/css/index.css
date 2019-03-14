@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #008fce;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 600px;
+  visibility: hidden;
+}
+
+.spot {
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}
+
+.amp {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.me {
+  position: fixed;
+  z-index: 1000;
+  top: 24px;
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.me__link {
+  position: relative;
+  margin-bottom: 16px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+}
+.me__link span {
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 1px;
+  width: 5%;
+  background-color: white;
+  content: "";
+  transition: width 0.3s;
+}
+.me__link:hover span {
+  width: 100%;
+}
+
+.twitter-icon {
+  position: fixed;
+  top: 16px;
+  right: 24px;
+  display: block;
+  width: 40px;
+  height: 40px;
+}

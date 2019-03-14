@@ -1,0 +1,39 @@
+
+.list--a li {
+  border-bottom: 1px solid black;
+}
+.list--a li:last-child {
+  border-bottom: none;
+}
+.list--b li + li {
+  border-top: 1px solid black;
+}
+body {
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+.container > div {
+  max-width: 40%;
+}
+.list {
+  border: 1px solid black;
+}
+.list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list li {
+  background: lightgrey;
+  min-height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+}
+.list li:nth-child(2n) {
+  background: white;
+}

@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #1E1C26;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+#svgContainer,#svgContainer2,#svgContainer3 {
+  width: 33.3%;
+  height: 100%;
+  background-color: #1E1C26;
+  display: inline-block;
+  vertical-align:top;
+}

@@ -1,0 +1,11 @@
+body {
+  background-color: #FFFFFF;
+}
+textarea {
+  padding: 1em;
+  width: 100%;
+  font-size: 14pt;
+  min-height: 5em;
+  max-height: 50vh;
+  height: var(--expand);
+}

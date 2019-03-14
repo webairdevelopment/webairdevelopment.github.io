@@ -1,0 +1,348 @@
+.wrapper {
+  background: skyblue;
+  display: flex;
+  height: 100vh;
+  min-width: 30rem;
+  box-sizing: border-box;
+  flex-directon: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.keke {
+  width: 25rem;
+  height: 16.5rem;
+  position: relative;
+}
+
+.wheels {
+  display: flex;
+  flex-direction: row;
+  width: 23rem;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.wheel {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #444;
+  box-shadow: 0 0 0 1rem #1e1e1e inset;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.wheel::after {
+  content: '';
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: .25rem dotted black;
+  align-self: center;
+}
+.wheel::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: .25rem;
+  width: 1.75rem;
+  border: solid 0.25rem rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.25) transparent transparent transparent;
+  border-radius: 50%/.5rem .5rem 0 0;
+  top: .125rem;
+}
+
+.wheels__connector {
+  position: absolute;
+  height: .5rem;
+  width: 15rem;
+  background-color: #FEC900;
+  bottom: 2.5rem;
+  left: 2.5rem;
+}
+
+.front {
+  height: 14rem;
+  width: 5rem;
+  position: absolute;
+  top: 0;
+  left: 2.5rem;
+}
+
+.front__windscreen {
+  width: 0;
+  height: 0;
+  border-bottom: 5rem solid #D0F1FF;
+  border-left: 4.5rem solid transparent;
+  position: absolute;
+  top: 1rem;
+}
+
+.front__lights {
+  height: 1rem;
+  width: 2rem;
+  position: absolute;
+  background-color: #C83A3A;
+  bottom: 5.5rem;
+  left: 0;
+}
+
+.front__shape {
+  background-color: #FEC900;
+  display: block;
+  position: absolute;
+}
+.front__shape.front__shape--1 {
+  height: 8rem;
+  width: 5rem;
+  bottom: 0;
+  left: 0;
+}
+.front__shape.front__shape--1::after {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+  height: .125rem;
+  background-color: #242429;
+}
+.front__shape.front__shape--2 {
+  height: 14rem;
+  width: .5rem;
+  top: 0;
+  right: 0;
+}
+
+.middle {
+  height: 13rem;
+  width: 3rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 9.5rem;
+}
+
+.middle__shape {
+  background-color: #FEC900;
+  position: absolute;
+}
+.middle__shape.middle__shape--1 {
+  height: 4rem;
+  width: 2rem;
+  bottom: 0;
+  right: 0;
+}
+.middle__shape.middle__shape--2 {
+  height: 7rem;
+  width: .25rem;
+  bottom: 0;
+  right: 0;
+}
+.middle__shape.middle__shape--3 {
+  background: #242429;
+  height: 6rem;
+  width: .25rem;
+  top: 0;
+  right: 0;
+}
+
+.sit {
+  background-color: #242429;
+  height: .75rem;
+  width: 3rem;
+  position: absolute;
+  bottom: 3.5rem;
+}
+
+.back-rest {
+  height: 2rem;
+  width: .75rem;
+  position: absolute;
+  background-color: #242429;
+  top: 5rem;
+  right: 0rem;
+}
+
+.back {
+  width: 10rem;
+  height: 6rem;
+  position: absolute;
+  right: 0;
+  bottom: 2.5rem;
+}
+
+.back__shape {
+  background-color: #FEC900;
+  display: block;
+  position: absolute;
+}
+.back__shape.back__shape--1 {
+  width: 10rem;
+  height: 4rem;
+  bottom: 0;
+  right: 0;
+}
+.back__shape.back__shape--2 {
+  width: 8rem;
+  height: 2rem;
+  right: 0;
+}
+.back__shape.back__shape--3 {
+  width: 0;
+  height: 0;
+  top: 1rem;
+  left: -1rem;
+  background: none;
+  border-bottom: 2rem solid #FEC900;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.back__lights {
+  display: block;
+  width: .3rem;
+  height: 2rem;
+  bottom: 1.5rem;
+  right: -.3rem;
+  background-color: #C83A3A;
+  position: absolute;
+}
+
+.cover {
+  width: 18rem;
+  height: 8rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.cover__shape {
+  background-color: #242429;
+  display: block;
+  position: absolute;
+}
+.cover__shape.cover__shape--1 {
+  width: 8rem;
+  height: 6rem;
+  bottom: 0;
+  right: 0;
+}
+.cover__shape.cover__shape--2 {
+  height: 2rem;
+  width: 16rem;
+  top: 0;
+  right: 2rem;
+}
+.cover__shape.cover__shape--3 {
+  width: 0;
+  height: 0;
+  top: 1rem;
+  right: -1rem;
+  background: none;
+  border-bottom: 2rem solid #242429;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes moveKeke {
+  0% {
+    -webkit-transform: translateX(300%);
+            transform: translateX(300%);
+  }
+  100% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+}
+@keyframes moveKeke {
+  0% {
+    -webkit-transform: translateX(300%);
+            transform: translateX(300%);
+  }
+  100% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+}
+@-webkit-keyframes moveKekeSmall {
+  0% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  100% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
+@keyframes moveKekeSmall {
+  0% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  100% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
+.toggle-animation {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: block;
+  padding: 1rem;
+  line-height: 1;
+  font-size: 1rem;
+  font-weigth: 500;
+  border: none;
+  border-radius: .25rem;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+#toggleAnimation {
+  position: absolute;
+  visibility: hidden;
+}
+#toggleAnimation:checked + .keke {
+  -webkit-animation: moveKekeSmall 10s infinite linear;
+          animation: moveKekeSmall 10s infinite linear;
+}
+@media (min-width: 768px) {
+  #toggleAnimation:checked + .keke {
+    -webkit-animation: moveKeke 10s infinite linear;
+            animation: moveKeke 10s infinite linear;
+  }
+}
+#toggleAnimation:checked + .keke .wheel {
+  -webkit-animation: rotate 3s infinite linear;
+          animation: rotate 3s infinite linear;
+}

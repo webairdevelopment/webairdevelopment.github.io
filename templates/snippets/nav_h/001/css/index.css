@@ -1,0 +1,29 @@
+﻿* {
+	margin: 0; padding: 0;
+}
+
+body { background: #3f3f3f; font-family: Georgia; }
+
+ul {
+	background: #808080;
+	list-style: none;
+	overflow: hidden;
+	text-align: center;
+}
+
+ul li {
+	display: inline-block;
+}
+
+ul li a {
+	padding: 5px 10px;
+	background: #000;
+	color: #fff;
+	line-height: 3em;
+	display: block;
+}
+
+ul li a:hover {
+	background: #e4e4e4;
+	color: #333;
+}

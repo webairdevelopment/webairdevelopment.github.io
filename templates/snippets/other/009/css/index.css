@@ -1,0 +1,26 @@
+.red {
+  background-color: #F44336;
+} 
+
+.blue {
+  background-color: #1E88E5;
+}
+
+.yellow {
+  background-color: #FDD835;
+}
+
+#title {
+  font-size: 3em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+#description {
+  font-size: 1em;
+  padding-bottom: 0.5em;
+}
+
+#results {
+  display: none;
+}

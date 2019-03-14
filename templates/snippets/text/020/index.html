@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <h1 class="title-wrap rotate">
+        <span class="text-row large">Multiline Padded</span>
+        <span class="text-row text-row-2 large">Text Experiments</span>
+      </h1>
+      <h2>3 Methods</h2>
+      <ul>
+        <li>Nested spans</li>
+        <li>pseudo elements and parent</li>
+        <li>Box-decoration-break</li>
+      </ul>
+      <h2>Rules</h2>
+      <ul>
+        <li>Text should be highlighted, i.e. have a background colour</li>
+        <li>Highlights should only cover areas where there is text</li>
+        <li>Each line should have a little left and right padding so that the text isn’t flush against the highlight box</li>
+        <li>Both lines must be able to be indented</li>
+      </ul>
+      <h2>Using nested spans</h2>
+      <article class="spans">
+        <h1>
+          <a href="#" role="link">
+            <span>Spring</span>
+            <span>
+              <span>@</span>
+              <span>Park</span>
+            </span>
+          </a>
+        </h1>
+      </article>
+      <article class="bg1">
+        <h1>
+          <a href="#" role="link">
+            <span>Spring</span>
+            <span>
+              <span>@</span>
+              <span>Park</span>
+            </span>
+          </a>
+        </h1>
+      </article>
+      <article class="bg2">
+        <h1>
+          <a href="#" role="link">
+            <span class="line-1 group">
+              <span class="l-1">Spring</span>
+            </span>
+            <span class="l-1 line-2">
+              <span>@</span>
+              <span>Park</span>
+            </span>
+          </a>
+        </h1>
+      </article>
+      <h2>Using a :before pseudo element</h2>
+      <ul>
+        <li>cross browser?? this and box-dec also: keep in mind stacking context also: box-sizing:border-box with negative margins???</li>
+        <li>How about with gradient bg's?</li>
+      </ul>
+      <span class="row">
+        <span class="imgbg">Span with :before bg</span>
+        <span class="imgbg imgbg2">Span with :before bg</span>
+      </span>
+      <p>This solution uses 3 elements, a parent element, and 2 child elements, one for each row of text.</p>
+      <p>Using an absolutely positioned :before element, sized to the same size as the parent, sent behind using negative z-index, then then given further padding using negative margin values creates this effect. This solution probably gives the most control and least css</p>
+      <p>The secret sauce really lies in the <strong><code>display: table</code></strong> property on the .text-row span. It stop the absolutely positioned :before element from taking up too much space.</p>
+      <p>The beauty of this solution is that the padding will always scale perfectly with the text (especially when using em values on the padding and negitive margin), also you can align rows as close as you want with line-height without the background ever clipping the text.</p>
+      <span class="row">
+        <span class="imgbg bg3">Spring</span>
+        <span class="imgbg imgbg2 bg3">@Park</span> 
+      </span>
+      <p>However when we add a transform to tilt it we have problems with cutting off of the bottom of the text:</p>
+      <span class="row">
+        <span class="imgbg rotate">Span with :before bg</span>
+        <span class="imgbg imgbg2 rotate">Span with :before bg</span>
+      </span>
+      <p>This is because adding a transform creates a new stacking context, and the negative z-indexed pseudo elements rise to the top again.</p>
+      <p>But if we put the transform on the parent row instead it works great</p>
+      <p>With this setup we can now introduce some extra properties for styling flare, such as box-shadow and text-shadow.</p>
+      <article class="titling">
+        <h1 class="title-wrap rotate">
+          <a href="">
+            <span class="text-row">Spring</span>
+            <span class="text-row text-row-2 symbol">
+              <span class="symbol">@</span>
+              Park
+            </span>
+          </a>
+        </h1>
+        <p>
+          <a href="#" role="link">
+            See Whats On
+          </a>
+        </p>
+      </article>
+      <h3>Limitations</h3>
+      <p>Due to there being a span for each line you have to manually set the text ie. what text is on what line. In this respect it's non-responsive.</p>
+      <p>You can't add a border around all the rows... you can add a box-shadow to all the text-rows at the right and bottom, but trying to add a box shadow on the top or right will look wierd visually.</p>
+      <article class="titling">
+        <h1 class="title-wrap rotate">
+          <a href="">
+            <span class="text-row">This is a longer line</span>
+            <span class="text-row text-row-2">Too short</span>
+          </a>
+        </h1>
+      </article>
+      <p>Can kinda visually break if you use the box-shadow and the second line isn't as long as the first... but that's probably an edge case seen as you can control the margin-left of the second line to push it across anyway.</p>
+      <p>Beware that things get wierd if the banner is smaller than it's container, make sure to appropriately size the text with media queries... if you've used em values for the padding and negative margin everything else should scale nicely based on the text-size.</p>
+      <h3>Some more examples using this technique</h3>
+      <article class="titling bubble">
+        <h1 class="title-wrap rotate">
+          <a href="">
+            <span class="text-row">Bubble</span>
+            <span class="text-row text-row-2">Stylin'</span>
+          </a>
+        </h1>
+      </article>
+      <article class="titling font">
+        <h1 class="title-wrap rotate">
+          <a href="">
+            <span class="text-row">Spring</span>
+            <span class="text-row text-row-2">Break!</span>
+          </a>
+        </h1>
+      </article>
+      <article class="titling skew">
+        <h1 class="title-wrap rotate">
+          <a href="">
+            <span class="text-row">Supreme</span>
+            <span class="text-row text-row-2">Athletic</span>
+            <span class="text-row text-row-2">Italics</span>
+          </a>
+        </h1>
+      </article>
+      <article class="titling skew border">
+        <h1 class="title-wrap rotate">
+          <a href="">
+            <span class="text-row block">Stagger</span>
+            <span class="text-row text-row-2 block">Titling</span>
+            <span class="text-row text-row-2 block">Blocks</span>
+          </a>
+        </h1>
+      </article>
+      <h2>Box-decoration</h2>
+        <article class="break">
+          <p>The element that contains the text string must be set to display: inline.</p>
+          <ul>
+            <li>If my element was inline-block, I’d get the desired effect right up until text spills onto a new line. At that point, subsequent lines would inherit the full width of the parent because of how inline-block works.</li>
+            <li>If my element was a block element, it would always assume the full width of the parent (unless explicitly declared, which is not an option), thus leading to the same behaviour above.</li>
+          </ul>
+          <h1>
+            Hello, this is a long line of text that spills onto multiple lines. Make it wrap.
+          </h1>
+          <p>This is the problem, if you want to adjust the line height so the text is more tightly set, the background clips the top and bottom of some text characters. Look at the lowercase g above.</p>
+          <h1 class="lh">
+            Hello, this is a long line of text that spills onto multiple lines. Make it wrap.
+          </h1>
+          <p>
+            You can see the other problem is that we need to add a padding on the text... but when set as inline block the text will only add left/right padding at the start and end of the text string, not the start and end of each line as rendered. Also, with this method any top/bottom padding will just increase the cropping / hiding of other lines of text.
+          </p>
+          <p>So, how can we solve this? Luckily, CSS has thrown us a piece of candy in the <strong><code>box-decoration-break</code></strong> property. Let’s take a look.</p>
+          <h2>The box-decoration-break: Property</h2>
+          <blockquote>The box-decoration-break CSS property specifies how the background, padding, border, border-image, box-shadow, margin and clip of an element is applied when the box for the element is fragmented. Fragmentation occurs when an inline box wraps onto multiple lines…</blockquote>
+          <p>Basically, this property is giving us a bit more granularity in how an inline element gets rendered.</p>
+          <p>By default, it’s set to <strong><code>box-decoration-break: slice</code></strong>, which means that it treats the inline box as if it weren’t fragmented at all. I like to think of it like this. </p>
+          <p>Imagine that we took that multi-line inline element, stretched it out onto one line, applied the styling, sliced it into pieces, then moved each piece back to a new line. The result would be that the properties mentioned above would act on the entire box of the element, rather than each of its parts.</p>
+          <p>However, there is a second option for us, and that is: <strong><code>box-decoration-break: clone</code></strong></p>
+          <p>When we set the property to clone, we can imagine a similar scenario as above, except one important thing. This time, let’s imagine that all the styles get applied after the element gets fragmented and distributed on multiple lines. In other words, paddings, borders, etc would be applied to each fragment almost as if they were separate elements.</p>
+          <h1 class="lh bdc">
+            Hello, this is a long line of text that spills onto multiple lines. Make it wrap.
+          </h1>
+          <h3>Limitations</h3>
+          <p>The h1 has to be inline, that means you can't offset the lines in any way. You can't use text-indent. Also you couldn't use text-align: justify; if you wanted to do that sort of thing.</p>
+          <p>You also can't use psuedo elements such as :first-letter or :first-line because The pseudo element only works if the parent element is a block container box.</p>
+          <p>The problem is still with line-height causing cropping on the text :(</p>
+          <p>Also any top padding you add will result in a row cropping text in the row above.</p>
+          <p>So really this solution has limited appeal.</p>
+          <h1 class="bdc lh2">
+            Hello, this is a long line of text that spills onto multiple lines. Make it wrap.
+          </h1>
+          <p>The advantages are that you can apply all these properties on one element, no need for a parent wrapper or new elements for each subsequent line of text. This solution is therefore also more responsive in that you can resize the container smaller and the line padding will still work as expected.</p>
+          <h3>Gradient backgrounds</h3>
+          <h1 class="bdc lh2 grad">
+            Hello, this is a long line of text that spills onto multiple lines. Make it wrap.
+          </h1>
+          <p>Fine when using a gradient from left to right</p>
+          <h1 class="bdc lh2 grad1">
+            Hello, this is a long line of text that spills onto multiple lines. Make it wrap.
+          </h1>
+          <p>But not top to bottom</p>
+          <h2>Box-shadow technique</h2>
+          <h1 class="box-shadow">
+            We can use box-shadow to add left and right padding to each line of our inline element.
+          </h1>
+          <p>...However that shifts the padding over to the left and unless you use a parent element around it you can't shift it over again using padding or margin, because it'll just add it to the first line otherwise.</p>
+          <p>We control the top and bottom padding with a mix of line-height and padding-top/bottom. unfortunately this is a balancing act, you still can't have tightly set lines and large top/bottom padding.</p>
+          <p>This technique works much better with uppercase text, that way there arent hanging ligatures to be cropped off</p>
+          <p>This is working in Chrome and Safari, and now working in Firefox 32+, in my quick tests. Chrome and Safari require it to be -webkit-box-decoration-break.</p>
+        </article>
+        <h2>Box-decoration-break</h2>
+        <h1 class="pre">We can use background: linear-gradient to our inline element to have it spread over all lines.</h1>
+        <p>With box-decoration-break:clone;</p>
+        <h1 class="pre break">We can use background: linear-gradient on our inline element and add box-decoration-break:clone; to have the entire gradient complete on each line</h1>
+        <h2>Background-attachment:fixed</h2>
+        <p>If we use the same technique as above but replace box-decoration-break:clone; with background-attachment:fixed we should see the same gradient being used across each line. <strong>NB: resize the viewport if below isnt visible.. think this is a codepen bug</strong></p>
+        <h1 class="pre-fixed">We can add background: linear-gradient to our inline element and add background-attachment:fixed to make it the same gradient on all lines.</h1>
+        <p>This technique has limited use as a solution in this context due to the following issues:</p>
+        <ul>
+          <li>Inability to add padding to the start / end of each line.</li>
+          <li>Browser support: currently broke in Firefox...It also sometimes requires a viewport resize in chrome (see below)</li>
+          <li>Quite glitchy in Chrome in respect that sometimes you need to resize the viewport to see the styling actually take effect (this requires further testing, it may just be a codepen bug i'm experiencing).</li>
+        </ul>
+    </div>
+  </body>
+</html>

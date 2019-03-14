@@ -1,0 +1,12 @@
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  background-color: rgb(54, 38, 27);
+  background-image: url("https://migardener-myworksdesign.netdna-ssl.com/wp-content/uploads/2014/04/soil-wallpaper-2560x19201.jpg");
+background-size: cover;
+  height: 100%;
+  width: 100%;
+  
+}

@@ -1,0 +1,96 @@
+body {
+  background-color: #000000;
+}
+
+.sel-picture {
+  width: 100px;
+  cursor: pointer;  
+  margin: 10px;
+  border: 4px double grey;
+}
+
+.sel-picture:hover {
+  transform: scale(1.1);
+}
+
+#displayPic {
+  width: 750px;
+  height: 500px;
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.pic {
+  width: 750px;
+  height: 500px;
+}
+
+#pictures {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  position: relative;
+  top: 0px;
+  transform: translatey(-150px);
+}
+#pictures-container {
+  position: relative;
+  height: 500px;
+  width: 150px;
+  overflow: hidden;
+}
+
+.btn {
+  position: absolute;
+  z-index: 10;
+  color: rgba(220,220,220, 0);
+  transform: translatex(100%);
+  font-size: 50px;
+  cursor: pointer;
+}
+.btn:hover{
+  color: rgb(150, 150, 150);
+  transform: translatex(100%) scale(1.3);
+}
+.show-btn {
+  color: rgba(220,220,220, 1);
+  animation: fadeIn .5s;
+}
+.no-show-btn {
+  color: rgba(220,220,220,1);
+  animation: fadeOut .5s forwards;
+}
+#upBtn {
+  top: 10px;
+}
+#downBtn {
+  bottom: 10px;
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

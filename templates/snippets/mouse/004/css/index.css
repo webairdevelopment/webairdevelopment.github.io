@@ -1,0 +1,51 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  overflow: hidden;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.left {
+  background-color: #AC39AB;
+}
+
+.right {
+  background-color: #861185;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 3;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 3rem;
+  right: 4rem;
+  z-index: 2;
+}
+header li {
+  color: #fff;
+  padding: 0.5rem;
+  margin-left: 3rem;
+}

@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="main_container" class="container full-width">
+      <header class="navbar navbar-default">
+        <h1 class="text-center text-info">This is a Header</h1>
+      </header>
+      <div class="row toggle">
+        <div class="panel panel-primary">
+          <div class="panel-body text-center">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" onclick="$.aim.setDebug($(this).prop("checked"))"> Debug Mode
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="instructions">Quickly move your mouse toward the top ↑</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.aim.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

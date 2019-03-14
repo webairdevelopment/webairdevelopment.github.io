@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+.controls {
+  position: fixed;
+  bottom: 0.5em;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: row;
+}
+.controls button,
+.controls audio {
+  background-color: aliceBlue;
+  min-height: 3em;
+  border-radius: 1.5em;
+  margin: 0.3em;
+  box-shadow: rgba(0,0,0,0.5) 0.5em 0.5em 0.5em, rgba(80%,80%,95%, 0.7) inset 0.2em 0.3em 0.2em;
+  border-style: solid;
+  border-color: whitesmoke silver steelblue white;
+  border-width: 0.3em 0.1em 0.1em 0.2em;
+}
+.controls audio {
+  max-width: 100%;
+}
+.nojs #pause-snow { display: none; }
+*::-ms-thumb, #pause-snow { display: none; /* since the animation doesn't work on IE/Edge anyway */ }
+#pause-snow .un { visibility: hidden; }
+.snowing-paused #pause-snow .un { visibility: visible; }
+@media (prefers-reduced-motion) {
+  #pause-snow .un { visibility: visible; }
+  .snowing-paused #pause-snow .un { visibility: hidden; }
+}
+
+.scene, .scene::before, .scene::after,
+.layer, .layer::before, .layer::after {
+  position: absolute;
+  width: 100%; height: 100%;
+  left: 0; top: 0;
+  z-index: 0;
+}
+.layer {
+  --d: var(--distance, 0); /* default */
+}
+.layer::before {
+  --d: calc(1 + var(--distance, 0));
+}
+.scene {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.sky {
+  background-color: #4bd;
+  transition: background-color var(--dur);
+  --dur: 80s;
+}
+.sky::before {
+  content: "";
+  background-image:
+    radial-gradient(0.2em, silver, transparent),
+    radial-gradient(0.1em, lightYellow, transparent),
+    radial-gradient(0.2em, white, transparent),
+    radial-gradient(0.1em, gold, transparent),
+    radial-gradient(0.1em, silver, transparent),
+    radial-gradient(0.2em, lightYellow, transparent),
+    radial-gradient(0.1em, white, transparent),
+    radial-gradient(0.2em, lightGoldenrodYellow, transparent),
+    radial-gradient(0.1em, silver, transparent),
+    radial-gradient(0.1em, lightYellow, transparent),
+    radial-gradient(0.1em, white, transparent);
+  background-size:
+    8em 8.1em,
+    11em 13em,
+    9.5em 7em,
+    7em 8.8em,
+    10em 9.3em,
+    9em 6em;
+  background-position: left top, right bottom, center, left bottom, right top;
+  transform: scale(1.1) skewX(5deg) skewY(5deg);
+  opacity: 0;
+  transition: opacity calc(var(--dur)/2) calc(var(--dur)/2);
+}
+.sky::after {
+  content: "";
+  height: calc(200% + 5em);
+  width: calc(100% + 5em);
+  --moon-x: calc(90% - 3em);
+  --moon-y: calc(85% - 3em);
+  --crater-stops: #bbb5 10%, #ddd5, #fff5 90%, transparent;
+  background-image: 
+    /* sun */
+    radial-gradient(circle 6em at 60% calc(6em + 6vh), orange, 0.5em, gold 2em, #fe0 4em, 4.5em, #fe00 6em ),
+    /* moon craters */
+    radial-gradient(circle 0.7em at calc(var(--moon-x) - 1.9em) calc(var(--moon-y) + 1em), var(--crater-stops)),
+    radial-gradient(circle 1em at calc(var(--moon-x) - 0.5em) calc(var(--moon-y) + 1.9em), var(--crater-stops)),
+    radial-gradient(circle 1.3em at calc(var(--moon-x) - -1.8em) calc(var(--moon-y) + 0.6em), var(--crater-stops)),
+    radial-gradient(circle 1.5em at calc(var(--moon-x) - 0.9em) calc(var(--moon-y) - 1.5em), var(--crater-stops)),
+    /* moon */
+    radial-gradient(circle 5em at var(--moon-x) var(--moon-y), silver 1em, white 4em, 4.15em, #fff0 5em );
+  transition: transform var(--dur);
+}
+
+.night .sky {
+  background-color: #135;
+}
+.night .sky::before {
+  opacity: 0.8;
+}
+.night .sky::after {
+  transform: rotate(0.55turn);  
+}
+.snowing .snow::before,
+.snowing .snow::after {
+  content: "❄✹❄✶❅❆✵✶❄❅  ❆✹❄✵✶❅✶❅❆ ✵✶❄❅❄  ✹❄✶❅❆  ✵✶❄❅❆❅❆✵✶  ❄❅❆✹❄✵  ✶❅✹❄✵✶❅❆✵✶❄❅";
+  display: block;
+  width: 120%;
+  font-size: calc(0.8em + 2vmin - var(--d)*0.7vmin);
+  text-indent: calc(10vw * var(--d));
+  letter-spacing: calc(27vw + 1.3em - 4vw*var(--d));
+  word-break: break-all;
+  line-height: 13vh;
+  height: 160vh;
+  overflow: hidden;
+  color: transparent;
+  text-shadow:
+    aliceblue 0 0,
+    snow 7vw 23vh,
+    antiquewhite 13vw 79vh,
+    aliceblue -4vw 91vh,
+    snow -15vw 57vh,
+    whitesmoke 3vw 129vh;
+  filter: blur(calc(0.15px * var(--d)));
+  
+  --animation-dur: calc(var(--d)*8s + 31s);
+  --animation-delay: calc(var(--animation-dur)* (1 + var(--d))/11);
+  animation: falling var(--animation-dur) infinite linear;  
+}
+.snowing .snow::before {
+  word-spacing: calc(10vmin * (10 - var(--d)));
+  transform: translate(-5vw,-185vh) rotate(calc(-11deg + 0.9deg*var(--d)));
+  animation-delay: var(--animation-delay);
+}
+.snowing .snow::after {
+  text-align: right;
+  animation-delay: calc( var(--animation-delay) + var(--animation-dur) / 2);
+  transform: translate(5vw,-180vh) rotate(calc(+17deg + 0.4deg*var(--d)));
+}
+@keyframes falling {
+  to { transform: translate(1vw, +100vh) rotate(calc(2deg - 0.5deg*var(--d)));}
+}
+
+.snowing.snowing-paused .snow::before,
+.snowing.snowing-paused .snow::after {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion) {
+  .snowing .snow::before,
+  .snowing .snow::after {
+    animation-play-state: paused;
+  }
+  
+  .snowing.snowing-paused .snow::before,
+  .snowing.snowing-paused .snow::after {
+    animation-play-state: running;
+  }
+}

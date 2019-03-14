@@ -1,0 +1,48 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 2rem/1.3 sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
+.container {
+  place-self: center;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 60rem;
+  max-height: 60vh;
+  min-height: 400px;
+  overflow: auto;
+  border: 2px solid #eee;
+}
+
+.item {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  padding: 0;
+  will-change: transform, opacity;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(0) skew(90deg, 90deg);
+          transform: scale(0) skew(90deg, 90deg);
+  opacity: 0;
+  transition: opacity .35s ease, -webkit-transform .5s ease;
+  transition: transform .5s ease, opacity .35s ease;
+  transition: transform .5s ease, opacity .35s ease, -webkit-transform .5s ease;
+}
+
+.is-visible {
+  -webkit-transform: scale(1) skew(0deg);
+          transform: scale(1) skew(0deg);
+  opacity: 1;
+}

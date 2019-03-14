@@ -1,0 +1,85 @@
+*, *:before, *:after {
+    border: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: inherit;
+    font-style: normal;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+  --baseGray: #040404;
+  --baseWhite: #fafafa;
+  --basePink: red;
+  --baseBlack : #3f2e56;
+  --baseWhite : #fafafa;
+}
+
+body{
+    background: var(--baseGray);
+    color: var(--baseWhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    transition: .3s ease-out all;
+}
+
+body *{
+    pointer-events: none;
+}
+
+h1{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+}
+
+.mono{
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.container{
+    margin: 1rem auto;
+    perspective: 300px;
+}
+
+.card{
+    background: #fff;
+    height: 20rem;
+    width: 15rem;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .3s ease-out all;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.25)
+}
+
+.card__window{
+    overflow: hidden;
+    font-size: 6rem;
+}
+
+.card__window img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: .3s ease-out all;
+}
+
+.card__center{
+    position: absolute;
+    top: calc(50% - 1em);
+    left: calc(50% - 1em);
+    height: 2em;
+    width: 2em;
+    margin: auto;
+}

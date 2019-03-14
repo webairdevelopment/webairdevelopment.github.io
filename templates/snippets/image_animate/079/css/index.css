@@ -1,0 +1,435 @@
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper-no6.v1 {
+  background-color: #017A74;
+  transition: background-color 0.3s linear;
+}
+.wrapper-no6.v1 .nav {
+  color: #00C2BA;
+}
+.wrapper-no6.v1 .button {
+  display: none;
+}
+.wrapper-no6.v1 .button2 {
+  display: flex;
+}
+
+.wrapper-no6.v2 {
+  background-color: #571133;
+  transition: background-color 0.3s linear;
+}
+.wrapper-no6.v2 .nav {
+  color: #38001C;
+}
+.wrapper-no6.v2 .button {
+  display: block;
+}
+.wrapper-no6.v2 .button2 {
+  display: none;
+}
+
+.wrapper-no6 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-no6 .nav {
+  transition: color 0.3s linear;
+  position: absolute;
+  top: 50px;
+}
+.wrapper-no6 .nav__el {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+.wrapper-no6 .nav__el li:first-child {
+  margin-left: 0;
+}
+.wrapper-no6 .nav__item {
+  margin-left: 50px;
+  cursor: pointer;
+}
+.wrapper-no6 .nav__item.active, .wrapper-no6 .nav__item:hover, .wrapper-no6 .nav__item:focus {
+  color: white;
+  transition: color 0.3s linear;
+}
+.wrapper-no6 .button,
+.wrapper-no6 .button2 {
+  font-size: 100px;
+  cursor: pointer;
+  width: 170px;
+}
+.wrapper-no6 .on p,
+.wrapper-no6 .off p {
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 2px 3px, white 0px 4px 3px;
+  transition: text-shadow 0.3s linear, margin 0.3s linear;
+}
+.wrapper-no6 .button2 {
+  width: auto;
+}
+.wrapper-no6 .button2 p {
+  margin: 0;
+}
+.wrapper-no6 .button2 .on-wrapper {
+  margin-right: 25px;
+}
+.wrapper-no6 .button2 .on-wrapper .on p {
+  margin-top: -2.5px;
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 2px 3px, white 0px 4px 3px;
+  transition: text-shadow 0.3s linear, margin 0.3s linear;
+}
+.wrapper-no6 .button2 .on-wrapper.active .on p {
+  margin-top: -7.5px;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 8px 1px #bbb, 0px 7px 1px #777, 0px 9px 1px #555, 0px 10px 1px #444;
+  transition: text-shadow 0.3s linear, margin 0.3s linear;
+}
+.wrapper-no6 .button2 .off-wrapper .off p {
+  margin-top: -2.5px;
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 2px 3px, white 0px 4px 3px;
+}
+.wrapper-no6 .button2 .off-wrapper.active .off p {
+  margin-top: -7.5px;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 8px 1px #bbb, 0px 7px 1px #777, 0px 9px 1px #555, 0px 10px 1px #444;
+  transition: text-shadow 0.3s linear, margin 0.3s linear;
+}
+.wrapper-no6 .button {
+  margin-top: -5%;
+}
+.wrapper-no6 .button .on-wrapper,
+.wrapper-no6 .button .off-wrapper {
+  position: absolute;
+}
+.wrapper-no6 .button .off-wrapper {
+  margin-left: -10px;
+}
+.wrapper-no6 .button .on {
+  overflow: hidden;
+  height: 50px;
+  position: absolute;
+  top: 50px;
+}
+.wrapper-no6 .button .on p {
+  margin-left: 0;
+  margin-top: -43%;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 2px 3px, white 0px 4px 3px;
+  transition: text-shadow 0.3s linear, margin 0.3s linear;
+}
+.wrapper-no6 .button .on-before {
+  overflow: hidden;
+  height: 50px;
+  position: absolute;
+  top: 0;
+}
+.wrapper-no6 .button .on-before p {
+  margin-left: 0;
+  margin-top: -7%;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 2px 3px, white 0px 4px 3px;
+  transition: text-shadow 0.3s linear, margin 0.3s linear;
+}
+.wrapper-no6 .button .on-wrapper.active.first .on {
+  opacity: 0;
+}
+.wrapper-no6 .button .on-wrapper.active.first .on p {
+  margin-left: 0;
+  margin-top: -43%;
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 2px 3px, white 0px 4px 3px;
+}
+.wrapper-no6 .button .on-wrapper.active.first .on-before {
+  opacity: 0;
+}
+.wrapper-no6 .button .on-wrapper.active.first .on-before p {
+  margin-left: 0;
+  margin-top: -7%;
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 2px 3px, white 0px 4px 3px;
+}
+.wrapper-no6 .button .on-wrapper.notactive .on {
+  opacity: 1;
+  -webkit-animation: down 0.5s linear 0.5s;
+          animation: down 0.5s linear 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.wrapper-no6 .button .on-wrapper.notactive .on p {
+  margin-left: 0;
+  margin-top: -43%;
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 2px 3px, white 0px 4px 3px;
+}
+.wrapper-no6 .button .on-wrapper.notactive .on-before {
+  opacity: 1;
+  -webkit-animation: up 0.5s linear 0.5s;
+          animation: up 0.5s linear 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.wrapper-no6 .button .on-wrapper.notactive .on-before p {
+  margin-left: 0;
+  margin-top: -7%;
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 2px 3px, white 0px 4px 3px;
+}
+.wrapper-no6 .button .on-wrapper.active .on {
+  opacity: 0;
+  -webkit-animation: notoffdown 0.5s linear 0.5s;
+          animation: notoffdown 0.5s linear 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  transition: opacity 0.3s linear 0.5s;
+}
+.wrapper-no6 .button .on-wrapper.active .on p {
+  margin-top: -47%;
+  margin-left: -3%;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 8px 1px #bbb, 0px 7px 1px #777, 0px 9px 1px #555, 0px 10px 1px #444;
+  transition: text-shadow 0.3s linear 1s, margin 0.3s linear 1s;
+}
+.wrapper-no6 .button .on-wrapper.active .on-before {
+  opacity: 0;
+  -webkit-animation: notoffup 0.5s linear 0.5s;
+          animation: notoffup 0.5s linear 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  transition: opacity 0.3s linear 0.5s;
+}
+.wrapper-no6 .button .on-wrapper.active .on-before p {
+  margin-top: -11%;
+  margin-left: -3%;
+  text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 8px 1px #bbb, 0px 7px 1px #777, 0px 9px 1px #555, 0px 10px 1px #444;
+  transition: text-shadow 0.3s linear 0.5s, margin 0.3s linear 1s;
+}
+.wrapper-no6 .button .off {
+  overflow: hidden;
+  height: 50px;
+  position: absolute;
+  top: 50px;
+  opacity: 0;
+}
+.wrapper-no6 .button .off p {
+  margin-left: 0;
+  margin-top: -35%;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 2px 3px, white 0px 4px 3px;
+  transition: text-shadow 0.3s linear, margin 0.3s linear;
+}
+.wrapper-no6 .button .off-before {
+  overflow: hidden;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+.wrapper-no6 .button .off-before p {
+  margin-left: 0;
+  margin-top: -7%;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 2px 3px, white 0px 4px 3px;
+  transition: text-shadow 0.3s linear, margin 0.3s linear;
+}
+.wrapper-no6 .button .off-wrapper.active .off {
+  -webkit-animation: notoffdown 0.5s linear 0.5s;
+          animation: notoffdown 0.5s linear 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.wrapper-no6 .button .off-wrapper.active .off p {
+  text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 8px 1px #bbb, 0px 7px 1px #777, 0px 9px 1px #555, 0px 10px 1px #444;
+  transition: text-shadow 0.3s linear 1s;
+}
+.wrapper-no6 .button .off-wrapper.active .off-before {
+  -webkit-animation: notoffup 0.5s linear 0.5s;
+          animation: notoffup 0.5s linear 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.wrapper-no6 .button .off-wrapper.active .off-before p {
+  text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 8px 1px #bbb, 0px 7px 1px #777, 0px 9px 1px #555, 0px 10px 1px #444;
+  transition: text-shadow 0.3s linear 1s;
+}
+.wrapper-no6 .button .off-wrapper.notactive .off {
+  opacity: 1;
+  transition: opacity 0.3s linear 0.5s;
+  -webkit-animation: offdown 0.5s linear 0.5s;
+          animation: offdown 0.5s linear 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.wrapper-no6 .button .off-wrapper.notactive .off p {
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 2px 3px, white 0px 4px 3px;
+}
+.wrapper-no6 .button .off-wrapper.notactive .off-before {
+  opacity: 1;
+  transition: opacity 0.3s linear 0.5s;
+  -webkit-animation: offup 0.5s linear 0.5s;
+          animation: offup 0.5s linear 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.wrapper-no6 .button .off-wrapper.notactive .off-before p {
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 2px 3px, white 0px 4px 3px;
+}
+@-webkit-keyframes up {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  50% {
+    top: -50px;
+    opacity: 1;
+  }
+  100% {
+    top: -50px;
+    opacity: 0;
+  }
+}
+@keyframes up {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  50% {
+    top: -50px;
+    opacity: 1;
+  }
+  100% {
+    top: -50px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes down {
+  0% {
+    top: 50px;
+    opacity: 1;
+  }
+  50% {
+    top: 90px;
+    opacity: 1;
+  }
+  100% {
+    top: 90px;
+    opacity: 0;
+  }
+}
+@keyframes down {
+  0% {
+    top: 50px;
+    opacity: 1;
+  }
+  50% {
+    top: 90px;
+    opacity: 1;
+  }
+  100% {
+    top: 90px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes offup {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  50% {
+    top: -50px;
+    opacity: 1;
+  }
+  100% {
+    top: -50px;
+    opacity: 0;
+  }
+}
+@keyframes offup {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  50% {
+    top: -50px;
+    opacity: 1;
+  }
+  100% {
+    top: -50px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes offdown {
+  0% {
+    top: 50px;
+    opacity: 1;
+  }
+  50% {
+    top: 90px;
+    opacity: 1;
+  }
+  100% {
+    top: 90px;
+    opacity: 0;
+  }
+}
+@keyframes offdown {
+  0% {
+    top: 50px;
+    opacity: 1;
+  }
+  50% {
+    top: 90px;
+    opacity: 1;
+  }
+  100% {
+    top: 90px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes notoffup {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes notoffup {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes notoffdown {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes notoffdown {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

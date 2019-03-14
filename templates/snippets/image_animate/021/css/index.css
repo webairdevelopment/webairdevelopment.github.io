@@ -1,0 +1,12 @@
+
+body{
+			background-color:#13a0b2;
+		}
+		
+		canvas{
+			position:absolute;
+			top:50%;left:50%;
+			margin-left:-250px;
+			margin-top:-250px;
+      box-shadow:0px 0px 70px #000;
+		}

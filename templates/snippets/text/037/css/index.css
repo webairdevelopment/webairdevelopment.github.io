@@ -1,0 +1,29 @@
+#app {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  background-color: #141414;
+  color: white;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.content {
+  position: relative;
+  pointer-events: none;
+}
+
+p {
+  padding-bottom: 2rem;
+}
+
+.txt {
+  position: relative;
+  padding: 50px;
+  padding: 41.14286vh 0 28.57143vh 51.25vw;
+  width: 36.08333vw;
+  font-size: 1.66667vw;
+  line-height: 2.16667vw;
+}

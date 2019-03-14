@@ -1,0 +1,83 @@
+
+body{
+    background: #fff;
+}
+.box{
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    width: 600px;
+    height: 420px;
+    background: none;
+}
+.outter-part{
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    left: 10%;
+    top: 5%;
+    background: #36333a;
+    border-radius: 25px;
+    z-index: 2;
+}
+.circle-1, .circle-2, .circle-3{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    bottom: 3%;
+    border-radius: 50%;
+    z-index: 2;
+}
+.circle-1{
+    left: 5%;
+    background: #00bdec;
+}
+.circle-2{
+    left: 9%;
+    background: #656567;
+}
+.circle-3{
+    left: 13%;
+    background: #656567;
+}
+.part-1{
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    left: 40%;
+    bottom: -15%;
+    background: #656567;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    z-index: 1;
+}
+.part-2{
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    left: 30%;
+    bottom: -25%;
+    background: #36333a;
+    border-radius: 10px;
+    z-index: 2;
+}
+.inner-part{
+    position: absolute;
+    width: 95%;
+    height: 85%;
+    left: 2.5%;
+    top: 5%;
+    background: #8fd5dd;
+    z-index: 2;
+}
+.gif-part{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 8%;
+    background: url("../images/giphy.gif") no-repeat;
+    border-radius: 5px;
+    z-index: 2;
+}

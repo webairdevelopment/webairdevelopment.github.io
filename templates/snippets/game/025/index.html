@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <title></title>
+  
+  
+  
+      <link rel="stylesheet" href="css/index.css">
+
+  
+</head>
+
+<body>
+
+  <template id="field">
+<div class="game-field" :class="{'game-field__flat': oms}" :style="{width: `${getContainerSize.x}px`, height: `${getContainerSize.y}px`, display: `${visStat ? 'block' : 'none'}`}">
+<div class="game-field__cell" 
+v-for='cell, index in getCellAmount' 
+:style="{ 
+  width: `${fieldSize.x}px`,
+  height: `${fieldSize.y}px`,
+  border: `1px solid #aaa`,
+    backgroundColor: _paintShips(index)
+  }" 
+v-key='`${fieldSize.x*fieldSize.y}`'
+@click='function(){console.log(index)}'>
+<cell :status='_paintShips(index)' :color="_paintShips(index)" :size="{ x: fieldSize.x, y: fieldSize.y }"></cell>
+</div>
+</div>
+</template>
+<template id="cell">
+<div class="c" :style="{ display: status ? 'block' : 'none' }">
+<span :style="frontStyles" class="game-field__box-part game-field__box-part--front"></span>
+<span :style="leftStyles" class="game-field__box-part game-field__box-part--left"></span>
+<span :style="rightStyles" class="game-field__box-part game-field__box-part--right"></span>
+<span :style="topStyles" class="game-field__box-part game-field__box-part--top"></span>
+<span :style="bottomStyles" class="game-field__box-part game-field__box-part--bottom"></span>
+</div>
+</template>
+<template id="space">
+<div> 
+<field :ships='shipsCoordinates' 
+ :field-size='mainFieldSize' 
+ :cells-amount='cellAmount'
+ :default-cell-color='`rgba(255, 255, 255, 0)`'
+ :oms='oms'
+ :vis-stat='visibleStatus'
+ :shots-for-paint="shots"
+ 
+></field>
+</div>
+</template>
+<template id="hub">
+<div>
+<enemy-action-field 
+  :target-field-params='fieldParams' 
+  :action-method="openActionEnemyField" 
+  :modal-status='isOpenActionEnemyField'
+  :add-shot-method="addShot"
+  :user-shots="userShots"
+  :shots-status='dataForPaintEnemyFields'
+  >
+</enemy-action-field>
+<enemy-target-field 
+  :target-field-params='fieldParams' 
+  :action-method="openActionEnemyField"
+  :user-shots="userShots"
+  :shots-status='dataForPaintEnemyFields'
+  >
+</enemy-target-field>
+<info-banner 
+ :user-data="userShotAmount" 
+ :bot-data="botShotAmount"
+ :lucky-shots="getShotes"
+></info-banner>
+<final-banner :status="finalBannerMode" :open-status="finalBannerStatus" :close-banner="closeFinalBanner" :restart="_restartGame"></final-banner>
+<sea-battle 
+@return-generate-data='getUserData' 
+:oms='isOpenActionEnemyField' 
+:visible-status='true'
+:rer='rerender'
+:shots="dataForPaintUserFields"></sea-battle>
+<sea-battle 
+@return-generate-data='getBotData'
+:visible-status='false'
+:rer='rerender'
+:shots="dataForPaintUserFields"></sea-battle>
+
+<shot-banner :status="isShot.user.status" :content="isShot.user.content" :opt-class="'shot-banner__user'"></shot-banner>
+<shot-banner :status="isShot.enemy.status" :content="isShot.enemy.content" :opt-class="'shot-banner__enemy'"></shot-banner>
+
+</div>
+</template>
+<template id="enemy-target-field">
+<div class="enemyTargetContainer"  
+  @click="openWin" 
+  :style="{ width: `${targetFieldParams.amountX * 10 + 2}px`, height: `${targetFieldParams.amountY * 10+2}px` }">
+<div class="enemyTargetContainer__tooltipe" :class="{ 'enemyTargetContainer__tooltipe--is-active': isTooltipActive }">Click there!</div>
+<div class="game-field__cell" 
+v-for='cell, index in targetFieldParams.amountX * targetFieldParams.amountY' 
+:style="{ 
+  width: `${targetFieldParams.amountX}px`,
+  height: `${targetFieldParams.amountY}px`,
+  border: `1px solid #aaa`,
+    backgroundColor: getColorCell(index)
+  }"
+v-key='`${index}`'>
+</div>
+</div>
+</template>
+<template id="enemy-action-field">
+<div class="action-field" :class="{'action-field--is-active': modalStatus  }">
+<div class="action-field__close-btn" @click="closeActionModal">
+<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+ <path fill="#ffffff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+</svg>
+</div>
+<div class="enemyTargetContainer__tooltipe" :class="{ 'enemyTargetContainer__tooltipe--is-active': true }">Click there!</div>
+<div class="action-field__body">
+<div class="game-field__cell game-field__cell--action-field" 
+v-for='cell, index in targetFieldParams.amountX * targetFieldParams.amountY'
+@click="setShot('user', index)"
+:style="{ 
+  width: '10%',
+  height: '10%',
+  border: `1px solid #aaa`,
+    backgroundColor: getColorCell(index)
+  }"
+v-key='`${index}`'>
+</div>
+</div>
+</div>
+</template>
+<template id="info">
+<div class="info-banner">
+<div>
+<p>User shot: <span>{{ userData }}</span></p>
+<p>lucky shot: <span>{{ LuckyShots.u }}</span></p>
+</div>
+<div>
+<p>Bot shot: <span>{{ botData }}</span></p>
+<p>lucky shot: <span>{{ LuckyShots.b }}</span></p>
+</div>
+</div>
+</template>
+<template id="f-banner">
+<div class="action-field f-banner" :class="{'f-banner--is-active': openStatus}">
+<div class="f-banner__close" @click="closeBannerAction">
+<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+ <path fill="#000" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+</svg>
+</div>
+<div class="f-banner__body">
+<p>{{status === 'win' ?  winText : loseText }}</p>
+<img :src="status === 'win' ?  winImage : loseImage" alt="win">
+<button class="f-banner__btn" @click="newGame">New Game</button>
+</div>
+</div>
+</template>
+<template id="shot-banner">
+<div class="shot-banner" :class="[ optClass, {'shot-banner--is-active': status} ]">
+<p>{{ content }}</p>
+</div>
+</template>
+<div id="app">
+<hub v-if='rerender' :rst = "restartGame"></hub>
+</div>
+  <script src="js/vue.min.js"></script>
+
+  
+
+    <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

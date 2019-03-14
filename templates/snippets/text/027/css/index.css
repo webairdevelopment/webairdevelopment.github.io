@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+body {
+  margin: 0;
+  background-color: #9C0000;
+}
+section {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.button {
+  color: #59C3C3;
+  cursor: pointer;
+  font-family: "Abril Fatface", sans;
+  font-size: 50px;
+  letter-spacing: -1px;
+}
+.button:hover {
+  color: #E07A5F;
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+:root {
+	--theme-color: #27FF2D;
+	--strip1-color: #B263D1;
+	--strip2-color: #692484;
+}
+
+html, body {
+	padding: 0px;
+	margin: 0px;
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(
+		to top right,
+		#fff,
+		#fff 50%,
+		#ba68c8 50%,
+		#ba68c8 100%
+	);
+}
+
+#wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn {
+	font-family: serif;
+	position: relative;
+	padding: 20px 40px;
+	font-size: 25px;
+	font-weight: 550;
+	color: #111;
+	background-color: var(--theme-color);
+	border: none;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: background-image 4s linear;
+	outline: none;
+	overflow: hidden;
+	--triangle-color: black;
+}
+
+.btnOnClick {
+	--triangle-color: white;
+	background-color: transparent;
+	color: white;
+}
+
+.btn::after {
+	content: "";
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+
+	display: block;	
+	width: 0px;
+	height: 0px;
+	
+	border-top: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid var(--triangle-color);
+	border-bottom: 10px solid var(--triangle-color);
+}
+
+.movingStripes {
+	position: absolute;
+	left: -300px;
+	top: 0px;
+	
+	display: block;
+	width: calc(100% + 300px);
+	height: 100%;
+	background-image: repeating-linear-gradient(
+		-55deg,
+		var(--strip1-color),
+		var(--strip1-color) 15px,
+		var(--strip2-color) 15px,
+		var(--strip2-color) 30px
+	);
+	z-index: -1;
+	
+	animation-name: moveTheStripes;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes moveTheStripes {
+	100% { 
+		transform: translateX(300px);
+	}
+}

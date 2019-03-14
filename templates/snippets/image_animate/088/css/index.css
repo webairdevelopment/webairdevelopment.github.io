@@ -1,0 +1,103 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  background: rgb(10,10,10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 200px;
+  color: rgb(240,240,240);
+}
+
+.container {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  animation: e1 3s 1.5s  cubic-bezier(0.860, 0.000, 0.070, 1.000) infinite;
+}
+
+.container:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  width: 80%;
+  top: 50%;
+  left:50%;
+  display:block;
+  box-shadow: 0 0 10px 10px rgba(0,0,0, 0.2);
+  transform: translate(-50%, -50%) rotate(45deg) scalex(1);
+  animation-fill-mode: forwards;
+  animation: d1 3s 1.5s  cubic-bezier(0.860, 0.000, 0.070, 1.000) infinite;
+}
+
+
+.a {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  transform: skewy(45deg);
+  animation: a1 3s  cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+
+.b {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  transform: skewy(45deg);
+  animation: b1 3s  cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+
+.a:after, .b:after {
+  content: '0';
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  left:0;
+  transform: skewy(-45deg);
+  animation: c1 30s 1.85s infinite;
+}
+
+.a:after {top:0; transform: skewy(-45deg);}
+.b:after {bottom: 0;}
+
+@keyframes a1 {
+  0%{opacity:0; transform: skewy(45deg) translate(-10px, 0);}
+  70% {opacity:1;}
+  100% {opacity:0; transform: skewy(45deg) translate(10px, 0);}
+}
+
+@keyframes b1 {
+  0% {opacity:0; transform: skewy(45deg) translate(10px, 0);}
+  70% {opacity:1;}
+  100%{opacity:0; transform: skewy(45deg) translate(-10px, 0); }
+}
+
+@keyframes c1 {
+  0%{content:'0'}
+  10%{content:'1'}
+  20%{content:'2'}
+  30%{content:'3'}
+  40%{content:'4'}
+  50%{content:'5'}
+  60%{content:'6'}
+  70%{content:'7'}
+  80%{content:'8'}
+  90%{content:'9'}
+}
+
+@keyframes d1 {
+  0%, 20% { transform: translate(-50%, -50%) rotate(45deg) scalex(1); }
+  65%, 100% { transform: translate(-50%, -50%) rotate(225deg) scalex(1); }
+}
+
+@keyframes e1 {
+  to {transform: rotate(360deg);}
+}
+

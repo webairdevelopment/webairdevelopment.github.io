@@ -1,0 +1,122 @@
+body {background-color: #FFFFFF;}
+
+@import url("https://fonts.googleapis.com/css?family=Acme");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.hover {
+  position: absolute;
+  font-family: 'Acme', sans-serif;
+  font-size: 24px;
+  top: 15%;
+  left: 25%;
+}
+
+.book {
+  position: relative;
+  height: 200px;
+  width: 150px;
+  left: calc(60% - 75px);
+  box-shadow: 2.5px 2.5px 0 0 #ececec, 5px 5px 0 0 lightgrey, 7.5px 7.5px 0 0 #ececec, 10px 10px 0 0 black;
+}
+.book:hover .cover {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.cover, .page, .front, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.title {
+  font-weigth: bold;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Acme', sans-serif;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+}
+
+.smol {
+  font-size: 14px;
+  position: absolute;
+  color: white;
+  top: 60%;
+  left: 15%;
+}
+
+.gotcha {
+  font-size: 14px;
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  top: 5%;
+  left: 20%;
+}
+.gotcha.-bottom {
+  top: unset;
+  bottom: 5%;
+  left: 30%;
+}
+
+.cover {
+  z-index: 5;
+  background: linear-gradient(to right, #434343, #000000);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  transition: 3s all;
+}
+.cover::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 102%;
+  top: -1%;
+  background: linear-gradient(to right, #a90329 0%, #8f0222 47%, #6d0019 100%);
+  right: 5%;
+  z-index: 100;
+}
+
+.title {
+  position: absolute;
+}
+
+.page {
+  z-index: 1;
+  background: url("../images/gnome.jpg");
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-position: center center;
+}

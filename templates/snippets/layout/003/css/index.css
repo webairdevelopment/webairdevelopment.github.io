@@ -1,0 +1,78 @@
+body {
+  background-color: #FFFFFF;
+}
+
+
+/**
+  Mixin to safely set the min-width for an
+  individual grid item.
+
+  If the min-width is greater than the max content
+  width at the smallest breakpoint, then an error
+  is thrown.
+*/
+/**
+  Wraps content in a media query, who's min-width is
+  just enough to safely accommodate $multiplier
+  grid columns (assuming the maximum permissible grid
+  item min-width).
+*/
+:root {
+  --smart-grid-item-min-width: 18rem;
+  --section-bg: #ecc;
+}
+
+.smart-grid {
+  counter-reset: grid-item;
+}
+@media (min-width: 30rem) {
+  .smart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--smart-grid-item-min-width), 1fr));
+    grid-column-gap: 2rem;
+  }
+  .smart-grid--bigger {
+    --smart-grid-item-min-width: 26rem;
+  }
+}
+.smart-grid--bigger {
+  --section-bg: #cec;
+}
+
+@media (min-width: 54rem) {
+  .smart-grid__item-2col {
+    grid-column: auto / span 2;
+  }
+}
+.smart-grid__item-2row {
+  grid-row: auto / span 2;
+}
+
+body {
+  padding: 2rem;
+  margin: 0;
+}
+
+section {
+  overflow: hidden;
+  border-width: 2px;
+  border-style: solid;
+  background-color: var(--section-bg);
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+section:before {
+  float: left;
+  margin: 1rem 1rem 1rem 0;
+  color: white;
+  background-color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.5rem;
+  counter-increment: grid-item;
+  content: counter(grid-item);
+}

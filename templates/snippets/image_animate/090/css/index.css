@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+}
+
+.head, .head::after, .face, .arm .hand, .windows, .grill, .bumper, .license-plate, .legs, .boot, .foot, .foot::after {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body {
+  background: #90c4f2;
+  height: 100vh;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kanit", sans-serif;
+}
+
+.transform-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fdd835;
+  color: #10538d;
+  padding: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.625rem;
+  font-family: "Kanit", sans-serif;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.transform-btn:hover, .transform-btn:focus {
+  background: #fddd4e;
+  border: 1px solid #1e88e5;
+  outline: 0;
+}
+
+.optimus {
+  position: relative;
+}
+.optimus.transformed .head {
+  top: -80px;
+}
+.optimus.transformed .tire {
+  bottom: 0;
+  height: 10%;
+}
+.optimus.transformed .legs {
+  top: 200px;
+}
+.optimus.transformed .license-plate {
+  background: #fdd835;
+}
+.optimus.transformed .license-bling {
+  background: #fdd835;
+}
+.optimus.transformed .license-bling:after {
+  background: #fdd835;
+}
+.optimus.transformed .arm {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+.optimus.transformed .arm.left {
+  left: -40px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+.optimus.transformed .arm.right {
+  right: -40px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.head {
+  transition: 0.5s;
+  background: #1e88e5;
+  width: 80px;
+  height: 80px;
+  top: 20px;
+}
+.head::after {
+  content: "";
+  background: #d5e9fa;
+  width: 10px;
+  height: 10px;
+}
+
+.antennae {
+  position: absolute;
+  background: #1e88e5;
+  width: 6px;
+  height: 20px;
+  top: -20px;
+}
+.antennae.left {
+  left: 0;
+}
+.antennae.right {
+  right: 0;
+}
+
+.face {
+  background: #d5e9fa;
+  bottom: 0;
+  width: 70%;
+  height: 70%;
+}
+
+.eye {
+  position: absolute;
+  background: #10538d;
+  top: 10px;
+  width: 30%;
+  height: 20%;
+}
+.eye.left {
+  left: 5%;
+}
+.eye.right {
+  right: 5%;
+}
+
+.body {
+  position: relative;
+  background: #f44336;
+  width: 200px;
+  height: 200px;
+}
+
+.arm {
+  position: absolute;
+  background: #f44336;
+  width: 40px;
+  height: 160px;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  transition: 0.5s;
+}
+.arm .pipe {
+  position: absolute;
+  top: -50px;
+  width: 10px;
+  height: 100px;
+  background: #d5e9fa;
+}
+.arm .hand {
+  bottom: -30px;
+  background: #1e88e5;
+  width: 30px;
+  height: 30px;
+}
+.arm.left {
+  left: 0;
+}
+.arm.left .pipe {
+  left: -10px;
+}
+.arm.right {
+  right: 0;
+}
+.arm.right .pipe {
+  right: -10px;
+}
+
+.windows {
+  top: 20px;
+  width: 175px;
+}
+
+.window {
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  background: #1e88e5;
+}
+.window.left {
+  left: 0;
+}
+.window.right {
+  right: 0;
+}
+
+.grill {
+  bottom: 40px;
+  width: 50%;
+  height: 60px;
+  background: white;
+  border: 3px solid #d5e9fa;
+}
+.grill .line {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #d5e9fa;
+}
+.grill .line:nth-child(1) {
+  top: 15%;
+}
+.grill .line:nth-child(2) {
+  top: 35%;
+}
+.grill .line:nth-child(3) {
+  top: 55%;
+}
+.grill .line:nth-child(4) {
+  top: 75%;
+}
+
+.bumper {
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: white;
+}
+
+.license-plate {
+  background: #d5e9fa;
+  transition: 0.5s;
+  top: 5px;
+  width: 60px;
+  height: 30px;
+}
+
+.license-bling {
+  position: absolute;
+  background: #fdd835;
+  background: white;
+  transition: 0.5s;
+  width: 40px;
+  height: 10px;
+  top: 5px;
+}
+.license-bling::after {
+  position: absolute;
+  content: "";
+  background: white;
+  transition: 0.5s;
+  width: 40px;
+  height: 10px;
+  top: 15px;
+}
+.license-bling.left {
+  left: 25px;
+}
+.license-bling.left::after {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+}
+.license-bling.right {
+  right: 25px;
+}
+.license-bling.right::after {
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+}
+
+.tire {
+  position: absolute;
+  background: #000204;
+  width: 40px;
+  height: 40px;
+  bottom: -40px;
+  transition: 0.5s;
+}
+.tire.left {
+  left: 0;
+}
+.tire.right {
+  right: 0;
+}
+
+.legs {
+  width: 90%;
+  top: 0;
+  transition: 0.5s;
+}
+
+.leg {
+  position: absolute;
+  background: white;
+  height: 160px;
+  width: 25%;
+}
+.leg.left {
+  left: 0;
+}
+.leg.right {
+  right: 0;
+}
+
+.boot {
+  background: #1e88e5;
+  bottom: 0;
+  height: 100px;
+  width: 120%;
+}
+
+.foot {
+  background: #10538d;
+  bottom: 0;
+  height: 40px;
+  width: 120%;
+}
+.foot::after {
+  content: "";
+  background: #d5e9fa;
+  bottom: 0;
+  height: 30%;
+  width: 80%;
+}

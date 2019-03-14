@@ -1,0 +1,14 @@
+body,
+.tracking-section {
+  background-color: #263238;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+body:hover,
+.tracking-section:hover {
+  cursor: url("../images/cursor.cur"), auto;
+}

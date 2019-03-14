@@ -1,0 +1,132 @@
+body {
+  height: 100vh;
+  background: #F6F8F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+}
+
+#Stickman {
+  width: 120px;
+  height: 375px;
+  font-size: 25px;
+  --rotate: 0deg;
+  -webkit-transform: rotate(var(--rotate));
+          transform: rotate(var(--rotate));
+  -webkit-transform-origin: 60px 186.5px;
+          transform-origin: 60px 186.5px;
+}
+#Stickman .head, #Stickman .torso, #Stickman .torso *, #Stickman .member-part {
+  background: #263238;
+  transition: 0.3s background, 0s -webkit-transform;
+  transition: 0.3s background, 0s transform;
+  transition: 0.3s background, 0s transform, 0s -webkit-transform;
+}
+#Stickman .head:hover, #Stickman .torso:hover, #Stickman .torso *:hover, #Stickman .member-part:hover {
+  background: #455A64;
+  cursor: pointer;
+}
+#Stickman .head:active, #Stickman .torso:active, #Stickman .torso *:active, #Stickman .member-part:active {
+  background: #651FFF;
+}
+#Stickman .v-rotate--axis {
+  background: red;
+  margin: 186.5px 60px;
+  position: absolute;
+}
+
+.head {
+  --rotate: 0deg;
+  width: 60px;
+  height: 60px;
+  margin-left: 32px;
+  border-radius: 50%;
+  -webkit-transform-origin: 30px 75px;
+          transform-origin: 30px 75px;
+  -webkit-transform: rotate(var(--rotate));
+          transform: rotate(var(--rotate));
+  z-index: 1;
+  position: relative;
+}
+.head .v-rotate--axis {
+  margin: 75px 30px !important;
+  position: absolute;
+}
+
+.torso {
+  width: 60px;
+  height: 150px;
+  margin: 15px 0 0 30px;
+}
+.torso:hover * {
+  background: #455A64 !important;
+}
+.torso:active *, .torso:active *:hover {
+  background: #651FFF !important;
+}
+.torso .arm-conect {
+  width: 120px;
+  height: 28px;
+  margin-left: -30px;
+  border-radius: 1em;
+}
+.torso .leg-conect {
+  width: 28px;
+  height: 60px;
+  border-radius: 0 0 15px 15px;
+}
+.torso .leg-conect.right {
+  margin-top: 90px;
+}
+.torso .leg-conect.left {
+  margin: -60px 0 0 32px;
+}
+
+.body-member {
+  width: 28px;
+  -webkit-transform-origin: 14px 14px;
+          transform-origin: 14px 14px;
+  --rotate: 0deg;
+  -webkit-transform: rotate(var(--rotate));
+          transform: rotate(var(--rotate));
+}
+.body-member .v-rotate--axis {
+  margin: 15px !important;
+}
+.body-member .member-part {
+  width: 28px;
+  height: 90px;
+  border-radius: 30px;
+  -webkit-transform-origin: 14px 14px;
+          transform-origin: 14px 14px;
+}
+.body-member .member-part.forearm, .body-member .member-part.shin {
+  --rotate: 0deg;
+  margin-top: -28px;
+  position: absolute;
+  -webkit-transform: rotate(var(--rotate));
+          transform: rotate(var(--rotate));
+}
+
+.arm-right {
+  margin: 15px 0 0 0;
+  position: absolute;
+}
+
+.arm-left {
+  margin: -150px 0 0 92px;
+  position: absolute;
+}
+
+.leg-right {
+  margin: 2px 0 0 30px;
+}
+
+.leg-left {
+  margin: -90px 0 0 62px;
+}

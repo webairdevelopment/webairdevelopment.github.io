@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFF8E1;
+}
+.wrapper .bar {
+  height: 10vh;
+}
+.wrapper .bar-forward {
+  position: absolute;
+  left: 0;
+  height: 10vh;
+  background-color: #ffa726;
+  animation-name: extendBar;
+  animation-duration: 2.0s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+.wrapper .bar-back {
+  position: absolute;
+  right: 0;
+  height: 10vh;
+  background-color: #ffca28;
+  animation-name: extendBar;
+  animation-duration: 2.0s;
+  animation-timing-function: ease;
+  animation-delay: 2.0s;
+  animation-fill-mode: forwards;
+}
+.wrapper .bar .bar-forward.bar-1 {
+  top: 0vh;
+  animation-delay: 0s;
+}
+.wrapper .bar .bar-back.bar-1 {
+  top: 0vh;
+  animation-delay: 2s;
+}
+.wrapper .bar .bar-forward.bar-2 {
+  top: 10vh;
+  animation-delay: 0.2s;
+}
+.wrapper .bar .bar-back.bar-2 {
+  top: 10vh;
+  animation-delay: 2.2s;
+}
+.wrapper .bar .bar-forward.bar-3 {
+  top: 20vh;
+  animation-delay: 0.4s;
+}
+.wrapper .bar .bar-back.bar-3 {
+  top: 20vh;
+  animation-delay: 2.4s;
+}
+.wrapper .bar .bar-forward.bar-4 {
+  top: 30vh;
+  animation-delay: 0.6s;
+}
+.wrapper .bar .bar-back.bar-4 {
+  top: 30vh;
+  animation-delay: 2.6s;
+}
+.wrapper .bar .bar-forward.bar-5 {
+  border-bottom: 1px solid #ffa726;
+}
+.wrapper .bar .bar-back.bar-5 {
+  border-bottom: 1px solid #ffca28;
+}
+.wrapper .bar .bar-forward.bar-5 {
+  top: 40vh;
+  animation-delay: 0.8s;
+}
+.wrapper .bar .bar-back.bar-5 {
+  top: 40vh;
+  animation-delay: 2.8s;
+}
+.wrapper .bar .bar-forward.bar-6 {
+  top: 50vh;
+  animation-delay: 1s;
+}
+.wrapper .bar .bar-back.bar-6 {
+  top: 50vh;
+  animation-delay: 3s;
+}
+.wrapper .bar .bar-forward.bar-7 {
+  top: 60vh;
+  animation-delay: 1.2s;
+}
+.wrapper .bar .bar-back.bar-7 {
+  top: 60vh;
+  animation-delay: 3.2s;
+}
+.wrapper .bar .bar-forward.bar-8 {
+  top: 70vh;
+  animation-delay: 1.4s;
+}
+.wrapper .bar .bar-back.bar-8 {
+  top: 70vh;
+  animation-delay: 3.4s;
+}
+.wrapper .bar .bar-forward.bar-9 {
+  top: 80vh;
+  animation-delay: 1.6s;
+}
+.wrapper .bar .bar-back.bar-9 {
+  top: 80vh;
+  animation-delay: 3.6s;
+}
+.wrapper .bar .bar-forward.bar-10 {
+  top: 90vh;
+  animation-delay: 1.8s;
+}
+.wrapper .bar .bar-back.bar-10 {
+  top: 90vh;
+  animation-delay: 3.8s;
+}
+.wrapper .title-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 40px;
+}
+.wrapper .title-wrapper h3 {
+  color: #FFF8E1;
+  font-size: 50px;
+  margin: 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+|  animation
+|--------------------------------------------------------------------------
+*/
+@keyframes extendBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100vw;
+  }
+}

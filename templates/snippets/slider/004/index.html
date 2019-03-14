@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+  </head>
+  <body>
+    <svg id="input" viewBox="0 0 100 20">
+      <path d="M0,10 L100,10" />
+    </svg>
+    <svg id="_2" viewBox="0 0 100 20"> 
+      <path id="label" transform="translate(37,10) scale(.75)" d="M0.89,-1.79 Q0,0 -0.89,-1.79L-1.10,-2.21 Q-2,-4 -4,-4L-5,-4 Q-7,-4 -7,-6L-7,-10 Q-7,-12 -5,-12L5,-12 Q7,-12 7,-10L7,-6 Q7,-4 5,-4L4,-4 Q2,-4 1.1,-2.21Z" />
+      <circle cy="10" r="0.1" />
+      <text text-anchor="middle" transform="translate(0,1.6)" >
+        <textpath startOffset="53.5%" dominant-baseline="hanging" xlink:href="#label">37</textpath>
+      </text>
+    </svg>
+    <input type="range" id="witness" value="37" disabled>
+    <script src="js/index.js"></script>
+  </body>
+</html>

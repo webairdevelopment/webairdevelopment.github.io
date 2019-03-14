@@ -1,0 +1,41 @@
+body {
+  --grid-color: #000;
+  --grid-weight: 1px;
+  --grid-spacing: 30px;
+  height: 100vh;
+  overflow: hidden;
+  background-position: center center,
+    center center;
+  background-size: var(--grid-spacing) var(--grid-spacing),
+    var(--grid-spacing) var(--grid-spacing);
+  background-image: repeating-linear-gradient(
+      0deg,
+      var(--grid-color),
+      var(--grid-color) var(--grid-weight),
+      transparent var(--grid-weight),
+      transparent var(--grid-spacing)
+    ),
+    repeating-linear-gradient(
+      -90deg,
+      var(--grid-color),
+      var(--grid-color) var(--grid-weight),
+      transparent var(--grid-weight),
+      transparent var(--grid-spacing)
+    );
+  color: #00f;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  cursor: crosshair;
+  background-color: #FFFFFF;
+}
+
+.m {
+  position: absolute;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transform: translate3d(-100%, -100%, 0);
+          transform: translate3d(-100%, -100%, 0);
+}

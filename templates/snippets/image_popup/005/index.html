@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/default.min.css">
+    <script src="js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <h1>Responsive images with constant aspect ratio</h1>
+    <p>Adapting image width responsively is quite straightforward, but turning a width change into a corresponding height change turns out to be a bit more challenging. In the process of trying to do just that I found a <a href="https://css-tricks.com/aspect-ratio-boxes/" target="_blank">CSS-Tricks article</a> (and <a href="https://www.w3schools.com/howto/howto_css_aspect_ratio.asp" target="_blank">another on W3Schools</a>) that suggest the following solution:</p>
+    <ul>
+      <li>Wrap your content - in this case an image - in a container</li>
+      <li>Set the height of that container as a function of its width by using the fact that padding percentages (even top and bottom) are relative to widths</li>
+      <li>Absolute position the content inside the container and optionally apply some <code>object-</code> fitting and positioning magic</li>
+    </ul>
+    <p>This is how the images in the grid below are laid out. Try fiddling around with the width of this page to see the result. The images shrink and grow, but the aspect ratio remains always very close to 3:2.</p>
+    <div class="grid goldenrod full-width">
+      <div class="card">
+        <div class="img-wrapper">
+          <img src="https://source.unsplash.com/s1pVNWf-okQ" >
+        </div>
+        <h2>Pisa cathedral</h2>
+        <p>
+          <a href="https://unsplash.com/@lnucci94" target="_blank">Lorenzo Nucci</a>
+        </p>
+        <p>In faucibus eros a vulputate venenatis. Cras mi neque, gravida at lorem eget, dictum fringilla mauris. Ut blandit mauris id ante porta hendrerit. Fusce pellentesque pharetra tincidunt. Quisque vitae sagittis ipsum. Integer in enim eros. Nunc suscipit aliquet mattis.</p>
+      </div>
+      <div class="card">
+        <div class="img-wrapper">
+          <img src="https://source.unsplash.com/2iry6Ig1jiI" >
+          </div>
+          <h2>A Moon</h2>
+          <p>
+            <a href="https://unsplash.com/@siggsebastian" target="_blank">Sigg Sebastian</a>
+          </p>
+          <p>In faucibus eros a vulputate venenatis. Cras mi neque, gravida at lorem eget, dictum fringilla mauris. Ut blandit mauris id ante porta hendrerit. Fusce pellentesque pharetra tincidunt. Quisque vitae sagittis ipsum. Integer in enim eros. Suspendisse nisl quam, dignissim eget dui non, laoreet imperdiet quam.</p>
+        </div>
+        <div class="card">
+          <div class="img-wrapper">
+            <img src="https://source.unsplash.com/aQCODBUh444" >
+          </div>
+          <h2>Blinded by money</h2>
+          <p>
+             <a href="https://unsplash.com/@rocky_71" target="_blank">Ricardo Aguilera</a>
+          </p>
+          <p>In faucibus eros a vulputate venenatis.Suspendisse nisl quam, dignissim eget dui non, laoreet imperdiet quam. Nunc suscipit aliquet mattis.</p>
+        </div>
+        <div class="card">
+          <div class="img-wrapper">
+            <img src="https://source.unsplash.com/dGgQcFy1I4s" >
+          </div>
+          <h2>Psychedelics</h2>
+          <p>
+            <a href="https://unsplash.com/@thomaskinto" target="_blank">Thomas Kinto</a>
+          </p>
+          <p>Cras mi neque, gravida at lorem eget, dictum fringilla mauris. Ut blandit mauris id ante porta hendrerit. Fusce pellentesque pharetra tincidunt. Quisque vitae sagittis ipsum. Integer in enim eros. Suspendisse nisl quam, dignissim eget dui non, laoreet imperdiet quam. Nunc suscipit aliquet mattis.</p>
+        </div>
+      </div>
+      <p>Here"s the CSS magic that reins those images in. It seems a bit hacky and I"m still not very happy about absolute positioning my elements, but it seems to work quite fine.</p>
+      <pre>
+        <code class="css">
+          .img-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 66.667%;
+            overflow: hidden;
+          }
+          .img-wrapper &gt; img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        </code>
+      </pre>
+      <p>And this is how it looks with no fixin":</p>
+      <div class="grid tomato full-width">
+        <div class="card">
+          <img src="https://source.unsplash.com/s1pVNWf-okQ" >
+          <h2>Pisa cathedral</h2>
+          <p>
+            <a href="https://unsplash.com/@lnucci94" target="_blank">Lorenzo Nucci</a>
+          </p>
+          <p>In faucibus eros a vulputate venenatis. Cras mi neque, gravida at lorem eget, dictum fringilla mauris. Ut blandit mauris id ante porta hendrerit. Fusce pellentesque pharetra tincidunt. Quisque vitae sagittis ipsum. Integer in enim eros. Nunc suscipit aliquet mattis.</p>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/2iry6Ig1jiI" >
+          <h2>A Moon</h2>
+          <p>
+            <a href="https://unsplash.com/@siggsebastian" target="_blank">Sigg Sebastian</a>
+          </p>
+          <p>In faucibus eros a vulputate venenatis. Cras mi neque, gravida at lorem eget, dictum fringilla mauris. Ut blandit mauris id ante porta hendrerit. Fusce pellentesque pharetra tincidunt. Quisque vitae sagittis ipsum. Integer in enim eros. Suspendisse nisl quam, dignissim eget dui non, laoreet imperdiet quam.</p>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/aQCODBUh444" >
+          <h2>Blinded by money</h2>
+          <p>
+            <a href="https://unsplash.com/@rocky_71" target="_blank">Ricardo Aguilera</a>
+          </p>
+          <p>In faucibus eros a vulputate venenatis.Suspendisse nisl quam, dignissim eget dui non, laoreet imperdiet quam. Nunc suscipit aliquet mattis.</p>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/dGgQcFy1I4s" >
+          <h2>Psychedelics</h2>
+          <p>
+            <a href="https://unsplash.com/@thomaskinto" target="_blank">Thomas Kinto</a>
+          </p>
+          <p>Cras mi neque, gravida at lorem eget, dictum fringilla mauris. Ut blandit mauris id ante porta hendrerit. Fusce pellentesque pharetra tincidunt. Quisque vitae sagittis ipsum. Integer in enim eros. Suspendisse nisl quam, dignissim eget dui non, laoreet imperdiet quam. Nunc suscipit aliquet mattis.</p>
+        </div>
+      </div>
+      <p>As always, feedback appreciated. Did I miss something, did you love this solution? <a href="https://codepen.io/raulrpearson/details/yQXKRV/" target="_blank">Add a comment</a> on the Pen or find <a href="https://twitter.com/raulrpearson" target="_blank">me on Twitter</a>.</p>
+      <script src="js/highlight.min.js"></script>
+      <script src="js/index.js"></script>
+  </body>
+</html>

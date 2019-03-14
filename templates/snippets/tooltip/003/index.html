@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i|Noto+Serif:400,700" rel="stylesheet">
+    <script src="js/zinggrid.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <zing-grid caption="WebAir Quotes" src="https://zinggrid-examples.firebaseio.com/air-quotes" layout="card" layout-controls="false" pager page-size="6" page-size-options="3,6,9,12">
+      <zg-colgroup>
+        <zg-column index="quote" header="&nbsp;">&#8220;[[index.quote]]&#8221;</zg-column>
+        <zg-column index="author" header="&nbsp;"><em>&#8212; [[index.author]]</em></zg-column>
+        <zg-column renderer="_bindAccordion" cell-class="accordion-flex-layout" index="author, bio" header="&nbsp;">
+          <template>
+            <section class="accordion">
+              <input type="checkbox" id="changeme" >
+              <label for="changeme">About the Author</label>
+              <article>
+                <p class="authorBio">[[index.bio]]</p>
+              </article>
+            </section>
+          </template>
+        </zg-column>
+      </zg-colgroup>
+      <zg-footer>
+       <p>Biography sources: <a href="https://www.wikipedia.org/" target="_blank" crossorigin>Wikipedia</a>
+      </zg-footer>
+    </zing-grid>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+
+body, html{
+            background-color:#fff;
+            margin: 0px;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        #lottie{
+            background-color:#000;
+            width:100%;
+            height:100%;
+            display:block;
+            overflow: hidden;
+            transform: translate3d(0,0,0);
+            /*display:none;*/
+        }

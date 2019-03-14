@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  background-image: url('data:image/svg+xml,%3Csvg width="52" height="26" viewBox="0 0 52 26" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.photo {
+  background: linear-gradient(to bottom, #ee786e 0%, #fceeb5 60%, #a2ccb6 60%);
+  width: calc(100vw - 80px);
+  height: calc(100vh - 80px);
+  border: 10px solid white;
+  margin: 40px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.photo:before {
+  content: "";
+  background: #fceeb5;
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  box-shadow: 0 0 60px #fceeb5;
+}
+
+.photo:after {
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 290 100' width='290' height='100'%3e%3cpath fill='#fceeb5' d='m 0 60 q 60 -60 80 -20 q 20 20 40 0 q 70 -70 80 0 q 10 20 30 0 q 20 -20 30 20 q 10 16 30 0 l 0 40 l -290 0'/%3e%3c/svg%3e");
+}
+
+.photo:before:before {
+  content: "dd";
+}
+
+.umbrella {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 230' width='160' %3e%3cpath d='m 250 0 q 180 30 250 220 q -50 -30 -100 0' fill='#ee786e'/%3e%3cpath d='m 250 0 q 150 50 150 220 q -50 -30 -100 0' fill='#fceeb5'/%3e%3cpath d='m 250 0 q -180 30 -250 220 q 50 -30 100 0' fill='#ee786e'/%3e%3cpath d='m 250 0 q -150 50 -150 220 q 50 -30 100 0' fill='#fceeb5'/%3e%3cpath d='m 250 0 q -70 50 -50 220 q 50 -30 100 0 q 20 -150 -50 -220' fill='#ee786e'/%3e%3c/svg%3e");
+  width: 160px;
+  height: 200px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  z-index: 2;
+}
+
+.umbrella:before {
+  content: "";
+  width: 8px;
+  height: 134px;
+  border-radius: 5px;
+  display: block;
+  margin: 66px 0 0 74px;
+  background: linear-gradient(to top, #a2ccb6, #fceeb5);
+}

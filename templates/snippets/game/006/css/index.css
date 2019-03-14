@@ -1,0 +1,35 @@
+body {
+  background-color: #FFFFFF;
+}
+
+section {
+	text-align: center;
+}
+
+span {
+	width: 20px;
+	height: 20px;
+	border: 0.2px solid linen;
+	display: block;
+	float: left;
+}
+
+a {
+	clear: both;
+	font-family: 'Pacifico', cursive;
+	text-decoration: none;
+	font-size: 30px;
+	color: white;
+	background-color: crimson;
+	padding: 2px 10px;
+	margin: 5px;
+	word-spacing: 5px;
+}
+
+div {
+	margin-top: 10px;
+}
+
+span.clicked {
+	background-color: rgb(102,51,153);
+}

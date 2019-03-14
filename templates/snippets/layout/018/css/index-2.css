@@ -1,0 +1,10 @@
+
+$color-settings: (
+  'colors': (
+    'a': ( 0: #333333 ),
+    'b': ( 0: #ff6347 ), // red
+    'c': ( 0: #1e90ff ), // blue
+    'd': ( 0: #46d246 ), // green
+  )
+);
+@include define-color-set;

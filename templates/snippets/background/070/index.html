@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <css-doodle>
+      --circleSize: 60px;
+      --color: hsl(calc(20 * @i()), 70%, 70%);
+      --delay: calc(@sin(@i() * @PI() / @size() * 2) * -1.2s); 
+      :doodle {
+        @grid: 40x1 / var(--circleSize);
+      }
+      :container {
+        height: 100vh;
+        animation: rotation 4s ease-in-out infinite;
+      }
+      :after {
+        content: '';
+        @shape: hypocycloid 4;
+        @size: calc(var(--circleSize) / 2);
+        background: var(--color);
+        animation: spin @rand(1s, 4s, .1) ease infinite;
+      }
+      @place-cell: center;
+      @size: var(--circleSize);
+      border-radius: 50%;
+      border-style: dotted;
+      border-color: var(--color);
+      --trans: 
+      rotateY(calc((@i() - 1) * @calc(360 / @size())deg))
+      translateZ(calc(var(--circleSize) / @tan(@PI() / @size() * 2)));
+      transform-style: preserve-3d;
+      transform: var(--trans) translateY(-50px);
+      animation: wave 3s ease-in-out var(--delay) infinite;
+      @keyframes rotation {
+        0%, 100% {
+          perspective: 500px;
+        } 50% {
+          perspective: 1000px;
+          }
+        }
+        @keyframes spin {
+          to {
+          transform: rotateY(2turn);
+        }
+      }
+      @keyframes wave {
+        0%, 100% {
+          transform: var(--trans) translateY(-50px);
+        } 50% {
+          transform: var(--trans) translateY(100px);
+        }
+      }
+    </css-doodle>
+    <script src="js/css-doodle.min.js"></script>
+  </body>
+</html>

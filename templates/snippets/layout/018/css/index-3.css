@@ -1,0 +1,15 @@
+
+* {
+  &, &:before, &:after {
+    box-sizing: border-box;
+  }
+  
+  &, &:focus, &:active, &:focus:active {
+    outline: none;
+  }
+}
+
+body {
+  min-height: 100vh;
+  padding: 1em;
+}

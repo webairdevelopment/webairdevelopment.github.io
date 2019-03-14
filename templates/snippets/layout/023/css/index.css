@@ -1,0 +1,85 @@
+﻿
+/* some basic styles */
+
+body {
+	font-family: 'Helvetica Neue', Helvetica;
+	font-size: 76%; max-width: 750px;
+	padding: 20px; margin: 0 auto;
+	background: #f7f7f7;
+}
+
+h3 { color: #5A5A5A; }
+
+div {
+	/* basic styles*/
+	padding: 10px;
+	color: #5F5F5F;
+	background: linear-gradient(#F0F0F0, #DBDBDB);
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+	
+	/* The long piece of text has broken into 3 columns */
+	column-count: 3;
+}
+
+div.column-width {
+	/*
+	The width is too much, so the browser adjusts the
+	number of columns to 2 (instead of 3).
+	The width is quite less now, yet we have only
+	3 columns and not more. This is because we're
+	inheriting column-count from above.
+	If the column-count is not specified then the browser
+	will automatically create columns to fit into the
+	available width.
+	
+	Now we have got about 5 columns!
+	*/
+	column-width: 10em;
+	column-count: auto;
+}
+
+div.columns {
+	/* Using columns instead of
+	column-width or column-count */
+	-webkit-columns: 4;
+	-moz-columns: 4;
+	columns: 4;
+}
+
+div.column-gap {
+	column-gap: 40px;
+}
+
+div.column-rule {
+	column-rule: 2px solid #a7a7a7;
+	/* some gap would be nice to have */
+	column-gap: 20px;
+}
+
+div.column-span h2 {
+	/*
+	Previously the `h2` was part of a column
+	but now it spans across all the columns like a boss!
+	*/
+	column-span: all;
+}
+
+
+
+
+
+ul {
+	/* basic styling */
+	background: #f1f1f1;
+	padding: 20px; margin: 20px 0;
+	color: #5F5F5F;
+	background: linear-gradient(#F0F0F0, #DBDBDB);
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+	list-style: none;
+	
+	/* yay!! easy :D */
+	column-count: 3;
+}
+ul li:hover {
+	color: #000; cursor: pointer;
+}

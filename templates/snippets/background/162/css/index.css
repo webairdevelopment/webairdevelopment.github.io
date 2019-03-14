@@ -1,0 +1,25 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  overflow: hidden;
+}
+svg #ropeHandGroup {
+  cursor: pointer;
+}

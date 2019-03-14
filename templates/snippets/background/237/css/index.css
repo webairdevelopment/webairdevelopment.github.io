@@ -1,0 +1,36 @@
+﻿html {
+	background-color: #f76; /* This is the bottom layer */
+	background-image:
+		linear-gradient(60deg, #dcc 13.5%, transparent 13.5%, transparent 86.5%, #fee 86.5%),
+		linear-gradient(-60deg, #dcc 13.5%, transparent 13.5%, transparent 86.5%, #fee 86.5%),
+		linear-gradient(60deg, #cbb 13.5%, transparent 13.5%, transparent 86.5%, #edd 86.5%),
+		linear-gradient(-60deg, #cbb 13.5%, transparent 13.5%, transparent 86.5%, #edd 86.5%),
+		linear-gradient(60deg, #dcc 13.5%, transparent 13.5%, transparent 86.5%, #fee 86.5%),
+		linear-gradient(-60deg, #dcc 13.5%, transparent 13.5%, transparent 86.5%, #fee 86.5%),
+		linear-gradient(60deg, #cbb 13.5%, transparent 13.5%, transparent 86.5%, #edd 86.5%),
+		linear-gradient(-60deg, #cbb 13.5%, transparent 13.5%, transparent 86.5%, #edd 86.5%),
+		linear-gradient(45deg, #544 25%, transparent 25%, transparent 75%, #544 75%),
+		linear-gradient(45deg, #544 25%, transparent 25%, transparent 75%, #544 75%); /* This is where the rest of the layers will be written */
+	background-position:
+		0   2em,
+		0   2em,
+		2em 4em,
+		2em 4em,
+		4em 2em,
+		4em 2em,
+		6em 4em,
+		6em 4em,
+		0em 0em,
+		2em 2em; /* This will keep our pattern in check */
+	background-size:
+		8em 4em,
+		8em 4em,
+		8em 4em,
+		8em 4em,
+		8em 4em,
+		8em 4em,
+		8em 4em,
+		8em 4em,
+		4em 4em,
+		4em 4em; /* This will also keep our pattern in check */
+}

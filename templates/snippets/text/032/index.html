@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="text"></div>
+    <svg>
+      <filter id="gooey">
+        <fegaussianblur in="SourceGraphic" stdDeviation="9" result="blur"></fegaussianblur>
+        <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 00 1 0 0 00 0 1 0 00 0 0 28 -8" result="gooey"></fecolormatrix>
+        <fecomposite in="SourceGraphic" in2="gooey" operator="atop"></fecomposite>
+      </filter>
+    </svg>
+  </body>
+</html>

@@ -1,0 +1,1007 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.garden {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgb(152,243,235);
+  overflow: hidden;
+}
+
+.dirt {
+  height: 50%;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  border-top-left-radius: 45% 2%;
+  border-top-right-radius: 45% 2%;
+  background-color: rgb(109, 58, 41);
+}
+
+.seed {
+  position: absolute;
+  top: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(240,206,151);
+  left: calc(50% - 7.5px);
+  animation: seed-fall 18s infinite;
+}
+
+@keyframes seed-fall {
+  0% {
+    top: -15px;
+    transform: rotateZ(0deg);
+    opacity: 1; 
+    background-color: rgb(240,206,151);
+  }
+  6% {
+    top: 50%;
+    transform: rotateZ(300deg);
+  }
+  7% {
+    opacity: 1; 
+  }
+  10% {
+    top: 50%;
+    opacity: 0; 
+    transform: rotateZ(300deg);
+    background-color: rgb(240,206,151);
+  }
+  32% {
+    top: -15px;
+    opacity: 0; 
+    background-color: rgb(114, 79, 24);
+  }
+  33% {
+    top: -30px;
+    transform: rotateZ(-180deg);
+    opacity: 1; 
+  }
+  39% {
+    top: 50%;
+    transform: rotateZ(70deg);
+  }
+  40% {
+    opacity: 1; 
+  }
+  43% {
+    top: 50%;
+    opacity: 0; 
+    transform: rotateZ(70deg);
+    background-color: rgb(114, 79, 24);
+  }
+  65% {
+    top: -15px;
+    opacity: 0;  
+    background-color: white;
+  }
+  66% {
+    top: -15px;
+    transform: rotateZ(0deg);
+    opacity: 1; 
+  }
+  72% {
+    top: 50%;
+    transform: rotateZ(260deg);
+  }
+  73% {
+    opacity: 1;  
+  }
+  76% {
+    top: 50%;
+    opacity: 0; 
+    transform: rotateZ(260deg);
+    background-color: white;
+  }
+  99% {
+    top: -15px;
+  }
+  100% {
+    opacity: 0; 
+  }
+}
+
+.seed:before {
+  position: absolute;
+  content: "";
+  border-left: 7.5px solid transparent;
+  border-right: 7.5px solid transparent;
+  border-bottom: 15px solid rgb(240,206,151);
+  top: -10px;
+  left: calc(50% - 7.5px);
+  animation: seed-top 18s infinite;
+}
+
+@keyframes seed-top {
+  0% {
+    border-bottom: 15px solid rgb(240,206,151);
+  }
+  10% {
+    border-bottom: 15px solid rgb(240,206,151);
+  }
+  32% {
+    border-bottom: 15px solid rgb(114, 79, 24);
+  }
+  43% {
+    border-bottom: 15px solid rgb(114, 79, 24);
+  }
+  65% {
+    border-bottom: 15px solid white;
+  }
+  76% {
+    border-bottom: 15px solid white;
+  }
+}
+
+/*************** CARROT  ***************/
+
+
+.carrot {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: calc(50% - 90px);
+  left: calc(50%);
+  animation: carrot-margin-grow 18s infinite;
+  z-index: 1;
+}
+
+@keyframes carrot-margin-grow {
+  0% {
+    bottom: calc(50% - 90px);
+    left: 50%;
+  }
+  7% {
+    bottom: calc(50% - 90px);
+    left: 50%;
+  }
+  30% {
+    bottom: calc(50% - 270px);
+    left: calc(50% - 50px);
+  }
+  33% {
+    bottom: 100%;
+  }
+  100% {
+    bottom: 100%;
+    left: calc(50% - 50px);
+  }
+}
+
+.carrot .root {
+  width: 100px;
+  height: 280px;
+  background-color: rgb(254,145,28);
+  position: relative;
+  animation: carrot-root-grow 18s infinite;
+  -webkit-clip-path: polygon(5% 3%, 18% 0%,82% 0%, 95% 3%, 100% 10%, 100% 25%, 55% 97%,50% 100%, 45% 97%, 0 25%, 0 10%);
+  clip-path: polygon(5% 3%, 18% 0%,82% 0%, 95% 3%, 100% 10%, 100% 25%, 55% 97%,50% 100%, 45% 97%, 0 25%, 0 10%);
+}
+
+@keyframes carrot-root-grow {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  7% {
+    width: 0;
+    height: 80px;
+  }
+  30% {
+    width: 100px;
+    height: 280px;
+  }
+}
+
+.carrot .root span {
+  position: absolute;
+  animation: root-mark-grow 18s infinite;
+  background-color: rgb(224,128,25);
+  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+@keyframes root-mark-grow {
+  0% {
+    height: 0px;
+  }
+  20% {
+    height: 0px;
+  }
+  30% {
+    height: 8px;
+  }
+}
+
+.carrot .root span:nth-of-type(1){
+  width: 65px;
+  height: 8px;
+  top: 30px;
+  left: 50px;
+}
+
+.carrot .root span:nth-of-type(2){
+  width: 54px;
+  height: 8px;
+  top: 67px;
+  left: 6px;
+}
+
+.carrot .root span:nth-of-type(3){
+  width: 48px;
+  height: 8px;
+  top: 113px;
+  left: 47px;
+}
+
+.carrot .root span:nth-of-type(4){
+  width: 40px;
+  height: 8px;
+  top: 162px;
+  left: 20px;
+}
+
+.carrot .leaf {
+  position: relative;
+  height: 249px;
+}
+
+.carrot .leaf span:nth-of-type(1) {
+  width: 100px;
+  height: 232px;
+  background-color: rgb(0,199,89);
+  position: absolute;
+  bottom: 0;
+  right: 38%;
+  animation: carrot-leaf-grow-1 18s infinite;
+  -webkit-clip-path: polygon(60% 0, 93% 10%, 100% 38%, 79% 69%, 79% 100%, 59% 100%, 59% 74%, 17% 59%, 0 33%, 21% 7%);
+  clip-path: polygon(60% 0, 93% 10%, 100% 38%, 79% 69%, 79% 100%, 59% 100%, 59% 74%, 17% 59%, 0 33%, 21% 7%);
+}
+
+@keyframes carrot-leaf-grow-1 {
+  0% {
+    width: 0;
+    height: 0;
+    right: 17%;        
+  }
+  7% {
+    width: 0;
+    height: 0;
+    right: 17%;        
+  }
+  30% {
+    width: 100px;
+    height: 232px;
+    right: 38%;
+  }
+}
+
+.carrot .leaf span:nth-of-type(2) {
+  width: 100px;
+  height: 218px;
+  background-color: rgb(4,186,86);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  animation: carrot-leaf-grow-2 18s infinite;
+  -webkit-clip-path: polygon(62% 0, 100% 18%, 91% 64%, 30% 78%, 31% 100%, 13% 100%, 12% 79%, 3% 50%, 0 20%, 23% 4%);
+  clip-path: polygon(62% 0, 100% 18%, 91% 64%, 30% 78%, 31% 100%, 13% 100%, 12% 79%, 3% 50%, 0 20%, 23% 4%);
+}
+
+@keyframes carrot-leaf-grow-2 {
+  0% {
+    width: 0;
+    height: 0;
+    left: 22%;
+  }
+  7% {
+    width: 0;
+    height: 0;
+    left: 22%;
+  }
+  30% {
+    width: 100px;
+    height: 218px;
+    left: 50%;
+  }
+}
+
+.carrot .leaf span:nth-of-type(3) {
+  background-color: rgb(0,174,78);
+  position: absolute;
+  bottom: 0;
+  left: 2%;
+  width: 123px;
+  height: 249px;
+  animation: carrot-leaf-grow-3 18s infinite;
+  -webkit-clip-path: polygon(68% 0, 100% 15%, 91% 59%, 61% 78%, 61% 100%, 39% 100%, 38% 77%, 12% 57%, 0 30%, 23% 4%);
+  clip-path: polygon(68% 0, 100% 15%, 91% 59%, 61% 78%, 61% 100%, 39% 100%, 38% 77%, 12% 57%, 0 30%, 23% 4%);
+}
+
+@keyframes carrot-leaf-grow-3 {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  7% {
+    width: 0;
+    height: 0;
+    -webkit-clip-path: polygon(68% 3%, 88% 20%, 100% 57%, 70% 75%, 70% 100%, 25% 100%, 25% 75%, 0 59%, 8% 25%, 32% 3%);
+    clip-path: polygon(68% 3%, 88% 20%, 100% 57%, 70% 75%, 70% 100%, 25% 100%, 25% 75%, 0 59%, 8% 25%, 32% 3%);
+  }
+  30% {
+    width: 100px;
+    height: 249px;
+    -webkit-clip-path: polygon(68% 0, 100% 15%, 91% 59%, 61% 78%, 61% 100%, 39% 100%, 38% 77%, 12% 57%, 0 30%, 23% 4%);
+    clip-path: polygon(68% 0, 100% 15%, 91% 59%, 61% 78%, 61% 100%, 39% 100%, 38% 77%, 12% 57%, 0 30%, 23% 4%);
+  }
+}
+
+.carrot .leaf span:nth-of-type(3):before {
+  content: "";
+  width: 3px;
+  height: 220px;
+  background-color: rgb(0,164,68);
+  position: absolute;
+  bottom: 16px;
+  left: 48%;
+  animation: carrot-leaf-mark-grow-1 18s infinite;
+}
+
+.carrot .leaf span:nth-of-type(3):after {
+  content: "";
+  width: 3px;
+  height: 91px;
+  background-color: rgb(0,164,68);
+  position: absolute;
+  transform: rotateZ(26deg);
+  bottom: 45%;
+  left: 68%;
+  animation: carrot-leaf-mark-grow-2 18s infinite;
+}
+
+
+@keyframes carrot-leaf-mark-grow-1 {
+  0% {
+    height: 0;
+  }
+  13% {
+    height: 0;
+  }
+  30% {
+    height: 220px;
+  }
+}
+
+@keyframes carrot-leaf-mark-grow-2 {
+  0% {
+    height: 0;
+    left: 50%;
+  }
+  17% {
+    height: 0;
+    left: 50%;
+  }
+  30% {
+    height: 91px;
+    left: 68%;
+
+  }
+}
+
+
+
+/*************** BEET  ***************/
+
+.beet {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  animation: beet-margin-grow 18s infinite;
+}
+
+@keyframes beet-margin-grow {
+  0% {
+    bottom: calc(50% - 10px);
+    left: 50%;
+  }
+  40% {
+    bottom: calc(50% - 10px);
+    left: 50%;
+  }
+  63% {
+    bottom: calc(50% - 190px);
+    left: calc(50% - 100px);
+  }
+  66% {
+    bottom: calc(100% + 21px);
+  }
+  100% {
+    bottom: calc(100% + 21px);
+    left: calc(50% - 100px);
+  }
+}
+
+.beet .root {
+  width: 200px;
+  height: 200px;
+  border-radius: 40% 40% 50% 50%;
+  background-color: rgb(214, 0, 42);
+  position: relative;
+  animation: beet-root-grow 18s infinite;
+}
+
+@keyframes beet-root-grow {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  40% {
+    width: 0;
+    height: 0px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  63% {
+    width: 200px;
+    height: 200px;
+    border-radius: 40% 40% 50% 50%;
+    background-color: rgb(214, 0, 42);
+  }
+}
+
+.beet .root:after {
+  content: "";
+  position: absolute;
+  top: 96%;
+  left: calc(50% - 30px);
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 20px solid rgb(214, 0, 42);
+  animation: beet-root-grow-after 18s infinite;
+}
+
+@keyframes beet-root-grow-after {
+  0% {
+    left: 50%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  40% {
+    left: 50%;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 0px solid white;
+  }
+  63% {
+    left: calc(50% - 30px);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 20px solid rgb(214, 0, 42);
+  }
+}
+
+.beet .root:before {
+  content: "";
+  position: absolute;
+  top: 16%;
+  right: 16%;
+  height: 32px;
+  width: 20px;
+  border-radius: 29%;
+  transform: rotateZ(-20deg);
+  background-color: rgb(235, 62, 96);
+  animation: beet-root-grow-before 18s infinite;
+}
+
+@keyframes beet-root-grow-before {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  63% {
+    opacity: 1;
+  }
+}
+
+.beet .leaf {
+  position: relative;
+  height: 249px;
+}
+
+.beet .leaf span {
+  background-color: rgb(0,174,78);
+  position: absolute;
+  bottom: 0;
+  left: 2%;
+  width: 200px;
+  height: 300px;
+  animation: beet-leaf-grow 18s infinite;
+  -webkit-clip-path: polygon(50% 0%, 70% 5%, 88% 20%, 100% 50%, 83% 66%, 58% 74%, 55% 100%, 45% 100%, 42% 73%, 17% 66%, 0 50%, 8% 25%, 30% 5%);
+  clip-path: polygon(50% 0%, 70% 5%, 88% 20%, 100% 50%, 83% 66%, 58% 74%, 55% 100%, 45% 100%, 42% 73%, 17% 66%, 0 50%, 8% 25%, 30% 5%);
+}
+
+@keyframes beet-leaf-grow {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  40% {
+    width: 0;
+  }
+  41% {
+    height: 0;
+  }
+  63% {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+.beet .leaf span:after {
+  background-color: rgb(240, 0, 47);
+  content: "";
+  opacity: 0.6;
+  width: 4px;
+  height: 214px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 70px;
+  left: calc(50% - 2px);
+  animation: beet-leaf-mark 18s infinite;
+}
+
+@keyframes beet-leaf-mark {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  63% {
+    height: 214px;
+  }
+}
+
+
+/*************** GARLIC  ***************/
+
+.garlic {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  animation: garlic-margin-grow 18s infinite;
+}
+
+@keyframes garlic-margin-grow {
+  0% {
+    bottom: calc(50% - 20px);
+    left: 50%;
+  }
+  73% {
+    bottom: calc(50% - 20px);
+    left: 50%;
+  }
+  96% {
+    bottom: calc(50% - 155px);
+    left: calc(50% - 60px);
+  }
+  99% {
+    bottom: calc(100% + 21px);
+  }
+  100% {
+    bottom: calc(100% + 21px);
+    left: calc(50% - 60px);
+  }
+}
+
+.garlic .root {
+  width: 120px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  animation: garlic-root-grow 18s infinite;
+}
+
+@keyframes garlic-root-grow {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  66% {
+    height: 0;   
+  }
+  73% {
+    width: 0;
+    height: 25px;
+  }
+  96% {
+    width: 120px;
+    height: 150px;
+  }
+}
+
+.garlic .root:before {
+  content: "";
+  width: 120px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: -50px;
+  animation: garlic-root-grow-before 18s infinite;
+}
+
+@keyframes garlic-root-grow-before {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  66% {
+    height: 0;   
+  }
+  73% {
+    left: 0px;
+    width: 0;
+    height: 25px;
+  }
+  96% {
+    left: -50px;
+    width: 120px;
+    height: 150px;
+  }
+}
+
+.garlic .root:after {
+  content: "";
+  width: 120px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 50px;
+  animation: garlic-root-grow-after 18s infinite;
+}
+
+@keyframes garlic-root-grow-after {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  66% {
+    height: 0;   
+  }
+  73% {
+    left: 0;
+    width: 0;
+    height: 25px;
+  }
+  96% {
+    left: 50px;
+    width: 120px;
+    height: 150px;
+  }
+}
+
+.garlic .root span:nth-of-type(1) {
+  top: -15px;
+  width: 10px;
+  left: calc(50% - 85px);
+  border-right: 80px solid transparent;
+  border-left: 80px solid transparent;
+  border-bottom: 40px solid white;
+  position: absolute;
+  animation: garlic-root-top 18s infinite;
+}
+
+@keyframes garlic-root-top {
+  0% {
+    border-bottom: 0px solid white;
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+  }
+  73% {
+    left: calc(50% - 5px);
+    top: 10px;
+  }
+  74% {
+    left: calc(50% - 5px);
+    top: 10px;
+    border-bottom: 0px solid white;
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+  }
+  96% {
+    left: calc(50% - 85px);
+    top: -15px;
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+    border-bottom: 40px solid white;
+  }
+}
+
+.garlic .root span:nth-of-type(2) {
+  top: 100%;
+  height: 17px;
+  background-color: rgb(227,211,177);;
+  width: 2px;
+  border-radius: 0 0 50% 50%;
+  left: calc(50% - 1px);
+  position: absolute;
+  animation: garlic-root-root-grow 18s infinite;
+}
+
+@keyframes garlic-root-root-grow {
+  0% {
+    height: 0px;
+  }
+  86% {
+    height: 0px;
+  }
+  96% {
+    height: 21px;
+  }
+}
+
+.garlic .root span:nth-of-type(2):before {
+  content: "";
+  top: 0;
+  height: 21px;
+  background-color: rgb(227,211,177);;
+  width: 2px;
+  border-radius: 0 0 50% 50%;
+  transform: rotateZ(30deg);
+  transform-origin: top center;
+  left: -4px;
+  position: absolute;
+  animation: garlic-root-root-grow 18s infinite;
+}
+
+.garlic .root span:nth-of-type(2):after {
+  content: "";
+  top: 0;
+  height: 21px;
+  background-color: rgb(227,211,177);;
+  width: 2px;
+  border-radius: 0 0 50% 50%;
+  transform: rotateZ(-30deg);
+  transform-origin: top center;
+  left: 4px;
+  position: absolute;
+  animation: garlic-root-root-grow 18s infinite;
+}
+
+.garlic .root span:nth-of-type(3) {
+  top: 6px;
+  height: 126px;
+  width: 90px;
+  border-radius: 50%;
+  transform-origin: top center;
+  left: 11px;
+  border-right: 2px solid rgb(227,211,177);
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid rgb(227,211,177);
+  z-index: 2;
+  position: absolute;
+  animation: garlic-mark-grow 18s infinite;
+}
+
+@keyframes garlic-mark-grow {
+  0% {
+    opacity: 0;
+  }
+  73% {
+    width: 0px;
+    height: 0;
+    left: 0;
+  }
+  86% {
+    opacity: 0;
+    width: 40px;
+    left: 30px;
+  }
+  96% {
+    opacity: 1;
+    width: 90px;
+    height: 126px;
+    left: 11px;
+  }
+}
+
+.garlic .leaf {
+  position: relative;
+  height: 300px;
+}
+
+.garlic .leaf span:nth-of-type(1){
+  background-color: rgb(0,174,78);
+  position: absolute;
+  bottom: 0;
+  left: 59%;
+  width: 22px;
+  height: 140px;
+  animation: garlic-leaf-grow-1-1 18s infinite;
+}
+
+@keyframes garlic-leaf-grow-1-1 {
+  0% {
+    height: 0px;
+  }
+  73% {
+    height: 0px;
+    bottom: -20px;
+    left: 50%;
+    width: 0;
+  }
+  96% {
+    width: 22px;
+    bottom: 0;
+    left: 59%;
+    height: 140px;
+  }
+}
+
+.garlic .leaf span:nth-of-type(1):after {
+  content: "";
+  background-color: rgb(0,174,78);
+  position: absolute;
+  bottom: 99%;
+  left: 0%;
+  border-radius: 50% 50% 0 0;
+  width: 22px;
+  height: 150px;
+  transform: rotateZ(7deg);
+  transform-origin: center bottom;
+  animation: garlic-leaf-grow-1-2 18s infinite;
+}
+
+@keyframes garlic-leaf-grow-1-2 {
+  0% {
+    height: 0px;
+  }
+  73% {
+    height: 0px;
+    width: 0;
+    bottom: 98%;
+  }
+  80% {
+    height: 20px;
+  }
+  96% {
+    width: 22px;
+    bottom: 99%;
+    height: 150px;
+  }
+}
+
+.garlic .leaf span:nth-of-type(2){
+  background-color: rgb(0,174,78);
+  position: absolute;
+  bottom: 0;
+  left: 23%;
+  width: 22px;
+  height: 150px;
+  animation: garlic-leaf-grow-2-1 18s infinite;
+}
+
+@keyframes garlic-leaf-grow-2-1 {
+  0% {
+    height: 0px;
+  }
+  73% {
+    height: 0px;
+    width: 0;
+    left: 40%;
+    bottom: -20px;
+  }
+  96% {
+    height: 150px;
+    width: 22px;
+    left: 23%;
+    bottom: 0;
+  }
+}
+
+.garlic .leaf span:nth-of-type(2):after {
+  content: "";
+  background-color: rgb(0,174,78);
+  position: absolute;
+  bottom: 99%;
+  left: 0%;
+  border-radius: 50% 50% 0 0;
+  width: 22px;
+  height: 150px;
+  transform: rotateZ(-7deg);
+  transform-origin: center bottom;
+  animation: garlic-leaf-grow-2-2 18s infinite;
+}
+
+@keyframes garlic-leaf-grow-2-2 {
+  0% {
+    height: 0px;
+  }
+  73% {
+    height: 0px;
+    width: 0;
+  }
+  80% {
+    height: 20px;
+  }
+  96% {
+    height: 150px;
+    width: 22px;
+  }
+}
+
+.garlic .leaf span:nth-of-type(3){
+  background-color: rgb(4,189,87);
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 11px);
+  width: 22px;
+  height: 171px;
+  animation: garlic-leaf-grow-3-1 18s infinite;
+}
+
+@keyframes garlic-leaf-grow-3-1 {
+  0% {
+    height: 0px;
+  }
+  73% {
+    height: 0px;
+    width: 0;
+    left: calc(50% - 0px);
+    bottom: -20px;
+  }
+  96% {
+    height: 171px;
+    width: 22px;
+    left: calc(50% - 11px);
+    bottom: 0;
+  }
+}
+
+.garlic .leaf span:nth-of-type(3):after {
+  content: "";
+  background-color: rgb(4,189,87);
+  position: absolute;
+  bottom: 99%;
+  left: 0%;
+  border-radius: 50% 50% 0 0;
+  width: 22px;
+  height: 150px;
+  transform-origin: center bottom;
+  animation: garlic-leaf-grow-3-2 18s infinite;
+}
+
+@keyframes garlic-leaf-grow-3-2 {
+  0% {
+    height: 0px;
+  }
+  73% {
+    height: 0px;
+    width: 0;
+  }
+  80% {
+    height: 20px;
+  }
+  96% {
+    height: 150px;
+    width: 22px;
+  }
+}

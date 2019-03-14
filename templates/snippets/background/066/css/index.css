@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: dodgerblue;
+}
+
+.keys {
+  display: flex;
+}
+
+.key {
+  border-radius: 0.5vmin;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: movement 500ms ease-in-out alternate infinite;
+          animation: movement 500ms ease-in-out alternate infinite;
+}
+.key:nth-child(2) {
+  -webkit-animation-delay: -41.6666666667ms;
+          animation-delay: -41.6666666667ms;
+}
+.key:nth-child(3) {
+  -webkit-animation-delay: -83.3333333333ms;
+          animation-delay: -83.3333333333ms;
+}
+.key:nth-child(4) {
+  -webkit-animation-delay: -125ms;
+          animation-delay: -125ms;
+}
+.key:nth-child(5) {
+  -webkit-animation-delay: -166.6666666667ms;
+          animation-delay: -166.6666666667ms;
+}
+.key:nth-child(6) {
+  -webkit-animation-delay: -208.3333333333ms;
+          animation-delay: -208.3333333333ms;
+}
+.key:nth-child(7) {
+  -webkit-animation-delay: -250ms;
+          animation-delay: -250ms;
+}
+.key:nth-child(8) {
+  -webkit-animation-delay: -291.6666666667ms;
+          animation-delay: -291.6666666667ms;
+}
+.key:nth-child(9) {
+  -webkit-animation-delay: -333.3333333333ms;
+          animation-delay: -333.3333333333ms;
+}
+.key:nth-child(10) {
+  -webkit-animation-delay: -375ms;
+          animation-delay: -375ms;
+}
+.key:nth-child(11) {
+  -webkit-animation-delay: -416.6666666667ms;
+          animation-delay: -416.6666666667ms;
+}
+.key:nth-child(12) {
+  -webkit-animation-delay: -458.3333333333ms;
+          animation-delay: -458.3333333333ms;
+}
+.key--black {
+  margin: -1.5vmin -3vmin;
+  width: 6vmin;
+  height: 18vmin;
+  z-index: 2;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.1) 0.6vmin 0.6vmin 0.6vmin -0.3vmin, inset rgba(255, 255, 255, 0.1) 0.6vmin 0.6vmin 2.4vmin 1.2vmin;
+}
+.key--white {
+  margin: 0.5vmin;
+  width: 12vmin;
+  height: 24vmin;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0.6vmin 0.6vmin 0.6vmin -0.3vmin, inset rgba(0, 0, 0, 0.2) -0.6vmin -0.6vmin 2.4vmin -0.6vmin;
+}
+
+@-webkit-keyframes movement {
+  to {
+    -webkit-transform: translateY(6vmin) scaleY(1.2);
+            transform: translateY(6vmin) scaleY(1.2);
+  }
+}
+
+@keyframes movement {
+  to {
+    -webkit-transform: translateY(6vmin) scaleY(1.2);
+            transform: translateY(6vmin) scaleY(1.2);
+  }
+}

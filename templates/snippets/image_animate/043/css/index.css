@@ -1,0 +1,143 @@
+
+html, body{
+    margin:0;
+    padding:0;
+    background-color:#333;
+}
+.frame {
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    background-color: #fefefe;
+    background-image: linear-gradient(175deg, #fefefe 0%, #00a4e4 74%);
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 10px solid #ffffff;
+    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+}
+svg{
+    position: absolute;	
+    margin-top:20%;
+    width: 800px;
+    height: 500px;
+	margin-left: -235px;
+	position: absolute;	
+	animation: swim 20s;
+	-webkit-animation: swim 20s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;  
+}
+@-webkit-keyframes swim
+{
+	0% {margin-left: -235px}
+	90% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+@keyframes swim
+{
+	0% {margin-left: -235px}
+	70% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+svg #svg_1,
+svg #svg_2,
+svg #svg_3,{
+  fill:#528484;
+}
+.bubble-frame{
+    position: absolute;
+    width: 580px;
+    height: 600px;
+}
+.bubbles{
+    position: absolute;
+    border: 1px solid #fff;
+    box-shadow: 0 0 2px 0 rgb(244, 244, 244);
+    border-radius: 50%;
+    
+}
+.small{
+    width: 20px;
+    height: 20px;-webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+.medium{
+    width: 10px;
+    height: 10px;-webkit-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-moz-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-webkit-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+.created{
+    color:#fff;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 15px;
+    position:absolute;
+    bottom:0px;
+    right:0px;  
+    cursor:pointer;
+}
+.created:hover{
+  color: #EF9A9A
+}

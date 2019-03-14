@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div id="app">
+      <p class="field-name">Password</p>
+      <input type="text" v-model="password" @keydown.enter="checkPassword" @change="checkPassword" maxlength="20">
+      <div class="bar" :class="barColor" :style="{width: width + 'px'}">
+        <div class="strength" v-if="password.length > 0">{{ strength }}</div>
+      </div>
+    </div>
+    <script src="js/vue.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

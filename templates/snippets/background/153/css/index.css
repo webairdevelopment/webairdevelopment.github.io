@@ -1,0 +1,30 @@
+:root {
+  --dx:0;
+  --dy:0;
+}
+
+body {
+  background: linear-gradient(to bottom, #1f1033 17%, #04010e 100%);
+  overflow: hidden;
+}
+
+canvas {
+  background: transparent;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  -webkit-filter: contrast(1.5);
+          filter: contrast(1.5);
+}
+
+img {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  z-index: 2;
+  display: block;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(var(--dx), var(--dy));
+          transform: translate(var(--dx), var(--dy));
+  border-radius: 500px;
+}

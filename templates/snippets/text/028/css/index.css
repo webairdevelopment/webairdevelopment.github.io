@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,900");
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: .2rem 0 0 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Heebo', sans-serif;
+  background: #f4f4f4;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 7rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: .3rem;
+  color: #222;
+}
+p.desc {
+  padding: 1rem;
+  font-size: 1rem;
+  letter-spacing: .2rem;
+  opacity: 0;
+  transition: 1.5s 2s;
+}
+
+a {
+  padding: .5rem;
+  font-size: .9rem;
+  color: #222;
+  letter-spacing: .15rem;
+  text-decoration: none;
+  transition: .3s;
+}
+a:hover {
+  color: #888;
+}
+
+@media screen and (max-width: 450px) {
+  p {
+    font-size: 3rem;
+  }
+  p.desc {
+    font-size: .5rem;
+  }
+
+  a {
+    font-size: .4rem;
+  }
+}
+.ex1 {
+  opacity: 0;
+}
+.ex1 span {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+}
+
+.ex2 {
+  opacity: 0;
+}
+.ex2 span {
+  position: relative;
+  left: -10px;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}

@@ -1,0 +1,70 @@
+body{
+  background-color: #FFFFFF;
+}
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 5vw;
+}
+#my-move,
+#cpu-move {
+  font-size: 15vw;
+  width: 100%;
+}
+#my-move {
+  text-align: right;
+}
+#options {
+  position: absolute;
+  right: calc(50% + 16vw);
+  transform: translateY(-2.5vw);
+  text-align: center;
+  border-radius: 3vw;
+  background-color: #444;
+  padding: 2vw;
+}
+#options button {
+  position: relative;
+  cursor: pointer;
+  top: 0.5vw;
+}
+#options.disabled button {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.4;
+}
+.board {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+.game {
+  display: flex;
+  flex: 1;
+}
+.game > div {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+#result {
+  display: flex;
+  text-align: center;
+  color: #fff;
+  padding: 15px;
+  font-size: 40px;
+  background-color: #666;
+}
+#result > div {
+  flex: 1;
+  transform: translateY(2px);
+}
+#result .cpu-score {
+  border-left: 1px solid;
+}
+#result.lose {
+  background-color: #811;
+}
+#result.win {
+  background-color: #262;
+}

@@ -1,0 +1,110 @@
+body {
+  background: #46B295;
+  overflow: hidden;
+  font-family: "Quicksand";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.header {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.header h1, .header h2 {
+  margin: 0;
+}
+.header h1 {
+  color: #fff3c9;
+}
+.header .number {
+  color: #996E4F;
+}
+.header .type {
+  color: #603913;
+}
+.header .social a img {
+  margin-top: 10px;
+  height: 1.5em;
+}
+
+.content {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  bottom: 0%;
+}
+
+.right_arrow, .left_arrow {
+  cursor: pointer;
+}
+
+.right_arrow {
+  -webkit-animation: rightSwing 1s linear infinite alternate;
+          animation: rightSwing 1s linear infinite alternate;
+}
+
+.left_arrow {
+  -webkit-animation: leftSwing 1s linear infinite alternate;
+          animation: leftSwing 1s linear infinite alternate;
+}
+
+@-webkit-keyframes rightSwing {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  50% {
+    -webkit-transform: translatex(4px);
+            transform: translatex(4px);
+  }
+  100% {
+    -webkit-transform: translatex(6px);
+            transform: translatex(6px);
+  }
+}
+
+@keyframes rightSwing {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  50% {
+    -webkit-transform: translatex(4px);
+            transform: translatex(4px);
+  }
+  100% {
+    -webkit-transform: translatex(6px);
+            transform: translatex(6px);
+  }
+}
+@-webkit-keyframes leftSwing {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  50% {
+    -webkit-transform: translatex(-4px);
+            transform: translatex(-4px);
+  }
+  100% {
+    -webkit-transform: translatex(-6px);
+            transform: translatex(-6px);
+  }
+}
+@keyframes leftSwing {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  50% {
+    -webkit-transform: translatex(-4px);
+            transform: translatex(-4px);
+  }
+  100% {
+    -webkit-transform: translatex(-6px);
+            transform: translatex(-6px);
+  }
+}

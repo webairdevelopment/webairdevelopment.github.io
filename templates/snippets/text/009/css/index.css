@@ -1,0 +1,27 @@
+.header,
+.text {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  color: #ff1ead;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.text {
+  color: #fff;
+  text-align: left;
+}
+
+.container {
+  background-color: #000;
+  line-height: 1.5;
+  margin: 1rem;
+  padding: 40px 25px;
+}
+
+p::first-letter {
+  color: #ff1ead;
+  font-size: 200%;
+}

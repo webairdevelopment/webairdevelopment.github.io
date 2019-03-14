@@ -1,0 +1,165 @@
+.card-menu-section-1 { background-image: url(../images/1.jpeg?raw=true); background-size: cover;}
+
+.card-menu-section-2 { background-image: url(../images/2.jpg?raw=true); background-size: cover;}
+
+.card-menu-section-3 { background-image: url(../images/3.jpg?raw=true); background-size: cover;}
+
+.card-menu-section-4 { background-image: url(../images/4.jpg?raw=true); background-size: cover;}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body { background: #1C182F;
+       font-family: 'Roboto Condensed', sans-serif;
+    
+    }
+
+.card-menu {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:#000000;
+    background-size: cover;
+  border-radius: 6px;
+}
+
+.card-menu-close-menu {
+  position: absolute;
+  left: 22px;
+  top: 22px;
+  width: 29px;
+  cursor: pointer;
+}
+
+.card-menu-close-menu:before, .card-menu-close-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 100%;
+  height: 4px;
+  background:#fff;
+}
+
+.card-menu-close-menu:before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.card-menu-close-menu:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.card-menu-section {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 25px 0 0 65px;
+  border-radius: inherit;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.card-menu.menu-active .card-menu-section-1 {
+  -webkit-transform: translate3d(20px, 60px, 0);
+  transform: translate3d(20px, 60px, 0);
+}
+
+.card-menu-section-1.inactive {
+  -webkit-transform: translate3d(100%, 60px, 0);
+  transform: translate3d(100%, 60px, 0);
+}
+
+.card-menu.menu-active .card-menu-section-2 {
+  -webkit-transform: translate3d(40px, 120px, 0);
+  transform: translate3d(40px, 120px, 0);
+}
+
+.card-menu-section-2.inactive {
+  -webkit-transform: translate3d(100%, 120px, 0);
+  transform: translate3d(100%, 120px, 0);
+}
+
+.card-menu.menu-active .card-menu-section-3 {
+  -webkit-transform: translate3d(60px, 180px, 0);
+  transform: translate3d(60px, 180px, 0);
+}
+
+.card-menu-section-3.inactive {
+  -webkit-transform: translate3d(100%, 180px, 0);
+  transform: translate3d(100%, 180px, 0);
+}
+
+.card-menu.menu-active .card-menu-section-4 {
+  -webkit-transform: translate3d(80px, 240px, 0);
+  transform: translate3d(80px, 240px, 0);
+}
+
+.card-menu-section-4.inactive {
+  -webkit-transform: translate3d(100%, 240px, 0);
+  transform: translate3d(100%, 240px, 0);
+}
+.card-menu.menu-active .card-menu-section { cursor: pointer; }
+
+.card-menu-section-1 .card-menu-section-heading, .card-menu-section-1 .card-menu-menu-btn:before { color: #E57B60; }
+
+.card-menu-section-2 .card-menu-section-heading, .card-menu-section-2 .card-menu-menu-btn:before {
+  color: #FFFFFF;
+}
+
+.card-menu__section-3 .card-menu-section-heading, .card-menu-section-3 .card-menu-menu-btn:before { color: #AD4A5D; }
+
+.card-menu-section-4 .card-menu-section-heading, .card-menu-section-4 .card-menu-menu-btn:before { color: #AD4A5D; }
+
+.card-menu-section-heading {
+  text-transform: uppercase;
+  font-size: 12px;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.card-menu.menu-active .card-menu-section-heading {
+  -webkit-transform: translateX(-45px);
+  transform: translateX(-45px);
+}
+
+.card-menu-menu-btn {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 28px;
+  height: 22px;
+  -webkit-transition: opacity 0.2s 0.2s;
+  transition: opacity 0.2s 0.2s;
+  cursor: pointer;
+}
+
+.card-menu.menu-active .card-menu-menu-btn {
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.card-menu-menu-btn:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: currentColor;
+  box-shadow: 0 8px, 0 16px;
+}

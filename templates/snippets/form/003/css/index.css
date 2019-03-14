@@ -1,0 +1,143 @@
+body {
+  background-color: #ecf0f1;
+}
+
+input {
+  position: absolute;
+  background: none;
+  text-indent: 36px;
+  border-bottom: solid thin #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 45px;
+  width: 275px;
+  font-size: 0.67em;
+}
+
+h1 {
+  font: 400 100px/1.5 'Cookie', Helvetica, sans-serif;
+  font-size: 3.5em;
+}
+
+h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  position: absolute;
+  color: #ecf0f1;
+}
+
+p {
+  font: 400 100px/1.5 'Cookie', Helvetica, sans-serif;
+  font-size: 2.8em;
+  color: #ecf0f1;
+}
+
+.container {
+  box-shadow: 2px 8px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.18);
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 3%;
+  height: 667px;
+  width: 360px;
+}
+
+::placeholder {
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+#sign-up-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#sign-up-name::placeholder, #sign-up-email::placeholder {
+  color: black;
+  letter-spacing: 1px;
+}
+
+#sign-up-name::placeholder, #sign-up-email::placeholder {
+  color: black;
+  letter-spacing: 1px;
+}
+
+#sign-up-name,  #sign-up-email {
+  position: absolute;
+  background: none;
+  text-indent: 16px;
+  border-bottom: solid thin black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 45px;
+  width: 175px;
+  font-size: 0.67em;
+  color: black;
+}
+
+#next-btn {
+  background-color: #9b59b6;
+  position: absolute;
+  border-radius: 50px;
+  color: #fff;
+  border: none;
+  height: 40px;
+  width: 112px;
+  left: 10%;
+  top: 36%;
+}
+
+#h-logo {
+  font: 400 100px/1.5 'Cookie', Helvetica, sans-serif;
+  position: absolute;
+  color: #fff;
+  font-size: 10em;
+  height: 64px;
+  width: 64px;
+  left: 13%;
+  top: 35%;
+}
+
+#log-in-transition {
+  transform: rotate(90deg);
+  position: absolute;
+  color: #fff;
+  top: 40%;
+  left: 1%;
+}
+
+#login-btn {
+  background: linear-gradient(to right, #457fca, #5691c8);
+  position: absolute;
+  border-radius: 25px;
+  color: #fff;
+  border: none;
+  height: 50px;
+  width: 300px;
+  left: 8.3%;
+  top: 69%;
+}
+
+#bg-image-1 {
+  background: url('../images/theresa-pewal.jpg') no-repeat;
+  background-size: cover;
+  filter: brightness(56%);
+}
+
+#bg-image-2 {
+  background: url('../images/lera-portraits.jpg') no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#log-in, #sign-up {
+  cursor: pointer;
+  position: relative;
+}

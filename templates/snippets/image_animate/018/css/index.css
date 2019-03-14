@@ -1,0 +1,88 @@
+
+body {
+  overflow: hidden;
+  background-color: #FFFFFF;
+  }
+.container {
+/*   background-color: red; */
+  height: 200px;
+  left: 50%;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+}
+.bottle {
+  animation: bouncebody alternate infinite 400ms 40ms ease-in-out;
+  transform-origin: center bottom;
+}
+@keyframes bouncebody { 
+  to { transform: scaleX(1.03) scaleY(0.97); } 
+}
+#eye-container {
+  animation: bounceeye infinite 0.8s ease-in-out;
+  height: 40px;
+  left: 40px;
+  position: absolute;
+  top: 130px;
+  width: 40px;
+}
+@keyframes bounceeye { 
+  50% {top: 125px;}
+}
+.eye {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 40px;
+  margin: auto;
+  position: relative;
+  width: 40px;
+}
+.eye:after  {
+  content:"";
+  background-color: #000;
+  border-radius: 50%;
+  height: 20px;
+  left: calc(50% - 10px);
+  position: absolute;
+  width: 20px;
+}
+.pupil {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 10px;
+  left: 8px;
+  position: absolute;
+  top: 12px;
+  width: 10px;
+  z-index: 99;
+}
+
+
+#link {
+  bottom: 20px;
+  color: #2D80D0;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#link p {font-size: 20px; margin: 0; margin-left: 5px;}
+#link:hover {opacity: 1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

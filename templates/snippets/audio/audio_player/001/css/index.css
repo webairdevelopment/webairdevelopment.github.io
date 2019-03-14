@@ -1,0 +1,130 @@
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat, sans-serif;
+  background-color: #FFFFFF;
+}
+
+#screen {
+  width: 375px;
+  height: 812px;
+  background-color: #140230;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  color: #fff;
+}
+#screen #top-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: #b3acb6;
+}
+#screen #top-bar * {
+  margin: 0;
+}
+#screen #top-bar p {
+  font-size: 10px;
+  line-height: 1.8;
+  font-weight: 700;
+}
+#screen #top-bar i.fa-angle-down {
+  font-size: 32px;
+}
+#screen #top-bar i.fa-list-ul {
+  font-size: 22px;
+}
+#screen img {
+  width: 325px;
+  margin: auto;
+  display: block;
+  margin-top: 60px;
+}
+#screen #info-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+#screen #info-bar .fa-check {
+  color: #1aa350;
+}
+#screen #info-bar .fa-ellipsis-h {
+  color: #bcbdbb;
+}
+#screen #info-bar i.fas {
+  font-size: 24px;
+}
+#screen #info-bar .name {
+  text-align: center;
+}
+#screen #info-bar .name p {
+  margin: 0;
+}
+#screen #info-bar .name p.artist {
+  font-size: 14px;
+  color: #bcbdbb;
+  margin-top: 10px;
+}
+#screen #info-bar .name p.song {
+  font-size: 20px;
+}
+#screen #line {
+  width: 80%;
+  margin: auto;
+  height: 3px;
+  background-color: #2b1c44;
+  margin-top: 50px;
+  border-radius: 50px;
+}
+#screen #line .fill {
+  width: 100px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50px;
+}
+#screen #line .fill::after {
+  content: ' ';
+  position: absolute;
+  -webkit-transform: translateX(95px);
+          transform: translateX(95px);
+  margin-top: -3px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 500px;
+}
+#screen #main-controls {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 45px 10px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+#screen #main-controls i.far.fa-pause-circle {
+  font-size: 60px;
+}
+#screen #main-controls i.fas.fa-step-backward,
+#screen #main-controls i.fas.fa-step-forward {
+  font-size: 30px;
+}
+#screen p#audio-settings {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  #screen {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}

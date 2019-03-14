@@ -1,0 +1,30 @@
+html {
+  background: black;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container > *:hover {
+  cursor: pointer;
+}
+
+#firstSquare {
+  position: absolute;
+}
+
+.square-container {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  flex-flow: row wrap;
+}

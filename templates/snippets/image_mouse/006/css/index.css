@@ -1,0 +1,75 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  background-color: #FFFFFF;
+}
+svg {
+  place-self: center;
+  height: 50%;
+}
+.timer {
+  transform-origin: 16.5% 84%;
+  transform-box: fill-box;
+  animation: rotate 30s linear infinite running;
+}
+.clicked {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  animation: click 0.25s linear forwards;
+}
+.paused {
+  animation-play-state: paused;
+}
+@-moz-keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes click {
+  50% {
+    transform: translate(-5px, 5px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@-webkit-keyframes click {
+  50% {
+    transform: translate(-5px, 5px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@-o-keyframes click {
+  50% {
+    transform: translate(-5px, 5px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@keyframes click {
+  50% {
+    transform: translate(-5px, 5px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}

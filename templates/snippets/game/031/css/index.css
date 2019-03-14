@@ -1,0 +1,113 @@
+
+      @import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture');
+body { overflow: hidden; user-select: none; }
+#game {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: #33e;
+}
+#game div {
+  white-space: nowrap;
+}
+#game b {
+  display: inline-block;
+  width: 4vmin;
+  height: 4vmin;
+  cursor: pointer;
+  margin: 4vmin 2.5vmin;
+  transition: all 0.2s;
+  transform: scaleY(1.6);
+  position: relative;
+}
+#game b:after {
+  opacity: 0.5;
+  content: "";
+  display: block;
+  width: 4vmin;
+  height: 4vmin;
+  background: white;
+  cursor: pointer;
+  border-radius: 0 50% 100% 50%;
+  transform: rotate(45deg);
+  margin-top: 20px;
+  position: relative;
+  top: -4vmin;
+}
+#game b.invisible {
+  animation: fall 2.8s 1
+    cubic-bezier(0.31, 0.44, 0.44, 1.65);
+}
+#game b:hover {
+  opacity: 1;
+}
+#game b.fall {
+  width: 6vmin;
+  height: 6vmin;
+  position: absolute;
+  animation: falling 2.8s infinite
+    cubic-bezier(0.31, 0.44, 0.44, 1.65);
+}
+#game .end {
+  color: white;
+  font-family: 'Black And White Picture';
+  width: 100vw;
+  position: absolute;
+  vertical-align: top;
+  text-align: center;
+  font-size: 16vmin;
+  top: calc(50% - 20vmin);
+  animation: twist 1s infinite
+    cubic-bezier(0.31, 0.44, 0.44, 1.65);
+  text-shadow: 1vmin  1vmin 0 #e33, 
+               1vmin -1vmin 0 #93e, 
+              -1vmin -1vmin 0 #ed3, 
+              -2vmin  1vmin 0 #3b9, 
+               2vmin  1vmin 0 #e39;
+}
+#game .rainbow {
+  position: absolute;
+  top: 30%;
+  left: -20vw;
+  width: 140vw;
+  height: 80vw;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 
+    0 -2vmin 0 1vmin #e33,
+    0 -2vmin 0 4vmin #e93,
+    0 -2vmin 0 7vmin #ed3,
+    0 -2vmin 0 10vmin #3d9,
+    0 -2vmin 0 13vmin #39e,
+    0 -2vmin 0 16vmin #93e,
+    0 -2vmin 0 19vmin #e39;
+}
+#game .rainbow:after {
+  content: "";
+  display: block;
+  width: 140vw;
+  height: 50vh;
+  background: #33e;
+  position: relative;
+  left: 20vw;
+  top: 60vmin;
+}
+@keyframes kick {
+  0%, 100% { top: 0; transform: scaleY(1); }
+  10% { top: 0; transform: scaleY(0.85); }
+  50% { top: -2vmin; transform: scaleY(1); }
+}
+@keyframes fall {
+  0% {top: 0vh; visibility: visible;}
+  100% {top: 110vh; visibility: hidden;}
+}
+@keyframes falling {
+  0% {top: -10vh;}
+  100% {top: 110vh;}
+}
+@keyframes twist {
+  0%,100% {transform: rotate(0);}
+  25%,75% {transform: rotate(-10deg);}
+  50% {transform: rotate(10deg);}
+}
+

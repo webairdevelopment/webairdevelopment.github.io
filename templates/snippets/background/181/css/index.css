@@ -1,0 +1,302 @@
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #001c34;
+  font-size: 10px;
+}
+
+#svg-defs {
+  display: none;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  --size: 100vw;
+  padding: 2rem;
+  width: var(--size);
+  position: relative;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media (min-width: 700px) {
+  .container {
+    --size: 90vw;
+    padding: none;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+    --size: 70vw;
+    padding: none;
+  }
+}
+
+[class*="row"] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye-element-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eye-element-container:hover .pupil {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.odd .eye-element-container:nth-child(3) {
+  display: none;
+}
+
+.even .eye-element-container:nth-child(2) {
+  display: none;
+}
+
+:root {
+  --eyesPerRow: 3;
+  --numRows: 5;
+  --eyeMargin: 4%;
+}
+
+.portrait {
+  --eyesPerRow: 2;
+}
+.portrait .eye-element-container {
+  width: calc(100%/var(--eyesPerRow) - var(--eyeMargin)*2);
+  margin: -1% var(--eyeMargin);
+}
+.portrait .odd .eye-element-container:nth-child(3) {
+  display: none;
+}
+.portrait .even .eye-element-container:nth-child(2) {
+  display: none;
+}
+
+.landscape {
+  --eyesPerRow: 3;
+}
+.landscape .eye-element-container {
+  width: calc(100%/var(--eyesPerRow) - var(--eyeMargin)*2);
+  margin: -1% var(--eyeMargin);
+}
+.landscape .odd .eye-element-container:nth-child(3) {
+  display: block;
+}
+.landscape .even .eye-element-container:nth-child(2) {
+  display: block;
+}
+
+svg.eye-svg {
+  width: 100%;
+}
+svg.eye-svg [id*="eye-clip-path"] path {
+  transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+svg.eye-svg.blink [id*="eye-clip-path"] path {
+  -webkit-animation: blink 0.225s ease-in-out;
+          animation: blink 0.225s ease-in-out;
+}
+svg.eye-svg * {
+  pointer-events: none;
+}
+svg.eye-svg:active #eye-clip-path-1 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+svg.eye-svg:active #eye-clip-path-2 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+svg.eye-svg:active #eye-clip-path-3 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+svg.eye-svg:active #eye-clip-path-4 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+svg.eye-svg:active #eye-clip-path-5 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+svg.eye-svg:active #eye-clip-path-6 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+svg.eye-svg:active #eye-clip-path-7 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+svg.eye-svg:active #eye-clip-path-8 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+svg.eye-svg:active #eye-clip-path-9 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+svg.eye-svg:active #eye-clip-path-10 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+svg.eye-svg:active #eye-clip-path-11 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+svg.eye-svg:active #eye-clip-path-12 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+svg.eye-svg:active #eye-clip-path-13 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+svg.eye-svg:active #eye-clip-path-14 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+svg.eye-svg:active #eye-clip-path-15 path {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.eye-moving-elements {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.eye-moving-elements, .pupil-group, .highlight {
+  transition: -webkit-transform .05s ease-out;
+  transition: transform .05s ease-out;
+  transition: transform .05s ease-out, -webkit-transform .05s ease-out;
+}
+
+.white-eye-background, .highlight {
+  fill: #EFEAE4;
+}
+
+.iris {
+  fill: #ff0000;
+  transition: fill .1s ease-in-out;
+}
+.iris.red {
+  fill: #ff0000;
+}
+.iris.blue {
+  fill: #007ec3;
+}
+.iris.green {
+  fill: #00b17a;
+}
+.iris.yellow {
+  fill: #fdc80a;
+}
+
+.pupil {
+  fill: #001c34;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  transition: -webkit-transform .25s ease-in-out;
+  transition: transform .25s ease-in-out;
+  transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+  pointer-events: none;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes blink {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+.debug-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: 'Helvetica', 'Arial', san-serif;
+  color: white;
+  padding: 10px;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  border-radius: 10rem;
+  padding: 1.25rem 2rem 1.25rem;
+  line-height: 120%;
+  margin: 0;
+  text-decoration: none;
+  background: #002a4e;
+  color: #ffffff;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,  -webkit-transform 150ms ease;
+  transition: background 250ms ease-in-out,  transform 150ms ease;
+  transition: background 250ms ease-in-out,  transform 150ms ease,  -webkit-transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+button:hover {
+  background: #0053ba;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  -webkit-transform: scale(0.89);
+          transform: scale(0.89);
+}

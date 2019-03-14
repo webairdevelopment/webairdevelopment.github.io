@@ -1,0 +1,10 @@
+/*---------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700);
+p {
+  font-family: 'dancing script', sans-serif;position: fixed;left: 0;right: 0;bottom: 20px;margin: 0 auto;width: 280px;
+  text-align: center;font-size: 12px;}
+
+a {font-family: 'open sans', sans-serif;color: #C9C8C0;text-transform: uppercase;text-decoration: none;}
+
+p > span {font-size: 20px;margin: 0 10px;color:#8a8aff}

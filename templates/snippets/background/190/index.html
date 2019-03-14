@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="actions">
+      <p>Start Webcam and move your head around</p>
+      <button class="controls glitcheroni handsfree-show-when-stopped" onclick="handsfree.start()">
+        Start Webcam
+      </button>
+      <button class="controls glitcheroni handsfree-show-when-started" onclick="handsfree.stop()">
+        Stop Webcam
+      </button>
+    </div>
+    <div id="container">
+      <canvas id="testCanvas"></canvas>
+    </div>
+    <script src="js/proton.min.js"></script>
+    <script src="js/handsfree.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

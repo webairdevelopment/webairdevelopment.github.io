@@ -1,0 +1,54 @@
+body {
+  font-family: "Helvetic Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #FFFFFF;
+}
+h1 {
+	font-weight: bold;
+	color: #191919;
+}
+p {
+	margin-bottom: 0.7em;
+	margin-top: 0;
+}
+.toggle {
+	display: flex;
+	flex-direction: column-reverse;
+}
+.toggle__input:not(checked) {
+    display: none;
+}
+.toggle__input + label {	
+	background-color: #D65D5D;
+	border-radius: 5px; 
+	color: #fff;
+	cursor: pointer;
+	font-szie: 0.8em;
+	margin-top: 0.5em;
+	margin-bototm: 0.5em;
+	padding: 0.5em;
+	text-align: center;
+	width: 12em;
+}
+.toggle__input + label:before {
+	color: #fff;
+	content: "+";
+	font-size: 1em;
+	padding-right: 0.3em;
+	width: 1em;
+}
+.toggle__input:not(checked) ~ .toggle__content {
+    display: none;
+}
+.toggle__input:checked ~ .toggle__content {       
+    display: block;
+}
+.toggle__input:checked + label:before {
+  content: "\2212";
+}
+.toggle__input + label .toggle__less, .toggle__input:checked + label .toggle__more  {
+    display: none;
+}
+.toggle__input:checked + label .toggle__less {
+    display: inline;
+}

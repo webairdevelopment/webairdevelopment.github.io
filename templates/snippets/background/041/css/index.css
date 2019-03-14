@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+body {
+  background-position: right;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  -webkit-transform: translateY(150%);
+          transform: translateY(150%);
+}
+.title h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #444;
+  letter-spacing: 0.09em;
+  margin: 0;
+}
+.title p {
+  color: #888;
+  font-family: sans-serif;
+}
+
+.birds {
+  position: absolute;
+  overflow: hidden;
+  width: 110%;
+  height: 105%;
+  left: -10%;
+  bottom: -5%;
+}
+
+.bird {
+  position: absolute;
+  width: 80px;
+  z-index: -1;
+  bottom: 0;
+  left: -100px;
+  
+  /*Bird Speed*/
+  -webkit-animation: bird 5s infinite ease-in-out;
+          animation: bird 5s infinite ease-in-out;
+}
+
+.body {
+  -webkit-animation: body 3s infinite;
+          animation: body 3s infinite;
+}
+
+.wing {
+  -webkit-transform-origin: 60% 60%;
+          transform-origin: 60% 60%;
+  -webkit-animation: wing 2s infinite linear;
+          animation: wing 2s infinite linear;
+}
+
+@-webkit-keyframes wing {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(150deg) translateY(22px);
+            transform: rotateX(150deg) translateY(22px);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes wing {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(150deg) translateY(22px);
+            transform: rotateX(150deg) translateY(22px);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+@-webkit-keyframes body {
+  0% {
+    -webkit-transform: translateY(90px);
+            transform: translateY(90px);
+  }
+  50% {
+    -webkit-transform: translateY(-180px);
+            transform: translateY(-180px);
+  }
+  100% {
+    -webkit-transform: translateY(90px);
+            transform: translateY(90px);
+  }
+}
+@keyframes body {
+  0% {
+    -webkit-transform: translateY(90px);
+            transform: translateY(90px);
+  }
+  50% {
+    -webkit-transform: translateY(-180px);
+            transform: translateY(-180px);
+  }
+  100% {
+    -webkit-transform: translateY(90px);
+            transform: translateY(90px);
+  }
+}
+@-webkit-keyframes bird {
+  from {
+    -webkit-transform: translate(-100px);
+            transform: translate(-100px);
+  }
+  to {
+    -webkit-transform: translate(calc(110vw + 100px));
+            transform: translate(calc(110vw + 100px));
+  }
+}
+@keyframes bird {
+  from {
+    -webkit-transform: translate(-100px);
+            transform: translate(-100px);
+  }
+  to {
+    -webkit-transform: translate(calc(110vw + 100px));
+            transform: translate(calc(110vw + 100px));
+  }
+}

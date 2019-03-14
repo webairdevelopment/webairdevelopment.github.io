@@ -1,0 +1,15 @@
+body {
+  margin: 10px;
+  text-align: center;
+  background-color: deepskyblue;
+}
+
+canvas {
+  max-width: calc(100vw - 20px);
+  max-height: calc(100vh - 20px);
+}
+
+p, a {
+  font-family: sans-serif;
+  color: white;
+}

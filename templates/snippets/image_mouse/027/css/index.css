@@ -1,0 +1,115 @@
+﻿body {
+  background-color: #FFFFFF;
+}
+
+/* We will now start by importing the CSS file and the font files for the icon */
+@import url('http://tank-a-faire.com/codePen/fontAwesome/font-awesome.css');
+
+/* Let's change the box-model */
+* {
+	box-sizing: border-box;
+}
+
+/* Now, the wrapper */
+.wrapper {
+	width: 150px;
+	height: 150px;
+	margin: 60px auto;
+	position: relative;
+}
+
+/* We hide the input and place it on top of everything else */
+.wrapper input {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity :0;
+	cursor: pointer;
+	z-index: 100;
+}
+
+/* Let's deal with the label now, which is our graphical element */
+.wrapper label {
+	display: block;
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease-out;
+	border-radius: 50%;
+	position: relative;
+	background: #b25244;
+  background: linear-gradient(#f7f2f6, #b2ac9e);
+	box-shadow:
+		inset 0 2px 3px rgba(255,255,255,0.13),
+    0 5px 8px rgba(0,0,0,0.3),
+    0 10px 10px 4px rgba(0,0,0,0.3);
+	/* Now let's give it some font styles, for the incoming icon */
+	font-size: 70px;
+	line-height: 150px;
+	color: #a5a39d;
+	text-shadow: 0 2px 1px rgba(0,0,0,0.25);
+	text-align: center;
+	z-index: -1; /* We will need this later */
+}
+
+/* Now pseudo-elements, just to make the whole button nicer */
+.wrapper label:after {
+	content: "";
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	bottom: -20px;
+	left: -20px;
+	z-index: -2;
+	border-radius: inherit;
+	box-shadow:
+		inset 0 1px 0 rgba(255,255,255,0.1),
+    0 1px 2px rgba(0,0,0,0.3),
+    0 0 10px rgba(0,0,0,0.15);
+}
+
+/* The second one */
+.wrapper label:before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	bottom: -10px;
+	left: -10px;
+	z-index: -1;
+	border-radius: inherit;
+	box-shadow:
+		inset 0 10px 10px rgba(0,0,0,0.13);
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+	/* The blur filter is a little smooth trick. It makes those kind of shadows smoother. Looks great, doesn't it ? */
+}
+
+/* A last thing to make it looks even better */
+.wrapper .icon-off:after {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	left: 15%;
+	top: 15%;
+	width: 70%;
+	height: 70%;
+	z-index: -1;
+	background: linear-gradient(#cbc7bc, #d2cbc3);
+	box-shadow:
+		0 -2px 5px rgba(255,255,255,0.05),
+    0 2px 5px rgba(255,255,255,0.1);
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+}
+
+/* It looks awesome, but we need to take care of the :checked state since the button has 2 states. From there, :checked is our friend! */
+.wrapper input:checked ~ label {
+	box-shadow:
+		inset 0 2px 3px rgba(255,255,255,0.13),
+    0 5px 8px rgba(0,0,0,0.35),
+    0 3px 10px 4px rgba(0,0,0,0.2);
+	color: #9abb82;
+}
+
+/* Done. Click on it to see the rendering. What do you think guys ? */

@@ -1,0 +1,90 @@
+﻿html, body {
+	width: 100%; height: 100%;
+}
+
+body {
+	font-size: 76%;
+	font-family: Verdana;
+	background: #eee;
+	padding: 50px 0;
+  background-color: #FFFFFF;
+}
+
+form {
+	background: #fafafa;
+	padding: 20px;
+	width: 400px;
+	margin: 0 auto;
+	border: 1px solid #ffe2e3;
+}
+
+form div {
+	/* Float containment */
+	overflow: hidden;
+}
+
+/* Things are looking good now, onto the main input field
+styling now! */
+
+/*
+Lets change the box model to make the label and input
+contain into the 100% div.
+
+You might want to specify the box sizing properties inside
+`* {}` at the top.
+
+Things are looking great now! Lets just spice it up a bit.
+*/
+form label, form input {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+form label {
+	font-weight: bold;
+	background: linear-gradient(#f1f1f1, #e2e2e2);
+	padding: 5px 10px;
+	color: #444;
+	
+	border: 1px solid #d4d4d4;
+	/* lets remove the right border */
+	border-right: 0;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	
+	line-height: 1.5em;
+	width: 30%;
+	
+	/* takes the width properly now and also the
+	spacing between the label and input field got removed. */
+	float: left;
+	
+	text-align: center;
+	cursor: pointer;
+}
+
+/* The label is looking good now. Onto the input field! */
+
+/*
+Everything is broken now! But we can fix it. Lets see how.
+*/
+form input {
+	width: 70%;
+	padding: 5px;
+	border: 1px solid #d4d4d4;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 4px;
+	
+	line-height: 1.5em;
+	float: right;
+	
+	/* some box shadow sauce :D */
+	box-shadow: inset 0px 2px 2px #ececec;
+}
+form input:focus {
+	/* No outline on focus */
+	outline: 0;
+	/* a darker border ? */
+	border: 1px solid #bbb;
+}

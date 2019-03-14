@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+section {
+  padding: 15px;
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  margin: 100vh auto 100px;
+  padding-right: 120px;
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+section:after {
+  content: "";
+  position: absolute;
+  top: -50vh;
+  left: 50%;
+  transform: translateY(-50%);
+  background-image: url("../images/image.svg");
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+
+.c-arrow-btn {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  background-color: lightgreen;
+}
+.c-arrow-btn img {
+  width: 12px;
+}
+.c-arrow-btn svg path {
+  fill: purple;
+}
+.c-arrow-btn svg circle {
+  stroke-dashoffset: 0;
+}
+
+.btn-parent {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  top: 0;
+}
+
+.arrow-svg {
+  position: absolute;
+  transform: rotate(-90deg);
+}
+.arrow-svg circle {
+  stroke-dashoffset: 0;
+  stroke: purple;
+  stroke-width: 3px;
+}

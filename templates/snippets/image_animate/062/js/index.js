@@ -1,0 +1,2 @@
+// NOPE
+"use strict";

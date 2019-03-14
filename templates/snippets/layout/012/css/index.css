@@ -1,0 +1,98 @@
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --i: var(--wide, 1);
+  --j: calc(1 - var(--i));
+  --k: var(--narr, 0);
+  overflow-x: hidden;
+  min-width: 100%;
+  background: #afafaf;
+}
+@media (max-width: 36.5em) {
+  html {
+    --wide: 0 ;
+  }
+}
+@media (max-width: 250px) {
+  html {
+    --narr: 1 ;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transform-style: preserve-3d;
+}
+
+article {
+  --p: var(--parity, 1);
+  --q: calc(1 - var(--p));
+  --s: calc(1 - 2*var(--p));
+  display: var(--narr, grid);
+  grid-template-columns: calc(var(--i)*calc(var(--q)*7em + var(--p)*21em) + var(--j)*calc(var(--q)*2em + var(--p)*calc(100% - 0.5em - 2em))) calc(var(--i)*calc(var(--p)*7em + var(--q)*21em) + var(--j)*calc(var(--p)*2em + var(--q)*calc(100% - 0.5em - 2em)));
+  grid-gap: calc(var(--j)*0.5em) calc(var(--i)*1.25em + var(--j)*0.5em);
+  grid-auto-flow: var(--wide, dense column);
+  place-content: var(--parity, center end);
+  position: relative;
+  padding: calc(var(--i)*0.75em + var(--j)*5vw);
+  max-width: 36.5em;
+  border-radius: var(--wide, calc(var(--q)*4.25em) calc(var(--p)*4.25em) calc(var(--p)*4.25em) calc(var(--q)*4.25em));
+  transform-style: preserve-3d;
+  transform-origin: calc(var(--q)*100%) 100%;
+  transform: rotatex(1deg);
+  background: linear-gradient(calc(var(--s)*90deg), #fff, #afafaf);
+  font: 600 1em/ 1.25 work sans, sans-serif;
+  counter-increment: idx;
+}
+article:before {
+  display: grid;
+  place-content: center;
+  grid-row: 1/span calc(1 + var(--i));
+  grid-column: calc(1 + var(--p))/span 1;
+  margin: 0 auto;
+  border: solid 0.125em var(--c0);
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: linear-gradient(90deg, var(--c1), var(--c2));
+  font-size: calc((var(--i)*3.5 + var(--j)*1)*1em);
+  font-weight: 300;
+  color: #fff;
+  content: counter(idx,decimal-leading-zero);
+}
+article:after {
+  position: absolute;
+  width: 100%;
+  height: 8.5em;
+  max-height: 100%;
+  border-radius: inherit;
+  transform-origin: inherit;
+  transform: translate3d(calc(var(--s)*-20%), 0, -1px) rotate(calc(var(--s)*-1.5deg)) scale(0.8, 0.9);
+  background: rgba(0, 0, 0, 0.35);
+  filter: blur(9px);
+  content: var(--wide, "");
+}
+article:nth-child(odd) {
+  --parity: 0 ;
+}
+
+h3 {
+  align-self: center;
+  justify-self: var(--parity, self-end);
+  padding: calc(var(--k)*0.25em) 0;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+p {
+  grid-column-end: span calc(1 + var(--j));
+  text-align: var(--wide, var(--parity, right));
+}

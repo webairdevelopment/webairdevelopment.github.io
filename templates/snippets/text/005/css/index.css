@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: #E2A9E5;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  height: 100vh;
+}
+
+.accessibility-animation {
+  display: inline-block;
+}
+.accessibility-animation .middle-letters, .accessibility-animation .end-letters, .accessibility-animation .alternate-middle-letters {
+  display: inline-block;
+  overflow: hidden;
+  height: 1.5em;
+}
+.accessibility-animation .end-letters {
+  color: #632C65;
+}
+.accessibility-animation .middle-letters, .accessibility-animation .alternate-middle-letters {
+  color: #4B384C;
+}
+.accessibility-animation .middle-letters {
+  animation: accessibility-middle-letters-animation 5s infinite;
+  animation-delay: -3s;
+  max-width: 0;
+}
+.accessibility-animation .alternate-middle-letters {
+  animation: accessibility-alternate-middle-letters-animation 5s infinite;
+  animation-delay: -3s;
+  max-width: 0;
+}
+
+@keyframes accessibility-middle-letters-animation {
+  0% {
+    max-width: 500px;
+  }
+  25% {
+    max-width: 0;
+  }
+  75% {
+    max-width: 0;
+  }
+  90% {
+    max-width: 500px;
+  }
+  100% {
+    max-width: 500px;
+  }
+}
+@keyframes accessibility-alternate-middle-letters-animation {
+  0% {
+    max-width: 0;
+  }
+  25% {
+    max-width: 0;
+  }
+  50% {
+    max-width: 500px;
+  }
+  75% {
+    max-width: 0;
+  }
+  100% {
+    max-width: 0;
+  }
+}
+

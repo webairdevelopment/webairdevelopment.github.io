@@ -1,0 +1,102 @@
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.buffer-top {
+  margin-top: 15px;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: dodgerblue;
+}
+
+.navbar-toggle {
+  display: block !important;
+}
+
+#menu {
+  display: none;
+}
+
+header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
+  font-size: 2em;
+  text-align: center;
+  background: #888;
+  transition: transform 0.3s, background .1s linear;
+  transform: translateY(-90%);
+  padding-top: 1.5em;
+  border-bottom: 1em solid transparent;
+  cursor: pointer;
+}
+
+header.shown, header:hover {
+  transform: translateY(0);
+}
+
+header:hover {
+  background: #777;
+}
+
+#jquery-aim-debug {
+  border-radius: 50%;
+  -webkit-transition: background .1s linear;
+}
+
+body {
+  /*background: #fff url(grid.png) top center repeat;*/
+  background: #fff;
+  color: #000;
+  font-family: sans-serif;
+  overflow: hidden;
+  -webkit-transition: background .5s linear;
+  padding: 0;
+  margin: 0;
+}
+
+.toggle {
+  text-align: right;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+body.debug {
+  background-color: #000;
+  color: #fff;
+}
+
+#main_container {
+  border-top: 7em solid rgba(255, 0, 0, 0);
+  -webkit-transition: border .5s linear;
+}
+
+body.debug #main_container {
+  border-top: 7em solid rgba(255, 0, 0, 0.5);
+}
+
+.instructions {
+  width: 50%;
+  position: fixed;
+  text-align: center;
+  height: 1em;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: -.5em auto 0 auto;
+}
+

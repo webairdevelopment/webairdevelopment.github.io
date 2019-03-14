@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url("https://s3.eu-west-2.amazonaws.com/nelsoncodepen/autumn_backdrop%402x.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  background-color: #FFD17A;
+}
+
+canvas {
+  display: block;
+}
+
+#leaf {
+  display: none;
+}

@@ -1,0 +1,59 @@
+﻿/* Now, first of all we'll style the background to get a soothing look */
+
+html {
+	height: 100%;
+	
+	background: 
+		linear-gradient(225deg, transparent 35%, hsla(192, 0%, 0%, 0.6)),
+		radial-gradient(50% 50%, circle, #5ed7f6, #0489ca);
+}
+
+			
+/* The backgorund looks perfect for now. We'll move on to styling the list and list items */
+
+ul {
+	padding: 0; margin: 135px auto 0;
+	list-style: none;
+	text-align: center;
+	display: block;
+}
+
+/* Looks good. Now, we need to animate the items */
+ul li {
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	border-radius: 50%;
+	margin: 0 4px;
+	animation: loading 5s infinite;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.030, 0.615, 0.995, 0.415);
+}
+
+/* Now the animation is looking perfect. Let's add a final touch */
+
+/* The animation is still not perfect. It's great but still missing the "jump" effect. So for that, we'll use a custom timing function for the animation */
+
+ul li:nth-child(6) {animation-delay: 0s}
+ul li:nth-child(5) {animation-delay: 0.2s}
+ul li:nth-child(4) {animation-delay: 0.4s}
+ul li:nth-child(3) {animation-delay: 0.6s}
+ul li:nth-child(2) {animation-delay: 0.8s}
+ul li:nth-child(1) {animation-delay: 1.0s}
+
+/* Now, we need to move the lis items as in the original animation */
+/* It's good, the only thing left is adding some delay for all list items */
+@keyframes loading {
+	0% {transform: translateX(-30px); opacity: 0}
+	25% {opacity: 1}
+	50% {transform: translateX(30px); opacity: 0}
+	100% {opacity: 0}
+}
+
+/* That's it! Thanks for watching the tutorial :) */
+
+		body {
+	background-color: #000000;
+}

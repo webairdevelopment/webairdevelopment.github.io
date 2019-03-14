@@ -1,0 +1,259 @@
+:root {
+    font-size: 72vmin;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 1em;
+    background-image: radial-gradient(circle, #ceedff, #59c0fc);
+}
+
+/* Printer */
+
+.printer {
+    transform: rotateX(-40deg);
+    transform-style: preserve-3d;
+}
+
+.printer-face {
+    position: absolute;
+    width: 1em;
+    height: 0.5em;
+    border: 0.003em solid rgba(0, 0, 0, 0.1);
+}
+
+/* Printer Top Face */
+
+.printer-top {
+    transform-origin: 50% 100%;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -0.5em) rotateX(90deg);
+    background-image: linear-gradient(#999, #bbb);
+}
+
+.printer-top::before {
+    content: '';
+    position: absolute;
+    top: 0.1em;
+    left: 50%;
+    width: 0.6em;
+    height: 0.1em;
+    background-image: linear-gradient(#444, #333);
+    border-radius: 0 0 0.01em 0.01em;
+    transform: translateX(-50%);
+}
+
+/* Printer Loader */
+
+.printer-loader {
+    display: flex;
+    justify-content: center;
+    padding: 0.05em 0.05em 0;
+    position: absolute;
+    top: -0.27em;
+    left: 50%;
+    width: 0.6em;
+    height: 0.38em;
+    background-color: #555;
+    background-image: linear-gradient(#666, #555);
+    transform-origin: 0 100%;
+    transform: rotateX(-45deg) translateX(-50%);
+    border-radius: 0.02em 0.02em 0 0;
+}
+
+.printer-loader-paper {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    border: 0.005em solid #ddd;
+    transform-origin: 50% 100%;
+}
+
+.printing .printer-loader-paper {
+    animation: loadPaper 3.5s 500ms linear forwards;
+}
+
+/* Print Button */
+
+.print-btn {
+    all: unset;
+    position: absolute;
+    left: 50%;
+    bottom: 0.065em;
+    width: 0.12em;
+    height: 0.12em;
+    font: inherit;
+    background-color: #298a29;
+    border-radius: 50%;
+    border: 0.005em solid rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.75);
+	cursor: pointer;
+    outline: none;
+    transform: translateX(-50%);
+    transition: box-shadow 100ms;
+}
+
+.print-btn::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 0.075em;
+    height: 0.075em;
+    border-radius: 50%;
+    border: 0.01em solid rgba(0, 0, 0, 0.5);
+    border-top-color: transparent;
+    transform: translate(-50%, -50%);
+}
+
+.print-btn::after {
+    content: '';
+    position: absolute;
+    top: 0.02em;
+    left: 50%;
+    width: 0.01em;
+    height: 0.04em;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateX(-50%);
+}
+
+.printing .print-btn {
+    box-shadow: 0 0 0.05em #19db19;
+    background-image: radial-gradient(circle, #19db19, #298a29);
+}
+
+/* Printer Front Face */
+
+.printer-front {
+    transform-style: preserve-3d;
+    transform: translateX(-50%);
+    background-image: linear-gradient(#bbb, #999);
+}
+
+.printer-front::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0.6em;
+    height: 0.25em;
+    border-radius: 0.1em 0.1em 0 0;
+    background-image: linear-gradient(#222, #333);
+    transform: translateX(-50%);
+}
+
+.printer-logo {
+    font-family: 'Black Han Sans', Arial, sans-serif;
+    font-size: 0.08em;
+    text-align: center;
+    margin-top: 1em;
+    color: #eee;
+    user-select: none;
+    -webkit-text-stroke: 0.05em #111;
+}
+
+.printer-logo span {
+    -webkit-text-stroke-width: 0;
+}
+
+/* Printer Tray */
+
+.printer-tray {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0.6em;
+    height: 0.4em;
+    background-image: linear-gradient(#666, #555);
+    border: 0.01em solid #666;
+    border-bottom-width: 0;
+    border-radius: 0.02em 0.02em 0 0;
+    padding: 0.04em;
+    transform-origin: 0 100%;
+    transform: rotateX(-90deg) translateX(-50%);
+}
+
+.printer-tray-paper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.005em;
+    background-color: #eee;
+    border: 0.001em solid #ddd;
+    overflow: hidden;
+    transform: translateY(0.4em);
+}
+
+.printing .printer-tray-paper {
+    animation: printPaper 3s 4.5s linear forwards;
+}
+
+.dog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transform: rotateY(180deg) rotate(180deg);
+}
+
+/* Lightbox */
+
+.lightbox {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox.show {
+    display: flex;
+}
+
+.lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+    border: 0.01em solid #fff;
+}
+
+/* Animations */
+
+@keyframes loadPaper {
+    100% {
+        transform: scaleY(0);
+    }
+}
+
+@keyframes printPaper {
+    20%, 30% {
+        transform: translateY(0.32em);
+    }
+
+    40%, 50% {
+        transform: translateY(0.24em);
+    }
+
+    60%, 70% {
+        transform: translateY(0.16em);
+    }
+
+    80%, 90% {
+        transform: translateY(0.08em);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

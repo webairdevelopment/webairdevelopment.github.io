@@ -1,0 +1,36 @@
+﻿html { font-size: 76%; }
+
+body{
+	font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	color:#444;
+	font-size:16px;
+	line-height:1.5em;
+	padding:1em;
+	margin:auto;
+	background:#F7F7F7;
+}
+
+#geo_info {
+	width: 350px;
+	margin: 50px auto;
+	padding: 20px;
+	background: white;
+	
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+#geo_info:hover {
+	background: #FEFFBA;
+}
+
+dd { margin: 0 0 0 2em; }
+dd span { font-weight:bold; }
+
+#warning {
+	width: 350px; margin: 0 auto;
+}

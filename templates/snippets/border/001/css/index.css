@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+|  Responsive
+|--------------------------------------------------------------------------
+*/
+/*
+|--------------------------------------------------------------------------
+|  config
+|--------------------------------------------------------------------------
+*/
+/*
+|--------------------------------------------------------------------------
+|  style
+|--------------------------------------------------------------------------
+*/
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFF8E1;
+  overflow: hidden;
+}
+.container .left-line {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  bottom: 50px;
+  margin: 0;
+  border: 3px solid #ffa726;
+  border-radius: 5px;
+}
+@media (max-width: 600px) {
+  .container .left-line {
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+  }
+}
+.container .left-line.hidden {
+  border: 3px solid #FFF8E1;
+  animation-name: moveUnder;
+  animation-duration: 4.0s;
+  animation-fill-mode: forwards;
+}
+.container .top-line {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  left: 50px;
+  margin: 0;
+  border: 3px solid #ffa726;
+  border-radius: 5px;
+}
+@media (max-width: 600px) {
+  .container .top-line {
+    top: 20px;
+    right: 20px;
+    left: 20px;
+  }
+}
+.container .top-line.hidden {
+  border: 3px solid #FFF8E1;
+  animation-name: moveRight;
+  animation-duration: 4.0s;
+  animation-fill-mode: forwards;
+}
+.container .right-line {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  bottom: 50px;
+  margin: 0;
+  border: 3px solid #ffa726;
+  border-radius: 5px;
+}
+@media (max-width: 600px) {
+  .container .right-line {
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+.container .right-line.hidden {
+  border: 3px solid #FFF8E1;
+  animation-name: moveAbove;
+  animation-duration: 4.0s;
+  animation-fill-mode: forwards;
+}
+.container .bottom-line {
+  position: absolute;
+  right: 50px;
+  left: 50px;
+  bottom: 50px;
+  margin: 0;
+  border: 3px solid #ffa726;
+  border-radius: 5px;
+}
+@media (max-width: 600px) {
+  .container .bottom-line {
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+  }
+}
+.container .bottom-line.hidden {
+  border: 3px solid #FFF8E1;
+  animation-name: moveLeft;
+  animation-duration: 4.0s;
+  animation-fill-mode: forwards;
+}
+
+/*
+|--------------------------------------------------------------------------
+|  animation
+|--------------------------------------------------------------------------
+*/
+@keyframes moveUnder {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+@keyframes moveAbove {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}

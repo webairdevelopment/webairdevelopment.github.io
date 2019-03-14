@@ -1,0 +1,454 @@
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+.eye::before, .eye::after, .mouth::before, .mouth::after {
+  position: absolute;
+  content: '';
+}
+
+:root {
+  font-size: 1.5vw;
+}
+
+body {
+  height: 40em;
+  width: 100%;
+  background: #21203A;
+}
+
+.container {
+  position: relative;
+  height: 40em;
+  height: 100vh;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translate(-1.875em, -1.875em);
+  animation: shake 6s linear infinite;
+  z-index: 1;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(-50%, -50%) translate(-1.875em, -1.875em);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(1.875em, 1.875em);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(-1.875em, -1.875em);
+  }
+}
+.face {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12.5em;
+  height: 12.5em;
+  background-color: #FFD700;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.9375em #21203A;
+}
+
+.eye {
+  position: absolute;
+  top: 43%;
+  left: 2.8125em;
+  width: 2.5em;
+  height: 1.3125em;
+  background: #FFD700;
+  border: 0.3125em solid #21203A;
+  border-radius: 6.25em 6.25em 0 0;
+  border-bottom: none;
+  transform: translateY(-50%);
+}
+.eye::before {
+  top: 0.875em;
+  left: -0.30625em;
+  width: 0.3125em;
+  height: 0.3125em;
+  background-color: #21203A;
+  border-radius: 0 0 50% 50%;
+  box-shadow: 2.18125em 0 0 #21203A;
+}
+
+.right {
+  left: auto;
+  right: 2.8125em;
+}
+
+.mouth {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  width: 3.125em;
+  height: 1.875em;
+  background-color: #F9426A;
+  border-radius: 50% 50% 48% 51% / 13% 13% 86% 86%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  animation: mouth 6s linear infinite;
+}
+.mouth::before {
+  position: absolute;
+  top: -0.0625em;
+  left: 50%;
+  width: 1.875em;
+  height: 0.5em;
+  background-color: #fff;
+  border-radius: 50% 50% 48% 51% / 13% 13% 86% 86%;
+  transform: translateX(-50%);
+}
+.mouth::after {
+  position: absolute;
+  bottom: -0.0625em;
+  left: 50%;
+  width: 1.875em;
+  height: 0.75em;
+  background: #fff;
+  border-radius: 50% 50% 48% 51% / 100% 100% 0% 0%;
+  transform: translateX(-50%);
+  animation: eat 6s linear infinite;
+}
+
+@keyframes mouth {
+  0% {
+    width: 3.125em;
+    height: 1.875em;
+  }
+  22% {
+    width: 3.125em;
+    height: 1.875em;
+  }
+  26% {
+    width: 3.125em;
+    height: 0.9375em;
+  }
+  35% {
+    width: 3.125em;
+    height: 1.5625em;
+  }
+  36% {
+    width: 3.125em;
+    height: 0.9375em;
+  }
+  41% {
+    width: 3.125em;
+    height: 1.5625em;
+  }
+  46% {
+    width: 3.125em;
+    height: 1.5625em;
+  }
+  47% {
+    width: 3.125em;
+    height: 0.9375em;
+  }
+  52% {
+    width: 3.125em;
+    height: 1.5625em;
+  }
+  53% {
+    width: 3.125em;
+    height: 0.9375em;
+  }
+  60% {
+    width: 3.125em;
+    height: 1.5625em;
+  }
+  65% {
+    width: 3.125em;
+    height: 1.875em;
+  }
+}
+@keyframes eat {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  26% {
+    opacity: 1;
+    width: 1.875em;
+    height: 0.5625em;
+  }
+  35% {
+    width: 1.875em;
+    height: 0.5625em;
+  }
+  36% {
+    width: 1.875em;
+    height: 0.4375em;
+  }
+  41% {
+    width: 1.875em;
+    height: 0.4375em;
+  }
+  46% {
+    width: 1.875em;
+    height: 0.375em;
+  }
+  60% {
+    width: 1.875em;
+    height: 0.375em;
+  }
+  65% {
+    width: 1.875em;
+    height: 0em;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 1.875em;
+    height: 0em;
+  }
+}
+.eaten {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.eaten div {
+  width: 0.3125em;
+  height: 0.3125em;
+  background: #fff;
+  border-radius: 50%;
+}
+.eaten div:nth-child(1) {
+  position: absolute;
+  top: 0.375em;
+  left: 0.9375em;
+  width: 0.4375em;
+  height: 0.4375em;
+  animation: eaten 6s linear infinite;
+}
+.eaten div:nth-child(2) {
+  position: absolute;
+  top: 0em;
+  left: 1.25em;
+  width: 0.3125em;
+  height: 0.3125em;
+  animation: eaten 6s 1.4s linear infinite;
+  opacity: 0;
+}
+.eaten div:nth-child(3) {
+  position: absolute;
+  top: -0.5em;
+  left: -1.125em;
+  width: 0.3125em;
+  height: 0.3125em;
+  opacity: 0;
+  animation: eaten1 6s 1s linear infinite;
+}
+.eaten div:nth-child(4) {
+  position: absolute;
+  top: 0em;
+  left: -0.9375em;
+  width: 0.25em;
+  height: 0.25em;
+  opacity: 0;
+  animation: eaten1 6s .4s linear infinite;
+}
+
+@keyframes eaten {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  28% {
+    opacity: 1;
+    transform: translate(0.625em, -0.625em);
+  }
+  29% {
+    opacity: 1;
+    transform: translate(0.625em, -0.625em) translateY(0);
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0.625em, -0.625em) translateY(1.875em);
+  }
+}
+@keyframes eaten1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  28% {
+    opacity: 1;
+    transform: translate(-0.625em, 0.625em);
+  }
+  29% {
+    opacity: 1;
+    transform: translate(-0.625em, 0.625em) translateY(0);
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-0.625em, 0.625em) translateY(1.875em);
+  }
+}
+.rays {
+  position: relative;
+  width: 11.25em;
+  height: 11.25em;
+  background-color: #FFD700;
+  transform: rotate(-20deg);
+  animation: rotate 6s linear infinite;
+  z-index: -1;
+}
+.rays::before {
+  content: '';
+  position: absolute;
+  width: 11.25em;
+  height: 11.25em;
+  background-color: #FFD700;
+  transform: rotate(-45deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-25deg);
+  }
+}
+.moon {
+  position: absolute;
+  top: 45%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  width: 3.75em;
+  height: 3.75em;
+  border-radius: 50%;
+  background-color: #FFF9C9;
+  z-index: 5;
+  animation: moon 6s linear infinite;
+}
+
+@keyframes moon {
+  0% {
+    top: 45%;
+    left: 95%;
+    z-index: 5;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  25% {
+    top: 59%;
+    left: 50%;
+    z-index: 5;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  26% {
+    top: 59%;
+    left: 50%;
+    z-index: 5;
+    -webkit-clip-path: polygon(99% 100%, 0% 100%, 0% 0%, 5% 7%, 11% 13%, 18% 18%, 24% 22%, 31% 25%, 43% 29%, 54% 29%, 62% 28%, 71% 25%, 80% 20%, 86% 15%, 92% 9%, 100% 0);
+    clip-path: polygon(99% 100%, 0% 100%, 0% 0%, 5% 7%, 11% 13%, 18% 18%, 24% 22%, 31% 25%, 43% 29%, 54% 29%, 62% 28%, 71% 25%, 80% 20%, 86% 15%, 92% 9%, 100% 0);
+  }
+  50% {
+    top: 45%;
+    left: 5%;
+    z-index: -5;
+  }
+  75% {
+    -webkit-clip-path: polygon(99% 100%, 0% 100%, 0% 0%, 5% 7%, 11% 13%, 18% 18%, 24% 22%, 31% 25%, 43% 29%, 54% 29%, 62% 28%, 71% 25%, 80% 20%, 86% 15%, 92% 9%, 100% 0);
+    clip-path: polygon(99% 100%, 0% 100%, 0% 0%, 5% 7%, 11% 13%, 18% 18%, 24% 22%, 31% 25%, 43% 29%, 54% 29%, 62% 28%, 71% 25%, 80% 20%, 86% 15%, 92% 9%, 100% 0);
+  }
+  76% {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  100% {
+    top: 45%;
+    left: 95%;
+    z-index: -5;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+}
+@keyframes moon1 {
+  0% {
+    top: 45%;
+    left: 95%;
+    z-index: 5;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  25% {
+    top: 59%;
+    left: 50%;
+    z-index: 5;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  26% {
+    top: 59%;
+    left: 50%;
+    z-index: 5;
+    -webkit-clip-path: polygon(99% 100%, 0% 100%, 0% 0%, 5% 7%, 11% 13%, 18% 18%, 24% 22%, 31% 25%, 43% 29%, 54% 29%, 62% 28%, 71% 25%, 80% 20%, 86% 15%, 92% 9%, 100% 0);
+    clip-path: polygon(99% 100%, 0% 100%, 0% 0%, 5% 7%, 11% 13%, 18% 18%, 24% 22%, 31% 25%, 43% 29%, 54% 29%, 62% 28%, 71% 25%, 80% 20%, 86% 15%, 92% 9%, 100% 0);
+  }
+  50% {
+    top: 45%;
+    left: 5%;
+    z-index: -5;
+    -webkit-clip-path: polygon(99% 100%, 0% 100%, 0% 0%, 5% 7%, 11% 13%, 18% 18%, 24% 22%, 31% 25%, 43% 29%, 54% 29%, 62% 28%, 71% 25%, 80% 20%, 86% 15%, 92% 9%, 100% 0);
+    clip-path: polygon(99% 100%, 0% 100%, 0% 0%, 5% 7%, 11% 13%, 18% 18%, 24% 22%, 31% 25%, 43% 29%, 54% 29%, 62% 28%, 71% 25%, 80% 20%, 86% 15%, 92% 9%, 100% 0);
+  }
+  51% {
+    top: 45%;
+    left: 5%;
+    z-index: -5;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  100% {
+    top: 45%;
+    left: 95%;
+    z-index: -5;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+}

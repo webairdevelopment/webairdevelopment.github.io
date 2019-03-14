@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* Reseting and stuff */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Structure and basic stylin' */
+body {
+  background-color: #FFFFFF;
+  font-family: sans-serif;
+  display: grid;
+  grid-row-gap: 1.5em;
+  padding: 2em 0;
+  grid-template-columns: 1fr 710px 1fr;
+}
+@media (max-width: 750px) {
+  body {
+    grid-template-columns: 1rem 1fr 1rem;
+  }
+}
+
+body > * {
+  grid-column: 2 / span 1;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  margin-left: 1rem;
+}
+ul li + li {
+  padding-top: 0.5em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.goldenrod {
+  background: goldenrod;
+}
+
+.tomato {
+  background: tomato;
+}
+
+.card > * + * {
+  padding-top: 0.5em;
+}
+
+/* The magic. This 👇 is what you're here for */
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 66.667%;
+  overflow: hidden;
+}
+
+.img-wrapper > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}

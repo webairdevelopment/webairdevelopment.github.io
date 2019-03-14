@@ -1,0 +1,74 @@
+/**
+    Note that all these styles are just examplatory.
+**/
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 2em auto;
+  max-width: 35em;
+  color: #2b2b2b;
+  background: #fafafa;
+}
+body * {
+  box-sizing: border-box;
+}
+h2 {
+  margin: 1.5em 0 0.5em;
+}
+p {
+  font-size: 1.125em;
+  margin: 0 0 0.5em;
+}
+p + p {
+  margin-top: 1.5em;
+}
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  position: relative;
+  border: 0.1875em solid;
+  padding: 1em;
+  color: rebeccapurple;
+  background: transparent;
+  border-radius: 0.125em;
+  transition: background 0.3s;
+}
+button:hover,
+button:focus {
+  color: white;
+  background: rebeccapurple;
+  border-color: rebeccapurple;
+}
+button:active {
+  top: 0.08em;
+}
+.svg-icon {
+  /* Place the icon on the text baseline. */
+  position: relative;
+  top: 0.125em;
+  /* Prevent the icon from shrinking inside a flex container. */
+  flex-shrink: 0;
+  /* Scale the icon to match the font-size of the parent element. */
+  height: 1em;
+  width: 1em;
+  /* Let the icon take whatever color the parent has. */
+  fill: currentColor;
+  /*
+     * If the icon is used on a link, which has a color transition,
+     * we can also use a transition on the fill value.
+    */
+  transition: fill 0.3s;
+}
+/* Helper Class to hide text visually but keep it accessible for screen reader or other assistive software. */
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}

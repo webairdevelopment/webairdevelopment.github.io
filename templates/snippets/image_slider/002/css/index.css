@@ -1,0 +1,62 @@
+body {
+  background-color: #FFFFFF;
+}
+
+img {
+  display: block;
+  max-height: 100%;
+}
+#elImageList {
+  --imageratio: 500/800;
+  --imagecount: 10;
+  --height: 60vh;
+  --expand: calc(var(--height) * var(--imageratio));
+  --idle: calc((100% - var(--expand)) / var(--imagecount));
+  height: var(--height);
+  min-height: 200px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+#elImageList .item {
+  box-shadow: -0.5vh 0 1vh rgba(0, 0, 0, 0.6);
+  transition: all 0.3s;
+  flex: 1 1 auto;
+  width: var(--idle);
+}
+#elImageList .item:first-of-type {
+  width: var(--expand);
+}
+#elImageList:hover .item {
+  width: var(--idle) !important;
+}
+#elImageList:hover .item:hover {
+  box-shadow: 0 0 1vh #000000;
+  width: var(--expand) !important;
+}
+body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+}
+#elImageList {
+  -webkit-animation: 2s f forwards;
+          animation: 2s f forwards;
+}
+@-webkit-keyframes f {
+  from {
+    width: 20vw;
+  }
+  to {
+    width: 50vw;
+  }
+}
+@keyframes f {
+  from {
+    width: 20vw;
+  }
+  to {
+    width: 50vw;
+  }
+}

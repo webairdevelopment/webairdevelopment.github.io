@@ -1,0 +1,155 @@
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+* {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+body {
+  background-color: #dedede;
+}
+
+div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  width: 250px;
+  margin: 10px;
+  border: 2px solid #155799;
+  padding: 6px 24px;
+  font-size: 1.15em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #155799;
+  background-color: #F1F2F2;
+  transition: all 0.25s ease-in-out;
+}
+.btn:hover {
+  background-color: #155799;
+  border-color: #155799;
+  color: #F1F2F2;
+}
+.btn:active {
+  background-color: #155799;
+  border-color: #155799;
+  color: #F1F2F2;
+  box-shadow: none;
+}
+.btn:focus, .btn:active:focus {
+  background-color: #155799;
+  border-color: #155799;
+  color: #F1F2F2;
+  outline: 5px auto #155799;
+}
+.btn:visited {
+  background-color: #155799;
+  border-color: #155799;
+}
+
+.btn-secondary {
+  width: 250px;
+  margin: 10px;
+  border: 2px solid #F2994A;
+  padding: 6px 24px;
+  font-size: 1.15em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #F2994A;
+  background-color: #F1F2F2;
+  transition: all 0.25s ease-in-out;
+}
+.btn-secondary:hover {
+  background-color: #F2994A;
+  border-color: #F2994A;
+  color: #F1F2F2;
+}
+.btn-secondary:active {
+  background-color: #F2994A;
+  border-color: #F2994A;
+  color: #F1F2F2;
+  box-shadow: none;
+}
+.btn-secondary:focus, .btn-secondary:active:focus {
+  background-color: #F2994A;
+  border-color: #F2994A;
+  color: #F1F2F2;
+  outline: 5px auto #F2994A;
+}
+.btn-secondary:visited {
+  background-color: #F2994A;
+  border-color: #F2994A;
+}
+
+.btn-submit {
+  width: 250px;
+  margin: 10px;
+  border: 2px solid #159957;
+  padding: 6px 24px;
+  font-size: 1.15em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #159957;
+  background-color: #F1F2F2;
+  transition: all 0.25s ease-in-out;
+}
+.btn-submit:hover {
+  background-color: #159957;
+  border-color: #159957;
+  color: #F1F2F2;
+}
+.btn-submit:active {
+  background-color: #159957;
+  border-color: #159957;
+  color: #F1F2F2;
+  box-shadow: none;
+}
+.btn-submit:focus, .btn-submit:active:focus {
+  background-color: #159957;
+  border-color: #159957;
+  color: #F1F2F2;
+  outline: 5px auto #159957;
+}
+.btn-submit:visited {
+  background-color: #159957;
+  border-color: #159957;
+}
+
+.btn-cancel {
+  width: 250px;
+  margin: 10px;
+  border: 2px solid #C33764;
+  padding: 6px 24px;
+  font-size: 1.15em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #C33764;
+  background-color: #F1F2F2;
+  transition: all 0.25s ease-in-out;
+}
+.btn-cancel:hover {
+  background-color: #C33764;
+  border-color: #C33764;
+  color: #F1F2F2;
+}
+.btn-cancel:active {
+  background-color: #C33764;
+  border-color: #C33764;
+  color: #F1F2F2;
+  box-shadow: none;
+}
+.btn-cancel:focus, .btn-cancel:active:focus {
+  background-color: #C33764;
+  border-color: #C33764;
+  color: #F1F2F2;
+  outline: 5px auto #C33764;
+}
+.btn-cancel:visited {
+  background-color: #C33764;
+  border-color: #C33764;
+}

@@ -1,0 +1,40 @@
+body {
+  background-color: #FFFFFF;
+}
+
+#contenedor{width: 700px;box-sizing:border-box; margin:1em auto;}
+
+svg {
+  /*border: 1px solid #d9d9d9;*/
+  display: block;
+  position: absolute;
+}
+
+.text {
+  width: 700px;
+  padding: .5em;
+  border: 1px solid #d9d9d9;
+  position: absolute;
+  line-height:150%;
+  
+}
+
+#shape {
+  height: 500px;
+  width: 500px;
+  float: left;
+  shape-margin:1em;
+}
+
+svg polygon {
+  fill: #6ab150;
+  fill-rule: evenodd;
+}
+
+svg circle {
+  fill: rgba(200, 255, 255, .5);
+  stroke: #ccc;
+  cursor:ew-resize;
+}
+
+h4{text-align:center;}

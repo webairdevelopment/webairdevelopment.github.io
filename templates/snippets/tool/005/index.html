@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Oswald" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Automated regex domain validator</h1>
+    </div>
+    <div class="input">
+      <input type="text" id="regex" placeholder="Type something amazing!"/>
+      <button id="go">Go</button>
+    </div>
+    <div class="table">
+      <table>
+        <tr id="tableHeader">
+          <th>Url</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td>http://www.WebAir.tk</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>https://www.WebAir.tk</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>http://www.WebAir.tk/</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>https://www.WebAir.tk/</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>http://WebAir.tk/</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>https://WebAir.tk/</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>www.WebAir.tk</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>WebAir.tk</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>www.WebAir.tk/</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>WebAir.tk</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>home</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>/home</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>/home/page.html</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>example.html</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>http://www.wrong.com</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>https://www.wrong.com</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>http://www.wrong.com/</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>https://www.wrong.com/</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>http://wrong.com/</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>https://wrong.com/</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>//wrong.com</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>//wrong.com/</td>
+          <td></td>
+        </tr>
+      <tr>
+        <td>www.wrong.com</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wrong.com</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>www.wrong.com/</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wrong.com</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div class="proposals">
+    <h4>Proposed regex</h4>
+    <div class="d-flex"> 
+      <div class="proposal">
+        <b><i class="fas fa-play-circle tryThisRegex" title="Try this!"></i> @XevoLab</b>
+        <div class="regex">
+          <div class="horiz-scroll">(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/|\/\/)(([a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?))(\/.*)?</div></div>
+          This regex will match every url leaving the current website
+        </div>
+        <div class="proposal">
+          <b>Have a better solution? Post it in the comments!</b>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

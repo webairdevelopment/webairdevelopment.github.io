@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div id="time-container">
+      <h2>Time as Color</h2>
+      <p class="description">See any time as a color or auto-localize to your current time.</p>
+      <div id="settings">
+        <input id="military-time-toggle" type="checkbox"/>
+        <label for="military-time-toggle">Military Time</label>
+        <div id="time-holder">
+          <select id="hours"></select>
+          <select id="minutes"></select>
+          <select id="seconds"></select>
+            <select id="am-pm" class="visible">
+            <option id="time-of-day-am">AM</option>
+            <option id="time-of-day-pm">PM</option>
+          </select>
+        </div>
+        <button id="use-my-time">Use My Current Time</button>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

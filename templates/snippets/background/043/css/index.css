@@ -1,0 +1,118 @@
+body {
+  background-color: #031011;
+}
+
+.container {
+  width: 280px;
+  height: 300px;
+  border: 3px solid #394244;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.container * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid #394244;
+  border-radius: 100%;
+  -webkit-animation: a_a 2.75s infinite;
+          animation: a_a 2.75s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.a {
+  width: 380px;
+  height: 380px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.b {
+  width: 340px;
+  height: 340px;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+.c {
+  width: 300px;
+  height: 300px;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.d {
+  width: 260px;
+  height: 260px;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.e {
+  width: 220px;
+  height: 220px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.f {
+  width: 180px;
+  height: 180px;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.h {
+  width: 140px;
+  height: 140px;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.g {
+  width: 100px;
+  height: 100px;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.i {
+  width: 60px;
+  height: 60px;
+}
+
+@-webkit-keyframes a_a {
+  25% {
+    left: calc(50% - 25px);
+    top: calc(50% + 25px);
+    border-color: green;
+    border-width: 3px;
+  }
+  75% {
+    left: calc(50% + 25px);
+    top: calc(50% - 25px);
+    border-width: 1px;
+  }
+}
+
+@keyframes a_a {
+  25% {
+    left: calc(50% - 25px);
+    top: calc(50% + 25px);
+    border-color: green;
+    border-width: 3px;
+  }
+  75% {
+    left: calc(50% + 25px);
+    top: calc(50% - 25px);
+    border-width: 1px;
+  }
+}

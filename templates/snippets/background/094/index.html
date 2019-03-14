@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron:700">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <svg class="goo-defs" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <fegaussianblur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 00 1 0 0 00 0 1 0 00 0 0 19 -9" result="goo" />
+          <fecomposite in="SourceGraphic" in2="goo" operator="atop"/> 
+        </filter>
+      </defs>
+    </svg>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

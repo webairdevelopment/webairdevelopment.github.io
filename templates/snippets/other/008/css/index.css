@@ -1,0 +1,413 @@
+
+@charset "UTF-8";
+body {
+  background: #000 url("../images/space.png") center;
+  background-size: 100vw;
+  overflow-x: hidden;
+  font-family: Arial;
+}
+
+.space {
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+.space::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+  background-size: 500px;
+}
+.space div {
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 100px 80px rgba(0, 0, 0, 0.7), 0 0 100px 80px rgba(0, 0, 0, 0.7);
+  font-size: 80px;
+}
+.space div::after {
+  display: block;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 30px #000;
+  width: 100vh;
+}
+.space div div::after {
+  font-size: 40px;
+}
+.space div:last-of-type {
+  margin-bottom: 50vh;
+}
+.space .sun {
+  width: 2782.032px;
+  height: 2782.032px;
+  left: calc(50% - 1391.016px);
+  background: gold;
+  top: -1391.016px;
+  background: radial-gradient(circle at top center, gold, black 90%, transparent 100%);
+  color: gold;
+}
+.space .sun::after {
+  content: "☉ sun";
+  left: calc(-50vh + 2782.032px/2);
+  top: 2812.032px;
+}
+.space .mercury {
+  width: 9.758px;
+  height: 9.758px;
+  left: calc(50% - 4.879px);
+  background: gray;
+  top: 115815.121px;
+  background: radial-gradient(circle at top center, gray, black 90%, transparent 100%);
+  color: gray;
+}
+.space .mercury::after {
+  content: "☿ mercury";
+  left: calc(-50vh + 9.758px/2);
+  top: 39.758px;
+}
+.space .venus {
+  width: 24.208px;
+  height: 24.208px;
+  left: calc(50% - 12.104px);
+  background: orange;
+  top: 216387.896px;
+  background: radial-gradient(circle at top center, orange, black 90%, transparent 100%);
+  color: orange;
+}
+.space .venus::after {
+  content: "♀ venus";
+  left: calc(-50vh + 24.208px/2);
+  top: 54.208px;
+}
+.space .earth {
+  width: 25.484px;
+  height: 25.484px;
+  left: calc(50% - 12.742px);
+  background: dodgerblue;
+  top: 299187.258px;
+  background: radial-gradient(circle at top center, dodgerblue, black 90%, transparent 100%);
+  color: dodgerblue;
+}
+.space .earth::after {
+  content: "♁ earth";
+  left: calc(-50vh + 25.484px/2);
+  top: 55.484px;
+}
+.space .moon {
+  width: 6.948px;
+  height: 6.948px;
+  left: calc(50% - 3.474px);
+  background: gray;
+  top: 765.326px;
+  background: radial-gradient(circle at top center, gray, black 90%, transparent 100%);
+  color: gray;
+}
+.space .moon::after {
+  content: "☾ moon";
+  left: calc(-50vh + 6.948px/2);
+  top: 36.948px;
+}
+.space .mars {
+  width: 13.558px;
+  height: 13.558px;
+  left: calc(50% - 6.779px);
+  background: red;
+  top: 455793.221px;
+  background: radial-gradient(circle at top center, red, black 90%, transparent 100%);
+  color: red;
+}
+.space .mars::after {
+  content: "♂ mars";
+  left: calc(-50vh + 13.558px/2);
+  top: 43.558px;
+}
+.space .jupiter {
+  width: 279.644px;
+  height: 279.644px;
+  left: calc(50% - 139.822px);
+  background: goldenrod;
+  top: 1556860.178px;
+  background: radial-gradient(circle at top center, goldenrod, black 90%, transparent 100%);
+  color: goldenrod;
+}
+.space .jupiter::after {
+  content: "♃ jupiter";
+  left: calc(-50vh + 279.644px/2);
+  top: 309.644px;
+}
+.space .io {
+  width: 7.286px;
+  height: 7.286px;
+  left: calc(50% - 3.643px);
+  background: gold;
+  top: 839.957px;
+  background: radial-gradient(circle at top center, gold, black 90%, transparent 100%);
+  color: gold;
+}
+.space .io::after {
+  content: " io";
+  left: calc(-50vh + 7.286px/2);
+  top: 37.286px;
+}
+.space .europa {
+  width: 6.244px;
+  height: 6.244px;
+  left: calc(50% - 3.122px);
+  background: olive;
+  top: 1338.678px;
+  background: radial-gradient(circle at top center, olive, black 90%, transparent 100%);
+  color: olive;
+}
+.space .europa::after {
+  content: " europa";
+  left: calc(-50vh + 6.244px/2);
+  top: 36.244px;
+}
+.space .ganymede {
+  width: 10.536px;
+  height: 10.536px;
+  left: calc(50% - 5.268px);
+  background: gray;
+  top: 2135.532px;
+  background: radial-gradient(circle at top center, gray, black 90%, transparent 100%);
+  color: gray;
+}
+.space .ganymede::after {
+  content: " ganymede";
+  left: calc(-50vh + 10.536px/2);
+  top: 40.536px;
+}
+.space .callisto {
+  width: 9.642px;
+  height: 9.642px;
+  left: calc(50% - 4.821px);
+  background: cadetblue;
+  top: 3755.179px;
+  background: radial-gradient(circle at top center, cadetblue, black 90%, transparent 100%);
+  color: cadetblue;
+}
+.space .callisto::after {
+  content: " callisto";
+  left: calc(-50vh + 9.642px/2);
+  top: 39.642px;
+}
+.space .saturn {
+  width: 232.928px;
+  height: 232.928px;
+  left: calc(50% - 116.464px);
+  background: beige;
+  top: 2867883.536px;
+  background: radial-gradient(circle at top center, beige, black 90%, transparent 100%);
+  color: beige;
+  box-shadow: none;
+  -webkit-transform: perspective(0);
+          transform: perspective(0);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.space .saturn::after {
+  content: "♄ saturn";
+  left: calc(-50vh + 232.928px/2);
+  top: 262.928px;
+}
+.space .saturn::before {
+  content: "";
+  width: 712.928px;
+  height: 712.928px;
+  left: -237.6426666667px;
+  top: -237.6426666667px;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  -webkit-transform: rotateX(75deg) rotateY(-15deg);
+          transform: rotateX(75deg) rotateY(-15deg);
+}
+.space .titan {
+  width: 10.302px;
+  height: 10.302px;
+  left: calc(50% - 5.151px);
+  background: yellow;
+  top: 2955.969px;
+  background: radial-gradient(circle at top center, yellow, black 90%, transparent 100%);
+  color: yellow;
+}
+.space .titan::after {
+  content: " titan";
+  left: calc(-50vh + 10.302px/2);
+  top: 40.302px;
+}
+.space .uranus {
+  width: 101.448px;
+  height: 101.448px;
+  left: calc(50% - 50.724px);
+  background: skyblue;
+  top: 5741949.276px;
+  background: radial-gradient(circle at top center, skyblue, black 90%, transparent 100%);
+  color: skyblue;
+  box-shadow: none;
+  -webkit-transform: perspective(0);
+          transform: perspective(0);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.space .uranus::after {
+  content: "⛢ uranus";
+  left: calc(-50vh + 101.448px/2);
+  top: 131.448px;
+}
+.space .uranus::before {
+  content: "";
+  width: 301.448px;
+  height: 301.448px;
+  left: -100.4826666667px;
+  top: -100.4826666667px;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  -webkit-transform: rotateX(75deg) rotateY(-15deg);
+          transform: rotateX(75deg) rotateY(-15deg);
+}
+.space .neptune {
+  width: 98.488px;
+  height: 98.488px;
+  left: calc(50% - 49.244px);
+  background: blue;
+  top: 8989950.756px;
+  background: radial-gradient(circle at top center, blue, black 90%, transparent 100%);
+  color: blue;
+}
+.space .neptune::after {
+  content: "♆ neptune";
+  left: calc(-50vh + 98.488px/2);
+  top: 128.488px;
+}
+.space .triton {
+  width: 5.414px;
+  height: 5.414px;
+  left: calc(50% - 2.707px);
+  background: peachpuff;
+  top: 707.293px;
+  background: radial-gradient(circle at top center, peachpuff, black 90%, transparent 100%);
+  color: peachpuff;
+}
+.space .triton::after {
+  content: " triton";
+  left: calc(-50vh + 5.414px/2);
+  top: 35.414px;
+}
+.space .pluton {
+  width: 4.754px;
+  height: 4.754px;
+  left: calc(50% - 2.377px);
+  background: bisque;
+  top: 11825997.623px;
+  background: radial-gradient(circle at top center, bisque, black 90%, transparent 100%);
+  color: bisque;
+}
+.space .pluton::after {
+  content: "♇ pluton";
+  left: calc(-50vh + 4.754px/2);
+  top: 34.754px;
+}
+.space .farout {
+  width: 1px;
+  height: 1px;
+  left: calc(50% - 0.5px);
+  background: white;
+  top: 35903488.468px;
+  background: radial-gradient(circle at top center, white, black 90%, transparent 100%);
+  color: white;
+}
+.space .farout::after {
+  content: "❤️ farout";
+  left: calc(-50vh + 1px/2);
+  top: 31px;
+}
+.space .sun {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  box-shadow: 0 0 3em orange;
+}
+.space .jupiter:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  display: block;
+  opacity: .16;
+  background: linear-gradient(#AC896D 0%, #EFD7BB 15%, #DF946E 25%, #EDB682 35%, #EDB682 45%, #AB6145 55%, #EFD7BB 75%, #AC896D 90%);
+}
+.space .saturn::before {
+  background: radial-gradient(ellipse at center, rgba(24, 19, 25, 0) 0%, rgba(53, 52, 51, 0) 34%, #373634 36%, #383735 37%, #444342 38%, #383735 39%, #444342 40%, #383735 41%, #574d4c 42%, #574d4c 44%, #716e67 46%, #716e67 48%, #71625d 49%, #71625d 51%, #7a7369 52%, #71625d 53%, #71625d 54%, #7a7369 55%, #6a6359 56%, #6a6359 58%, rgba(79, 76, 76, 0) 60%, #414046 61%, #414046 62%, #5a5559 63%, #4e4a49 65%, #4e494a 67%, rgba(78, 73, 74, 0) 68%, #4e494b 69%, #4e494b 70%, rgba(78, 73, 76, 0) 71%, rgba(77, 72, 76, 0) 72%, rgba(24, 19, 25, 0) 100%);
+}
+.space .uranus::before {
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(255, 255, 255, 0.6));
+  -webkit-transform: rotateX(75deg) rotateY(-55deg);
+          transform: rotateX(75deg) rotateY(-55deg);
+}
+.space .neptune:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  display: block;
+  opacity: 1;
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+  background: linear-gradient(transparent 30%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.1) 33%, transparent 35%, transparent 52%, rgba(255, 255, 255, 0.1) 56%, rgba(255, 255, 255, 0.1) 58%, transparent 65%, transparent 100%);
+}
+
+.buttons {
+  width: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0;
+}
+.buttons li {
+  color: #fff;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 0;
+  padding: 5px;
+  cursor: pointer;
+}
+.buttons li:hover {
+  font-style: italic;
+}
+.buttons li.moon {
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.info {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: 10;
+  text-align: center;
+  width: 500px;
+  left: calc(50% - 300px);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    
+    
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Which Web Site is the Best on the net?</h1>
+      <p id="description">Get in the Know, take this survey, and learn the Truth!<br>
+        The backend and vote tallying is on <a href="https://webtask.io/">webtask.io</a>, the chart was created with <a href="https://www.chartjs.org/" >Chart.js</a>.</p>
+
+<!-- I use the primary colours for the button backgrounds. -->
+
+      <div class="container" id="buttons">
+        <button class="btn red" onclick="submit('red');">Google.com</button>
+        <button class="btn blue" onclick="submit('blue');">WebAir.tk</button>
+        <button class="btn yellow" onclick="submit('yellow');">Msn.com</button>
+      </div>
+      <div class="container" id="results">
+        <canvas id="resultsChart" height="80"></canvas>
+      </div>
+    </div>
+    <script src="js/axios.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/index.js"></script>
+    
+    
+
+    
+    
+    
+  </body>
+</html>

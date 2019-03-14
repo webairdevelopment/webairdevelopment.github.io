@@ -1,0 +1,81 @@
+body {
+  background-color: #FFFFFF;  
+}
+canvas {
+  border-radius: 50%;
+}
+#elV {
+  width: 80vmin;
+  height: 50vmin;
+  position: relative;
+  -webkit-animation: 2.3s g infinite steps(7);
+          animation: 2.3s g infinite steps(7);
+}
+@-webkit-keyframes g {
+  from,
+  to {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  60% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+}
+@keyframes g {
+  from,
+  to {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  60% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+}
+#elC {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-filter: drop-shadow(0 0 1px rgba(255, 0, 0, 0.5));
+          filter: drop-shadow(0 0 1px rgba(255, 0, 0, 0.5));
+}
+#elD {
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  font-size: 2em;
+  display: inline;
+  border: thin solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 1ch;
+  white-space: nowrap;
+  -webkit-animation: 0.96s f infinite linear;
+          animation: 0.96s f infinite linear;
+}
+@-webkit-keyframes f {
+  from {
+    left: 120%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes f {
+  from {
+    left: 120%;
+  }
+  to {
+    left: 0;
+  }
+}
+body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}

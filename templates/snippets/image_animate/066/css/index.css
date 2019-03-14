@@ -1,0 +1,100 @@
+body, html {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+#wrapper {
+	height: 100vh;
+}
+
+#left, #right {
+	height: 50vh;
+	display: grid;
+	place-items: center;
+}
+
+#left {
+	background-color: black;
+}
+
+.rhombusLoader {
+	--len: 50px;
+	--particle-color: #FC3C3C;
+	width: var(--len);
+	height: var(--len);
+	border: 4px solid rgba(200, 200, 200, 0.34);
+	transform: rotate(45deg);
+	position: relative;
+	margin-bottom: 25px;
+/* 	animation-name: divRotation;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-timing-function: linear; */
+}
+
+@keyframes divRotation {
+	100% {
+		transform: rotate(405deg);
+	}
+}
+
+.rhombusLoader::after,
+.rhombusLoader::before {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	top: -6px;
+	left: -6px;
+	animation-name: moveParticle;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	background-color: var(--particle-color);
+}
+
+.rhombusLoader::after {
+	animation-delay: -2s;
+}
+
+
+@keyframes moveParticle {
+	0% {
+		top: -6px;left: -6px;
+/* 		background-color: #fce4ec; */
+	}
+	25% {
+		top: -6px;left: calc(var(--len) - 4px);
+/* 		background-color: #f8bbd0 ; */
+	}
+	50% {
+		top: calc(var(--len) - 3px);left: calc(var(--len) - 3px);
+/* 			background-color: #ec407a; */
+	}
+	75% {
+		top: calc(var(--len) - 4px);left: -6px;
+/* 		background-color: #ab47bc; */
+	}
+	100% {
+		top: -6px;left: -6px;	
+/* 		background-color: #6a1b9a; */
+	}
+}
+
+@media (min-width: 600px) {
+	#wrapper {
+		display: grid;
+		width: 100vw;
+		height: 100vh;
+		grid-template-columns: 1fr 1fr;
+	}
+	#left, #right {
+		width: 50vw;
+		height: 100vh;
+	}
+}

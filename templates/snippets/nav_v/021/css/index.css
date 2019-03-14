@@ -1,0 +1,266 @@
+
+
+
+/* 11. CSS Global Variables  */
+
+:root {
+--header-font:'TitilliumWeb-Roman-VF', sans-serif;  /* 5. Variable font default */
+--body-font:sans-serif ;
+--main-color:#f1f1f1;
+--light-color:#fff;
+--dark-color:#222;
+--begin-color:#43cea2;
+--end-color:#185a9d;
+--activity-color:yellow;
+--font-size:1.2em;
+}
+
+ /* 5. Variable font  */
+@font-face { font-family: 'TitilliumWeb-Roman-VF'; src: url('https://vuild.com/2019-features/TitilliumWeb-Roman-VF.ttf') format('truetype')}
+ 
+
+* { box-sizing: border-box; padding: 0; margin: 0}
+
+body {
+	font-family: var(--body-font);
+	font-size: var(--font-size);
+	line-height: 1.6em;
+	scroll-snap-type: y mandatory;  /* 6. Scroll Snap  */
+}
+
+nav { height: 10vh; background: var(--dark-color)}
+
+footer { height: 20vh; background: var(--dark-color); padding: 2vh 2vw; border-top: .1vh solid var(--light-color)}
+
+footer ul {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 2vh;
+	column-gap: 1vw;
+}
+
+footer li {block-size: 1vh;inline-size: 25vh} /* 2. Logical properties  */
+footer li a{display: block; padding: .9vh 3vw ; border: .1vh solid #333; margin: auto}
+
+a { color:var(--activity-color); text-decoration: none}
+p { margin-bottom: 3vh;line-height: 1.7em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: TitilliumWeb-Roman-VF;   /* 5. Variable font  */
+	font-variation-settings: 'wght' 356.944, 'opsz' 20;  /* 5. Variable font settings */
+	line-height: 1.6em;
+
+}
+
+h2,h3,h4,h5,h6 {
+	 /* 10. Gradient text begin  */
+	background: linear-gradient(to right, var(--begin-color) 0%, var(--end-color) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+    /* 10. Gradient text end */
+}
+
+section {
+	height: 100vh;
+	padding: 6vh 12vw;
+	scroll-snap-align: start;    /* 6. Scroll Snap each section */
+	background: var(--main-color);
+}
+
+a.btn {
+	display: block;
+	border: .2vh solid var(--light-color);
+	padding: 1vh 5vw;
+	width: 50%;
+	text-align: center;
+	margin: 6vh 0;
+	color: var(--light-color);
+}
+
+:nth-child(odd) a.btn {
+	border: .2vh solid var(--dark-color);
+	color: var(--dark-color);
+}
+
+  /* 7. Detect pointer type: If supports hover  */
+
+@media (hover) {
+a.btn:hover {color: var(--light-color)}
+li a:hover { animation: hover 1s ease-in-out forwards}
+a:hover{color: 	var(--dark-color)}
+:nth-child(odd) a.btn:hover{color: 	inherit}
+@keyframes hover {
+0% { color: var(--light-color); filter: blur(0)}
+50% { color: var(--activity-color); filter: blur(.2vw);transform:scale(1.1)}
+100% { color: var(--activity-color); filter: blur(0)}
+}
+::-webkit-scrollbar-thumb:hover { background:crimson}
+}
+
+ol { 
+	padding:1vh 2vw;
+	 /* 10. Gradient border begin */
+	border-image: linear-gradient(to left, var(--begin-color) 0%, var(--end-color) 100%);  
+	border-image-slice: 1;
+	border-width: 1vw;
+	 /* 10. Gradient border end */
+	font-size: .85em;
+	background: rgba(0,0,0,.3);
+	max-height:45vh;
+	overflow-y: scroll;
+}
+
+  /* 3. Subgrid  */
+
+li {
+    grid-column: 2 / 5;
+    display: grid;
+	margin-bottom: .5vh;
+    grid-template-columns: subgrid;
+}
+
+li a { color: var(--light-color)}
+
+.hero li a:before {
+	content: "✓";
+	color: lime;
+	margin-right: 1vw;
+}
+
+li:nth-child(10) :after, li:nth-child(11) :after, li:nth-child(12) :after, li:nth-child(13) :after {
+	content: "Bonus";
+	background: var(--activity-color);
+	color: var(--dark-color);
+	font-size: .4em;
+	margin-left: 1vw;
+	padding: .2vh .2vw;
+}
+
+  /* Alternating section backgrounds  */
+
+section:nth-child(even) { background: var(--dark-color); color: var(--light-color)}
+
+h1 {
+	background: linear-gradient(to left, var(--main-color) 0%, var(--light-color) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	margin-bottom: 1vh;
+	line-height: 1.2em;
+	font-size: 1.5em;
+}
+  
+  /* 4. Drop Cap  */
+  
+ section  p::first-letter {
+ 	padding-top: 2vh;
+ 	-webkit-initial-letter: 3 3;
+ 	initial-letter: 3 3;
+ 	color: var(--brand-color);
+ 	margin-right: 1vw;
+ 	background: linear-gradient(to bottom, var(--begin-color) 0%, var(--end-color) 100%);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+	
+/* 13. Scrollbar Customizations  */
+
+::-webkit-scrollbar { width: 5vw}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 1vw var(--dark-color); 
+	background: linear-gradient(to bottom,  var(--begin-color), var(--end-color));
+}
+ 
+::-webkit-scrollbar-thumb {
+	border-radius: 2vw;
+	height:36vh;
+	background: red; 
+	background:	linear-gradient(to bottom, crimson 0%, red 33%, red 66%, crimson 80%, crimson 100%);
+	box-shadow: 0 1.5vh 0 crimson, 0 3.5vh 0 darksalmon, 0 6.5vh 0 indianred, 0 9vh 0 orange, 0 13vh 0 darkorange, 0 18vh 0 orangered, 0 22.5vh 0 tomato, 0 26vh 0 salmon, 0 30vh 0 gold, 0 35vh 0 peachpuff, 0 -1.5vh 0 crimson, 0 -3.5vh 0 darksalmon, 0 -6.5vh 0 indianred, 0 -9vh 0 orange, 0 -13vh 0 darkorange, 0 -18vh 0 orangered, 0 -22.5vh 0 tomato, 0 -26vh 0 salmon, 0 -30vh 0 gold, 0 -35vh 0 peachpuff
+}
+
+ol::-webkit-scrollbar { width: 1vw}
+
+ol::-webkit-scrollbar-thumb {
+	border-radius: 1vw;
+	background: red; 
+	background:	linear-gradient(to bottom, crimson 0%, red 33%, red 66%, crimson 80%, crimson 100%);
+	box-shadow: inset 0 -1vh 0 salmon,inset 0 -2vh 0 orangered, inset 0 -3vh 0 tomato, inset 0 1vh 0 salmon,inset 0 2vh 0 orangered, inset 0 3vh 0 tomato;
+}
+ 
+.hero {
+	background: #43cea2;
+	background: linear-gradient(to bottom, var(--begin-color), var(--end-color)) ;
+	color: var(--light-color);
+	height: 90vh;
+	font-size: .8em;
+	padding: 3vh 8vw;
+	scroll-snap-align: start;
+}
+
+/* Verbose Media Query for now (low browser support, easy switch) */
+
+ @media only screen and (min-width: 60em) {
+
+/* 9. Feature Query  */
+
+@supports (display: grid) {
+.hero {
+  display: grid;
+	grid-template-columns: 1fr 1fr;
+	display: grid;
+	grid-gap:5vw;
+  }
+ 	
+h1 {font-size: 1.6em}
+section {padding: 12vh 20vw;font-size:var(--font-size)}
+}
+
+.hero {padding: 10vh 18vw; font-size: 1em}
+ol { padding:3vh 2vw}
+}
+
+/* 8. New Media Query Syntax  */
+
+@media (width <= 30em) { 
+footer {color: var(--light-color);background:var(--dark-color)}
+}
+
+
+/* HTML logo. Delete/ replace. */
+.logo {
+	font-family: TitilliumWeb-Roman-VF;
+	padding: 1vh 5vw 0;
+	text-transform: uppercase;
+	color: var(--text-color);
+	font-weight: 700;
+	font-size: .9em;
+	display: block;
+	width: 50vw;
+	background: linear-gradient(to bottom, #ccc 0%, var(--light-color) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.logo::before {
+	content: "";
+	color: var(--light-color);
+	font-size: 4em;
+	display: block;
+	background: #d02b30;
+	margin-top: 1vh;
+	line-height: 1vh;
+	height: 4vh;
+	width: 8vh;
+	border: .3vh solid var(--light-color);
+	border-radius: var(--border-radius);	
+}

@@ -1,0 +1,230 @@
+
+/* ----------------------------------------------- */
+/*                    Parameters                   */
+/* ----------------------------------------------- */
+/* --- Colors --- */
+/* --- Fonts --- */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  background-color: #e7f9fd;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+}
+.water-droplet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  width: 150px;
+  height: 150px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 75px;
+  border-bottom-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+  background-color: #00ccff;
+  border: 5px solid #4ddbff;
+  z-index: 20;
+  -webkit-animation: water-droplet 1s ease-in-out alternate infinite;
+          animation: water-droplet 1s ease-in-out alternate infinite;
+}
+.water-droplet ul.eye {
+  position: absolute;
+  top: 95px;
+  left: 50%;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transform: translateX(-50%) rotate(-45deg);
+          transform: translateX(-50%) rotate(-45deg);
+  width: 120px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.water-droplet ul.eye li {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 25px;
+  border-radius: 50%;
+  border: 5px solid #00ccff;
+  border-bottom: 5px solid #e7f9fd;
+}
+.water-droplet ul.eye li:nth-child(1) {
+  left: 0;
+}
+.water-droplet ul.eye li:nth-child(2) {
+  right: 0;
+}
+.water-droplet .mouth {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 5px;
+  height: 10px;
+  border: 2px solid #e7f9fd;
+  background-color: #00c4f5;
+  border-radius: 50%;
+  -webkit-animation: sleep_mouth 1s ease-in-out alternate infinite;
+          animation: sleep_mouth 1s ease-in-out alternate infinite;
+}
+ul.water-ripple {
+  position: absolute;
+  top: 80%;
+  left: 49%;
+  -webkit-transform: translate(-49%, -80%);
+          transform: translate(-49%, -80%);
+  width: 100px;
+  height: 60px;
+  list-style: none;
+}
+ul.water-ripple li {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50px;
+  height: 20px;
+  border-radius: 50%;
+  border: 4px solid #00ccff;
+  -webkit-animation: water-ripple 1s 0.4s ease-in-out alternate infinite;
+          animation: water-ripple 1s 0.4s ease-in-out alternate infinite;
+}
+ul.water-ripple li:nth-child(1) {
+  width: 100px;
+  height: 40px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  z-index: 10;
+}
+ul.water-ripple li:nth-child(2) {
+  width: 150px;
+  height: 60px;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  z-index: 9;
+}
+ul.water-ripple li:nth-child(3) {
+  width: 200px;
+  height: 80px;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  z-index: 8;
+}
+ul.water-ripple li:nth-child(4) {
+  width: 250px;
+  height: 100px;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  z-index: 7;
+}
+ul.water-ripple li:nth-child(5) {
+  width: 300px;
+  height: 120px;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  z-index: 6;
+}
+ul.water-ripple li:nth-child(6) {
+  width: 350px;
+  height: 140px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  z-index: 5;
+}
+/* ----------------------------------------------- */
+/*                    Keyframes                    */
+/* ----------------------------------------------- */
+@-webkit-keyframes water-ripple {
+  0% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+    opacity: 1;
+  }
+}
+@keyframes water-ripple {
+  0% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes water-droplet {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -40%) rotate(45deg);
+            transform: translate(-50%, -40%) rotate(45deg);
+  }
+}
+@keyframes water-droplet {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -40%) rotate(45deg);
+            transform: translate(-50%, -40%) rotate(45deg);
+  }
+}
+@-webkit-keyframes sleep_mouth {
+  0% {
+    -webkit-transform: rotate(-45deg) scale(1);
+            transform: rotate(-45deg) scale(1);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) scale(1.4);
+            transform: rotate(-45deg) scale(1.4);
+  }
+}
+@keyframes sleep_mouth {
+  0% {
+    -webkit-transform: rotate(-45deg) scale(1);
+            transform: rotate(-45deg) scale(1);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) scale(1.4);
+            transform: rotate(-45deg) scale(1.4);
+  }
+}
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */

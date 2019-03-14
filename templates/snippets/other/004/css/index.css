@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body {
+    background-color: #f4f2e9;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+/* headings */
+h1 {
+    text-align: center;
+}
+
+/* lists */
+ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin: 20px 0px 10px;
+    padding: 10px;
+    border-bottom: 1px solid #dedede;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li > div {
+    margin-right: 60px;
+}
+
+/* forms: inputs, btns, etc. */
+input {
+    display: block;
+    margin: 20px 0;
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #dedede;
+}
+
+button {
+    margin: 20px 0;
+    border: 1px solid #00635d;
+    padding: 6px 18px;
+    font-size: 1em;
+    background-color: #00635d;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    color: #00635d;
+    background: transparent;
+}
+
+button.remove {
+    height: 50px;
+    width: 50px;
+    border-color: #dedede;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex: 0 0 auto;
+    background-color: #dedede;
+    transition: all 0.5s ease-in-out;
+}
+
+button.remove:hover {
+    background-color: black;
+}
+
+button.remove:hover>svg {
+    fill: #dedede;
+}
+
+.input-half {
+    width: 50%;
+}
+
+.input-half:first-child {
+    margin-right: 20px;
+}
+
+.input-full {
+    width: 100%;
+}
+
+/* elements */
+svg {
+    height: 25px;
+    width: 25px;
+    fill: #333;
+}
+
+/* general styles */
+#app {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #f1f2f2;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+    
+}
+
+.light {
+    font-weight: 300;
+}
+
+.title {
+    display: block;
+    font-style: italic;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}

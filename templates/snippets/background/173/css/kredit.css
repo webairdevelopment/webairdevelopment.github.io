@@ -1,0 +1,20 @@
+@font-face{
+	font-family: kredit;
+	src:url("../images/kredit.ttf");
+}
+@font-face{
+	font-family: kredit-back;
+	src:url("../images/kredit_back.ttf");
+}
+@font-face{
+	font-family: kredit-front;
+	src:url("../images/kredit_front.ttf");
+}
+@font-face{
+	font-family: kredit-shine;
+	src:url("../images/kredit_shine.ttf");
+}
+@font-face{
+	font-family:Beyond Infinity;
+	src:url("../images/Beyond_Infinity.ttf");
+}

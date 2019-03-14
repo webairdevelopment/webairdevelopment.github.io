@@ -1,0 +1,32 @@
+﻿/* At first let's give some style*/
+body{
+	background: #000;
+	color: lime;
+}
+
+/* font-size, positioning, visibility*/
+p{
+	font-size: 14px;
+	margin: 30px;
+	white-space:nowrap;
+	overflow: hidden;
+	width: 30em;
+	animation: type 5s steps(50, end) 1;	
+}
+
+/* let's animate, it's super easy */
+@keyframes type{
+	from{ width: 0;}
+}
+/*looks like something is wrong, Fixed!!! */
+
+/*let's make it more realistic, so I added span tag, let's animate span*/
+span{
+	animation: blink 1s infinite;
+}
+
+@keyframes blink{
+	to{ opacity: .0;}
+}
+
+

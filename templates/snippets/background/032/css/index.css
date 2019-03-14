@@ -1,0 +1,8 @@
+body {
+  background-color: #222;
+  overflow: hidden;
+  background-color: #1e88e5;/*#76BCAD;*/
+}
+canvas {  
+  width:100%;
+}

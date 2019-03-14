@@ -1,0 +1,82 @@
+:root {
+  --background-color: #000000;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  transition: 0.2s;
+}
+
+#time-container {
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 6px;
+  position: absolute;
+  max-width: 40vw;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+#time-container h2 {
+  color: white;
+  margin: 0 auto 1rem;
+  text-shadow: 1px 1px var(--background-color), 2px 2px var(--background-color), 3px 3px var(--background-color), 4px 4px var(--background-color), 5px 5px var(--background-color), 6px 6px var(--background-color), 7px 7px var(--background-color), 8px 8px var(--background-color), 9px 9px var(--background-color);
+}
+
+.description, label {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.2px;
+  line-height: 1.2rem;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+[type="checkbox"] + label {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+[type="checkbox"] + label::before {
+  content: '';
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 2px;
+  border: 1px solid var(--background-color);
+  margin-right: 0.4rem;
+  transition: 0.2s;
+}
+[type="checkbox"] + label:hover {
+  cursor: pointer;
+}
+[type="checkbox"]:checked + label::before {
+  background-color: var(--background-color);
+  box-shadow: 0 0 0 1px white inset;
+}
+
+#am-pm {
+  display: none;
+}
+#am-pm.visible {
+  display: initial;
+}
+
+button {
+  border: 0.5px solid var(--background-color);
+  color: var(--background-color);
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  transition: 0.1s;
+  margin-top: 1rem;
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--background-color);
+  color: white;
+}

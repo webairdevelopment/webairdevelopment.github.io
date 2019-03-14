@@ -1,0 +1,94 @@
+
+body {background-color: #000000;}
+
+@import url("https://fonts.googleapis.com/css?family=News+Cycle:700");
+* {
+  box-sizing: border-box;
+}
+
+button, .splitting .char {
+  font-family: 'News Cycle', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 0;
+  color: #333333;
+  background-color: #EBCC99;
+  background-image: url("../images/wood.png");
+  border: none;
+  border-radius: 0.5vmin;
+  box-shadow: inset rgba(0, 0, 0, 0.2) -4px -4px 24px, inset #CFB58B 0 -4px 0, rgba(0, 0, 0, 0.15) 0 6px 6px -3px;
+}
+
+html {
+  display: flex;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: enter;
+  margin: auto;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 0.5rem 1.5rem 0.75rem;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+button:active {
+  transform: translateY(2px);
+}
+
+.splitting .word {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 6vmin;
+  line-height: 1.45;
+}
+
+.splitting .char {
+  display: flex;
+  justify-content: center;
+  margin: 1vmin;
+  width: 10vmin;
+  height: 10vmin;
+}
+.splitting .char:nth-child(odd) {
+  transform: translateY(-50%) rotate(25deg);
+  opacity: 0;
+}
+.splitting .char:nth-child(even) {
+  transform: translateY(50%) rotate(-25deg);
+  opacity: 0;
+}
+
+.show-text .char {
+  animation-delay: calc(40ms * var(--char-index));
+  animation-direction: alternate;
+  animation-duration: 800ms;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: both;
+}
+.show-text .char:nth-child(odd) {
+  animation-name: slide-in-1;
+}
+.show-text .char:nth-child(even) {
+  animation-name: slide-in-2;
+}
+
+@keyframes slide-in-1 {
+  to {
+    transform: translateY(0) rotate(-1deg);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-2 {
+  to {
+    transform: translateY(0) rotate(2deg);
+    opacity: 1;
+  }
+}

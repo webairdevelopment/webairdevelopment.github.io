@@ -1,0 +1,32 @@
+main {
+  width: 100vmin;
+  height: 100vmin;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  place-items: center;
+}
+
+div {
+  width: 110%;
+  height: 110%;
+  background: #eaecef;
+  background: hsl(183, 100%, 60%);
+  border-radius: 50%;
+  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 0% 50%, 0% 100%, 50% 100%);
+  clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 0% 50%, 0% 100%, 50% 100%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #16161c;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

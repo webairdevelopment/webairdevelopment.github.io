@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <button class="cerchio trigger-audio" data-dist="7">Hover</button>
+    <audio id="sound-hover" style="display:none;" controls="controls" preload="auto"></audio>
+    <div class="cursor-wrap js-cursor-wrap">
+      <div class="cursor js-cursor">
+        <svg height="60" width="60" class="circle">
+          <circle cx="30" cy="30" r="26" stroke="#fff" stroke-width=".8" fill="transparent" />
+        </svg>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

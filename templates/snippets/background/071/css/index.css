@@ -1,0 +1,61 @@
+body {
+  background-color: #222;
+  font-family: 'Montserrat', sans-serif;
+  color: #E9EBBF;
+}
+
+img {
+  width: 100%;
+  height: 80%;
+  margin: 0;
+}
+
+figure {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  display: block;
+  -webkit-animation:forest-night 10s infinite;
+  animation:forest-night 10s infinite;
+}
+
+@-webkit-keyframes forest-night {
+  0% {
+    filter:hue-rotate(0deg) brightness(0%);
+  }
+  10% {
+    filter:hue-rotate(0deg) brightness(50%);
+  }
+  20% {
+    filter:hue-rotate(0deg) brightness(100%);
+  }
+  50% {
+    filter:hue-rotate(0deg) brightness(2);
+  }
+  70% {
+    filter:hue-rotate(220deg) brightness(50%);
+  }
+  100% {
+    filter:hue-rotate(0deg) brightness(0%);
+  }
+}
+@keyframes forest-night {
+  0% {
+    filter:hue-rotate(0deg) brightness(0%);
+  }
+  10% {
+    filter:hue-rotate(0deg) brightness(50%);
+  }
+  20% {
+    filter:hue-rotate(0deg) brightness(100%);
+  }
+  50% {
+    filter:hue-rotate(0deg) brightness(2);
+  }
+  70% {
+    filter:hue-rotate(220deg) brightness(50%);
+  }
+  100% {
+    filter:hue-rotate(0deg) brightness(0%);
+  }
+}

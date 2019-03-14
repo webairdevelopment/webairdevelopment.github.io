@@ -1,0 +1,94 @@
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+#start {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  text-align: center;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  padding: 20px 0;
+  opacity: 1;
+  transition: 1s ease-in-out opacity;
+}
+
+#start:hover {
+  background: #eee;
+}
+
+.play {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-100px) translateX(-50px);
+  width: 0;
+  height: 0;
+  border-left: 100px solid black;
+  border-right: 100px solid transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+}
+
+.play-me {
+  border: none;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  font-family: Arial;
+}
+
+.subtext {
+  font-family: Arial;
+}
+
+.bars {
+  width: 80%;
+  height: 10%;
+  margin: auto;
+  overflow: hidden;
+  padding-right: -10px;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+}
+
+.bar {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(to top, #A2CCB6 0%, #A2CCB6 15%, #FCEEB5 30%, #FCEEB5 45%, #EE786E 70%, #EE786E 100%);
+}
+
+.bar-inner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: white;
+  height: 0;
+}
+
+.plug {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-family: Arial;
+}
+
+a, a:visited, a:active, a:link {
+  color: black;
+}

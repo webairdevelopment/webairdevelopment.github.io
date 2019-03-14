@@ -1,0 +1,53 @@
+html {
+  background-color: #1a1a1a;
+  overflow: hidden;
+  user-select: none;
+}
+html body {
+  margin: 0;
+}
+html body .controls {
+  top: 2vh;
+  left: 2vh;
+  position: absolute;
+  padding: 2vh 3vh 2vh 2vh;
+  color: white;
+  font-size: 3vh;
+  font-family: arial;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1vh;
+}
+html body .controls p {
+  font-size: 2.3vh;
+  text-indent: 1vh;
+}
+html body .controls .e {
+  position: absolute;
+  top: 0.5vh;
+  right: 0.5vh;
+  width: 1.5vh;
+  height: 1.5vh;
+  cursor: pointer;
+}
+html body .controls .e:hover {
+  transform: scale(0.8, 0.8);
+  transition: transform 0.2s;
+}
+html body .controls .e:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotateZ(-45deg);
+  height: 100%;
+  width: 2px;
+  background-color: red;
+}
+html body .controls .e:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotateZ(45deg);
+  height: 100%;
+  width: 2px;
+  background-color: red;
+}

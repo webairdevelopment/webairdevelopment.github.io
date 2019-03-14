@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="infobuttcontainer">
+      <button class="infobutt">?</button>
+    </div>
+    <div class="disclaimer hide1">
+      <p>Click a color button, paint away.Make sure to change the grid size and unit size before painting,<em>changing these values mid-painting will re-create the artboard and your progress will be lost.</em> If you want to use an image as a template, drag and drop the image onto your artboard, you should then be able to toggle it on and off.When you click generate div, a single div is created with a css block applied to it to render your artwork.Its also copied to your clipboard just in case you want to use it elsewhere.</p>
+    </div>
+    <div class="gridsize">
+      <div>
+        <label>Columns:</label>
+        <input id="columninput" type="text" value="40">
+      </div>
+      <div>
+        <label>Rows:</label>
+        <input id="rowinput" type="text" value="30">
+      </div>
+      <div>
+        <label>Grid Unit Size (in pixels):</label>
+        <input id="gridunitsize" type="text" value="12">
+      </div>
+      <div>
+        Show Background-Image: &nbsp;
+        <label class="switch">
+          <input id="imgbgtoggle" type="checkbox" disabled>
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+    <div class="pcard">
+      <div class="pixelboard">
+        <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*" style="display:none;">
+      </div>
+      <div id="space-invader"></div>
+      <div class="knob left"></div>
+      <div class="knob right"></div>
+    </div>
+    
+    <div class="button-container">
+      <div class="colorbutton">
+        <button id="button1" class="spaceButt" data-color="#000" style="background-color: #000; box-shadow: -5px 4px 0px #000, -6px 5px 0px #000;"></button>
+        <div>
+          <input type="text" id="textinput1" value="#000000">
+          <input id="colorinput1" type="color" value="#000000">
+        </div>
+      </div>
+      <div class="colorbutton">
+        <button id="button2" class="spaceButt" data-color="#FFF" style="background-color: #FFF; box-shadow: -5px 4px 0px #FFF, -6px 5px 0px #000;"></button>
+        <div>
+          <input type="text" id="textinput2" value="#FFFFFF">
+          <input id="colorinput2" type="color" value="#FFFFFF">
+        </div>
+      </div>
+      <div class="colorbutton">
+        <button id="button3" class="spaceButt" data-color="#F44336" style="background-color: #F44336; box-shadow: -5px 4px 0px #F44336, -6px 5px 0px #000;"></button>
+        <div>
+          <input type="text" id="textinput3" value="#F44336">
+          <input id="colorinput3" type="color" value="#F44336">
+        </div>
+      </div>
+      <div class="colorbutton">
+        <button id="button4" class="spaceButt" data-color="#FDD835" style="background-color: #FDD835; box-shadow: -5px 4px 0px #FDD835, -6px 5px 0px #000;"></button>
+        <div>
+          <input type="text" id="textinput4" value="#FDD835">
+          <input id="colorinput4" type="color" value="#FDD835">
+        </div>
+      </div>
+      <div class="colorbutton">
+        <button id="button5" class="spaceButt" data-color="#1E88E5" style="background-color: #1E88E5; box-shadow: -5px 4px 0px #1E88E5, -6px 5px 0px #000;"></button>
+        <div>
+          <input type="text" id="textinput5" value="#1E88E5">
+          <input id="colorinput5" type="color" value="#1E88E5"></div>
+      </div>
+      <div class="colorbutton">
+        <button id="button6" class="spaceButt" data-color="#43b87d" style="background-color: #43b87d; box-shadow: -5px 4px 0px #43b87d, -6px 5px 0px #000;"></button>
+        <div>
+          <input type="text" id="textinput6" value="#43b87d">
+          <input id="colorinput6" type="color" value="#43b87d">
+        </div>
+      </div>
+    </div>
+    <button id="gencode">GENERATE DIV.</button>
+    <script src="js/index.js"></script>
+  </body>
+</html>

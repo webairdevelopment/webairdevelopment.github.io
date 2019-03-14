@@ -1,0 +1,5106 @@
+.custom-cursor * {
+  cursor: none;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+     supported by Chrome and Opera */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #00001a;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 65vmin;
+  height: 65vmin;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  flex-wrap: wrap;
+  -webkit-transform: rotateX(60deg);
+          transform: rotateX(60deg);
+  will-change: transform;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span,
+div {
+  width: 12.5%;
+  height: 12.5%;
+  display: block;
+  position: relative;
+  z-index: 99999;
+}
+
+span.visible {
+  -webkit-transform: translateY(-800%);
+          transform: translateY(-800%);
+  position: relative;
+  z-index: 1;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span.visible .el {
+  width: 15%;
+  height: 15%;
+  border-radius: 50% 50%;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  will-change: transform;
+}
+span.visible:nth-of-type(1) .el {
+  background: #0004ff;
+}
+span.visible:nth-of-type(2) .el {
+  background: #0008ff;
+}
+span.visible:nth-of-type(3) .el {
+  background: #000cff;
+}
+span.visible:nth-of-type(4) .el {
+  background: #0010ff;
+}
+span.visible:nth-of-type(5) .el {
+  background: #0014ff;
+}
+span.visible:nth-of-type(6) .el {
+  background: #0018ff;
+}
+span.visible:nth-of-type(7) .el {
+  background: #001cff;
+}
+span.visible:nth-of-type(8) .el {
+  background: #0020ff;
+}
+span.visible:nth-of-type(9) .el {
+  background: #0024ff;
+}
+span.visible:nth-of-type(10) .el {
+  background: #0028ff;
+}
+span.visible:nth-of-type(11) .el {
+  background: #002cff;
+}
+span.visible:nth-of-type(12) .el {
+  background: #0030ff;
+}
+span.visible:nth-of-type(13) .el {
+  background: #0034ff;
+}
+span.visible:nth-of-type(14) .el {
+  background: #0038ff;
+}
+span.visible:nth-of-type(15) .el {
+  background: #003cff;
+}
+span.visible:nth-of-type(16) .el {
+  background: #0040ff;
+}
+span.visible:nth-of-type(17) .el {
+  background: #0044ff;
+}
+span.visible:nth-of-type(18) .el {
+  background: #0048ff;
+}
+span.visible:nth-of-type(19) .el {
+  background: #004cff;
+}
+span.visible:nth-of-type(20) .el {
+  background: #0050ff;
+}
+span.visible:nth-of-type(21) .el {
+  background: #0054ff;
+}
+span.visible:nth-of-type(22) .el {
+  background: #0058ff;
+}
+span.visible:nth-of-type(23) .el {
+  background: #005cff;
+}
+span.visible:nth-of-type(24) .el {
+  background: #0060ff;
+}
+span.visible:nth-of-type(25) .el {
+  background: #0064ff;
+}
+span.visible:nth-of-type(26) .el {
+  background: #0068ff;
+}
+span.visible:nth-of-type(27) .el {
+  background: #006cff;
+}
+span.visible:nth-of-type(28) .el {
+  background: #0070ff;
+}
+span.visible:nth-of-type(29) .el {
+  background: #0074ff;
+}
+span.visible:nth-of-type(30) .el {
+  background: #0078ff;
+}
+span.visible:nth-of-type(31) .el {
+  background: #007cff;
+}
+span.visible:nth-of-type(32) .el {
+  background: #0080ff;
+}
+span.visible:nth-of-type(33) .el {
+  background: #0083ff;
+}
+span.visible:nth-of-type(34) .el {
+  background: #0087ff;
+}
+span.visible:nth-of-type(35) .el {
+  background: #008bff;
+}
+span.visible:nth-of-type(36) .el {
+  background: #008fff;
+}
+span.visible:nth-of-type(37) .el {
+  background: #0093ff;
+}
+span.visible:nth-of-type(38) .el {
+  background: #0097ff;
+}
+span.visible:nth-of-type(39) .el {
+  background: #009bff;
+}
+span.visible:nth-of-type(40) .el {
+  background: #009fff;
+}
+span.visible:nth-of-type(41) .el {
+  background: #00a3ff;
+}
+span.visible:nth-of-type(42) .el {
+  background: #00a7ff;
+}
+span.visible:nth-of-type(43) .el {
+  background: #00abff;
+}
+span.visible:nth-of-type(44) .el {
+  background: #00afff;
+}
+span.visible:nth-of-type(45) .el {
+  background: #00b3ff;
+}
+span.visible:nth-of-type(46) .el {
+  background: #00b7ff;
+}
+span.visible:nth-of-type(47) .el {
+  background: #00bbff;
+}
+span.visible:nth-of-type(48) .el {
+  background: deepskyblue;
+}
+span.visible:nth-of-type(49) .el {
+  background: #00c3ff;
+}
+span.visible:nth-of-type(50) .el {
+  background: #00c7ff;
+}
+span.visible:nth-of-type(51) .el {
+  background: #00cbff;
+}
+span.visible:nth-of-type(52) .el {
+  background: #00cfff;
+}
+span.visible:nth-of-type(53) .el {
+  background: #00d3ff;
+}
+span.visible:nth-of-type(54) .el {
+  background: #00d7ff;
+}
+span.visible:nth-of-type(55) .el {
+  background: #00dbff;
+}
+span.visible:nth-of-type(56) .el {
+  background: #00dfff;
+}
+span.visible:nth-of-type(57) .el {
+  background: #00e3ff;
+}
+span.visible:nth-of-type(58) .el {
+  background: #00e7ff;
+}
+span.visible:nth-of-type(59) .el {
+  background: #00ebff;
+}
+span.visible:nth-of-type(60) .el {
+  background: #00efff;
+}
+span.visible:nth-of-type(61) .el {
+  background: #00f3ff;
+}
+span.visible:nth-of-type(62) .el {
+  background: #00f7ff;
+}
+span.visible:nth-of-type(63) .el {
+  background: #00fbff;
+}
+span.visible:nth-of-type(64) .el {
+  background: cyan;
+}
+span.visible .el[data-delay='1'] {
+  -webkit-animation: animateIn 1.2s ease-out;
+          animation: animateIn 1.2s ease-out;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+span.visible .el[data-delay='2'] {
+  -webkit-animation: animateIn 1.2s ease-out;
+          animation: animateIn 1.2s ease-out;
+  -webkit-animation-delay: 0.24s;
+          animation-delay: 0.24s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+span.visible .el[data-delay='3'] {
+  -webkit-animation: animateIn 1.2s ease-out;
+          animation: animateIn 1.2s ease-out;
+  -webkit-animation-delay: 0.36s;
+          animation-delay: 0.36s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+span.visible .el[data-delay='4'] {
+  -webkit-animation: animateIn 1.2s ease-out;
+          animation: animateIn 1.2s ease-out;
+  -webkit-animation-delay: 0.48s;
+          animation-delay: 0.48s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+span.visible .el[data-delay='5'] {
+  -webkit-animation: animateIn 1.2s ease-out;
+          animation: animateIn 1.2s ease-out;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+span.visible .el[data-delay='6'] {
+  -webkit-animation: animateIn 1.2s ease-out;
+          animation: animateIn 1.2s ease-out;
+  -webkit-animation-delay: 0.72s;
+          animation-delay: 0.72s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+span.visible .el[data-delay='7'] {
+  -webkit-animation: animateIn 1.2s ease-out;
+          animation: animateIn 1.2s ease-out;
+  -webkit-animation-delay: 0.84s;
+          animation-delay: 0.84s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+span.visible .el[data-delay='8'] {
+  -webkit-animation: animateIn 1.2s ease-out;
+          animation: animateIn 1.2s ease-out;
+  -webkit-animation-delay: 0.96s;
+          animation-delay: 0.96s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+span.visible .el[data-delay='9'] {
+  -webkit-animation: animateIn 1.2s ease-out;
+          animation: animateIn 1.2s ease-out;
+  -webkit-animation-delay: 1.08s;
+          animation-delay: 1.08s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+span.visible .el[data-delay='10'] {
+  -webkit-animation: animateIn 1.2s ease-out;
+          animation: animateIn 1.2s ease-out;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+div.selector:active:nth-of-type(1) ~ span.visible:nth-of-type(1) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(1) ~ span.visible:nth-of-type(2) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(1) ~ span.visible:nth-of-type(-6) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(1) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(1) ~ span.visible:nth-of-type(-14) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(1) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(1) ~ span.visible:nth-of-type(-5) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(1) ~ span.visible:nth-of-type(3) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(1) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(1) ~ span.visible:nth-of-type(-7) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(1) ~ span.visible:nth-of-type(9) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(1) ~ span.visible:nth-of-type(-15) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(1) ~ span.visible:nth-of-type(17) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(2) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(3) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(-5) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(-13) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(-4) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(4) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(1) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(-7) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(9) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(-15) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(17) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(-6) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(-14) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(2) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(3) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(4) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(-4) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(-12) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(-3) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(5) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(2) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(-6) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(-14) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(-7) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(1) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(9) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(-5) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(-13) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(3) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(4) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(5) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(-3) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(-11) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(-2) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(6) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(3) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(-5) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(-13) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(-6) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(2) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(-4) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(-12) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(4) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(5) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(6) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(-2) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(-10) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(-1) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(7) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(4) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(-4) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(-12) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(-5) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(3) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(-3) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(-11) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(5) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(6) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(7) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(-1) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(-9) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(0) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(8) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(16) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(5) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(-3) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(-11) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(-4) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(4) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(-2) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(-10) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(6) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(7) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(8) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(0) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(16) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(-8) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(24) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(6) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(-2) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(-10) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(-3) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(5) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(-1) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(-9) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(7) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(8) ~ span.visible:nth-of-type(8) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(8) ~ span.visible:nth-of-type(7) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(8) ~ span.visible:nth-of-type(-1) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(8) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(8) ~ span.visible:nth-of-type(-9) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(8) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(8) ~ span.visible:nth-of-type(-2) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(8) ~ span.visible:nth-of-type(6) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(8) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(8) ~ span.visible:nth-of-type(0) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(8) ~ span.visible:nth-of-type(16) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(8) ~ span.visible:nth-of-type(-8) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(8) ~ span.visible:nth-of-type(24) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(9) ~ span.visible:nth-of-type(9) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(9) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(9) ~ span.visible:nth-of-type(2) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(9) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(9) ~ span.visible:nth-of-type(-6) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(9) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(9) ~ span.visible:nth-of-type(3) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(9) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(9) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(9) ~ span.visible:nth-of-type(1) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(9) ~ span.visible:nth-of-type(17) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(9) ~ span.visible:nth-of-type(-7) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(9) ~ span.visible:nth-of-type(25) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(3) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(-5) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(4) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(9) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(1) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(17) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(-7) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(25) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(2) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(-6) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(10) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(4) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(-4) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(5) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(2) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(-6) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(1) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(9) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(17) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(3) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(-5) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(11) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(5) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(-3) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(6) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(3) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(-5) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(2) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(4) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(-4) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(12) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(6) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(-2) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(7) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(4) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(-4) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(3) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(5) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(-3) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(13) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(7) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(-1) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(8) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(16) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(24) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(5) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(-3) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(4) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(6) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(-2) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(14) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(16) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(8) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(24) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(0) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(32) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(6) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(-2) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(5) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(7) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(-1) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(15) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(16) ~ span.visible:nth-of-type(16) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(16) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(16) ~ span.visible:nth-of-type(7) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(16) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(16) ~ span.visible:nth-of-type(-1) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(16) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(16) ~ span.visible:nth-of-type(6) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(16) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(16) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(16) ~ span.visible:nth-of-type(8) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(16) ~ span.visible:nth-of-type(24) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(16) ~ span.visible:nth-of-type(0) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(16) ~ span.visible:nth-of-type(32) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(17) ~ span.visible:nth-of-type(17) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(17) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(17) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(17) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(17) ~ span.visible:nth-of-type(2) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(17) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(17) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(17) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(17) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(17) ~ span.visible:nth-of-type(9) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(17) ~ span.visible:nth-of-type(25) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(17) ~ span.visible:nth-of-type(1) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(17) ~ span.visible:nth-of-type(33) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(3) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(17) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(9) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(25) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(1) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(33) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(2) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(18) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(4) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(2) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(9) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(17) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(25) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(3) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(19) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(5) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(3) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(4) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(20) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(6) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(4) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(5) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(21) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(7) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(16) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(24) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(32) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(5) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(6) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(22) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(24) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(16) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(32) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(8) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(40) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(6) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(7) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(23) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(24) ~ span.visible:nth-of-type(24) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(24) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(24) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(24) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(24) ~ span.visible:nth-of-type(7) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(24) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(24) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(24) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(24) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(24) ~ span.visible:nth-of-type(16) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(24) ~ span.visible:nth-of-type(32) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(24) ~ span.visible:nth-of-type(8) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(24) ~ span.visible:nth-of-type(40) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(25) ~ span.visible:nth-of-type(25) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(25) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(25) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(25) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(25) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(25) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(25) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(25) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(25) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(25) ~ span.visible:nth-of-type(17) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(25) ~ span.visible:nth-of-type(33) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(25) ~ span.visible:nth-of-type(9) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(25) ~ span.visible:nth-of-type(41) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(25) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(17) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(33) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(9) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(41) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(26) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(10) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(17) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(25) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(33) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(27) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(11) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(28) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(12) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(29) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(24) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(32) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(40) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(13) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(30) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(32) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(24) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(40) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(16) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(48) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(14) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(31) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(32) ~ span.visible:nth-of-type(32) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(32) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(32) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(32) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(32) ~ span.visible:nth-of-type(15) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(32) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(32) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(32) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(32) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(32) ~ span.visible:nth-of-type(24) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(32) ~ span.visible:nth-of-type(40) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(32) ~ span.visible:nth-of-type(16) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(32) ~ span.visible:nth-of-type(48) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(33) ~ span.visible:nth-of-type(33) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(33) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(33) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(33) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(33) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(33) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(33) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(33) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(33) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(33) ~ span.visible:nth-of-type(25) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(33) ~ span.visible:nth-of-type(41) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(33) ~ span.visible:nth-of-type(17) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(33) ~ span.visible:nth-of-type(49) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(33) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(25) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(41) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(17) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(49) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(34) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(18) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(25) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(33) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(41) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(35) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(19) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(36) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(20) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(37) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(32) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(40) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(48) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(21) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(38) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(40) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(32) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(48) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(24) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(56) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(22) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(39) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(40) ~ span.visible:nth-of-type(40) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(40) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(40) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(40) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(40) ~ span.visible:nth-of-type(23) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(40) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(40) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(40) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(40) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(40) ~ span.visible:nth-of-type(32) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(40) ~ span.visible:nth-of-type(48) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(40) ~ span.visible:nth-of-type(24) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(40) ~ span.visible:nth-of-type(56) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(41) ~ span.visible:nth-of-type(41) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(41) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(41) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(41) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(41) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(41) ~ span.visible:nth-of-type(58) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(41) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(41) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(41) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(41) ~ span.visible:nth-of-type(33) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(41) ~ span.visible:nth-of-type(49) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(41) ~ span.visible:nth-of-type(25) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(41) ~ span.visible:nth-of-type(57) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(59) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(41) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(33) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(49) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(25) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(57) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(42) ~ span.visible:nth-of-type(58) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(60) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(26) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(58) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(33) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(41) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(49) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(43) ~ span.visible:nth-of-type(59) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(61) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(27) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(59) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(44) ~ span.visible:nth-of-type(60) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(62) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(28) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(60) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(45) ~ span.visible:nth-of-type(61) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(63) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(40) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(48) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(56) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(29) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(61) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(46) ~ span.visible:nth-of-type(62) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(48) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(40) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(56) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(32) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(64) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(30) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(62) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(47) ~ span.visible:nth-of-type(63) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(48) ~ span.visible:nth-of-type(48) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(48) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(48) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(48) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(48) ~ span.visible:nth-of-type(31) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(48) ~ span.visible:nth-of-type(63) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(48) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(48) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(48) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(48) ~ span.visible:nth-of-type(40) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(48) ~ span.visible:nth-of-type(56) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(48) ~ span.visible:nth-of-type(32) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(48) ~ span.visible:nth-of-type(64) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(49) ~ span.visible:nth-of-type(49) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(49) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(49) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(49) ~ span.visible:nth-of-type(58) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(49) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(49) ~ span.visible:nth-of-type(66) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(49) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(49) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(49) ~ span.visible:nth-of-type(59) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(49) ~ span.visible:nth-of-type(41) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(49) ~ span.visible:nth-of-type(57) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(49) ~ span.visible:nth-of-type(33) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(49) ~ span.visible:nth-of-type(65) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(59) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(67) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(60) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(49) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(41) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(57) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(33) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(65) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(58) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(50) ~ span.visible:nth-of-type(66) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(60) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(68) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(61) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(58) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(34) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(66) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(41) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(49) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(57) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(59) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(51) ~ span.visible:nth-of-type(67) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(61) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(69) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(62) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(59) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(35) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(67) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(58) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(60) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(52) ~ span.visible:nth-of-type(68) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(62) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(70) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(63) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(60) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(36) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(68) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(59) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(61) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(53) ~ span.visible:nth-of-type(69) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(63) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(71) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(48) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(56) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(64) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(61) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(37) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(69) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(60) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(62) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(54) ~ span.visible:nth-of-type(70) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(56) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(48) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(64) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(40) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(72) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(62) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(38) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(70) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(61) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(63) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(55) ~ span.visible:nth-of-type(71) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(56) ~ span.visible:nth-of-type(56) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(56) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(56) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(56) ~ span.visible:nth-of-type(63) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(56) ~ span.visible:nth-of-type(39) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(56) ~ span.visible:nth-of-type(71) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(56) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(56) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(56) ~ span.visible:nth-of-type(62) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(56) ~ span.visible:nth-of-type(48) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(56) ~ span.visible:nth-of-type(64) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(56) ~ span.visible:nth-of-type(40) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(56) ~ span.visible:nth-of-type(72) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(57) ~ span.visible:nth-of-type(57) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(57) ~ span.visible:nth-of-type(58) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(57) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(57) ~ span.visible:nth-of-type(66) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(57) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(57) ~ span.visible:nth-of-type(74) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(57) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(57) ~ span.visible:nth-of-type(59) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(57) ~ span.visible:nth-of-type(67) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(57) ~ span.visible:nth-of-type(49) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(57) ~ span.visible:nth-of-type(65) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(57) ~ span.visible:nth-of-type(41) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(57) ~ span.visible:nth-of-type(73) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(58) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(59) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(67) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(75) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(60) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(68) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(57) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(49) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(65) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(41) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(73) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(66) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(58) ~ span.visible:nth-of-type(74) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(59) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(60) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(68) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(76) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(61) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(69) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(58) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(66) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(42) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(74) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(49) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(57) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(65) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(67) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(59) ~ span.visible:nth-of-type(75) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(60) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(61) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(69) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(77) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(62) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(70) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(59) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(67) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(43) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(75) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(50) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(58) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(66) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(68) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(60) ~ span.visible:nth-of-type(76) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(61) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(62) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(70) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(78) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(63) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(71) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(60) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(68) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(44) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(76) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(51) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(59) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(67) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(69) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(61) ~ span.visible:nth-of-type(77) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(62) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(63) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(71) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(79) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(56) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(64) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(72) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(61) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(69) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(45) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(77) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(52) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(60) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(68) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(70) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(62) ~ span.visible:nth-of-type(78) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(63) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(64) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(56) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(72) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(48) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(80) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(62) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(70) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(46) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(78) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(53) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(61) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(69) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(71) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(63) ~ span.visible:nth-of-type(79) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(64) ~ span.visible:nth-of-type(64) .el {
+  -webkit-transform: translateZ(-75px);
+          transform: translateZ(-75px);
+}
+div.selector:active:nth-of-type(64) ~ span.visible:nth-of-type(63) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(64) ~ span.visible:nth-of-type(55) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(64) ~ span.visible:nth-of-type(71) .el {
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+div.selector:active:nth-of-type(64) ~ span.visible:nth-of-type(47) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(64) ~ span.visible:nth-of-type(79) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(64) ~ span.visible:nth-of-type(54) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(64) ~ span.visible:nth-of-type(62) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(64) ~ span.visible:nth-of-type(70) .el {
+  -webkit-transform: translateZ(-22.5px);
+          transform: translateZ(-22.5px);
+}
+div.selector:active:nth-of-type(64) ~ span.visible:nth-of-type(56) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(64) ~ span.visible:nth-of-type(72) .el {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+div.selector:active:nth-of-type(64) ~ span.visible:nth-of-type(48) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+div.selector:active:nth-of-type(64) ~ span.visible:nth-of-type(80) .el {
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+
+@-webkit-keyframes animateIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateZ(-100px);
+            transform: translateZ(-100px);
+  }
+  50% {
+    opacity: .2;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0px);
+            transform: translateZ(0px);
+  }
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateZ(-100px);
+            transform: translateZ(-100px);
+  }
+  50% {
+    opacity: .2;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0px);
+            transform: translateZ(0px);
+  }
+}
+.mouse {
+  visibility: hidden;
+  position: fixed;
+  pointer-events: none;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: showMouse .75s ease-in-out;
+          animation: showMouse .75s ease-in-out;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.mouse .circle {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle at 50% -10%, white 0%, rgba(255, 255, 255, 0.4) 100%);
+  border-radius: 100%;
+  transition: all .2s ease-in-out;
+  pointer-events: none;
+  opacity: .3;
+}
+.mouse.active .circle {
+  opacity: .2;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.custom-cursor .mouse {
+  visibility: visible;
+}
+
+@-webkit-keyframes showMouse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showMouse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

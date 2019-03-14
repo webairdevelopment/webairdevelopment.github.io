@@ -1,0 +1,164 @@
+
+html, body {
+  background: #151515;
+  margin: 0;
+}
+
+.phenomenon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  box-shadow: 0 0 80px yellow;
+  background: yellow;
+  border-radius: 50%;
+}
+.phenomenon .curve {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  background: #ffff000d;
+  border-radius: 50%;
+}
+.phenomenon .curve .quad {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  border: 0px solid yellow;
+}
+.phenomenon .curve .quad:nth-child(1) {
+  border-radius: 0 20px 0 0;
+  transform: translateY(10px) translateX(30px);
+  border-width: 2px 2px 0px 0px;
+}
+.phenomenon .curve .quad:nth-child(2) {
+  border-radius: 20px 0 0 0;
+  transform: translateY(10px) translateX(-30px);
+  border-width: 2px 0px 0px 2px;
+}
+.phenomenon .curve .quad:nth-child(3) {
+  border-radius: 0 0 0 20px;
+  transform: translateY(-10px) translateX(10px);
+  border-width: 0px 0px 2px 2px;
+}
+.phenomenon .curve .quad:nth-child(4) {
+  border-radius: 0 0 20px 0;
+  transform: translateY(-10px) translateX(-10px);
+  border-width: 0px 2px 2px 0px;
+}
+.phenomenon .curve:nth-child(1) {
+  transform: rotate(15deg) translateX(80px);
+  animation: circum 4s linear 100ms infinite;
+}
+.phenomenon .curve:nth-child(2) {
+  transform: rotate(30deg) translateX(80px);
+  animation: circum 4s linear 200ms infinite;
+}
+.phenomenon .curve:nth-child(3) {
+  transform: rotate(45deg) translateX(80px);
+  animation: circum 4s linear 300ms infinite;
+}
+.phenomenon .curve:nth-child(4) {
+  transform: rotate(60deg) translateX(80px);
+  animation: circum 4s linear 400ms infinite;
+}
+.phenomenon .curve:nth-child(5) {
+  transform: rotate(75deg) translateX(80px);
+  animation: circum 4s linear 500ms infinite;
+}
+.phenomenon .curve:nth-child(6) {
+  transform: rotate(90deg) translateX(80px);
+  animation: circum 4s linear 600ms infinite;
+}
+.phenomenon .curve:nth-child(7) {
+  transform: rotate(105deg) translateX(80px);
+  animation: circum 4s linear 700ms infinite;
+}
+.phenomenon .curve:nth-child(8) {
+  transform: rotate(120deg) translateX(80px);
+  animation: circum 4s linear 800ms infinite;
+}
+.phenomenon .curve:nth-child(9) {
+  transform: rotate(135deg) translateX(80px);
+  animation: circum 4s linear 900ms infinite;
+}
+.phenomenon .curve:nth-child(10) {
+  transform: rotate(150deg) translateX(80px);
+  animation: circum 4s linear 1000ms infinite;
+}
+.phenomenon .curve:nth-child(11) {
+  transform: rotate(165deg) translateX(80px);
+  animation: circum 4s linear 1100ms infinite;
+}
+.phenomenon .curve:nth-child(12) {
+  transform: rotate(180deg) translateX(80px);
+  animation: circum 4s linear 1200ms infinite;
+}
+.phenomenon .curve:nth-child(13) {
+  transform: rotate(195deg) translateX(80px);
+  animation: circum 4s linear 1300ms infinite;
+}
+.phenomenon .curve:nth-child(14) {
+  transform: rotate(210deg) translateX(80px);
+  animation: circum 4s linear 1400ms infinite;
+}
+.phenomenon .curve:nth-child(15) {
+  transform: rotate(225deg) translateX(80px);
+  animation: circum 4s linear 1500ms infinite;
+}
+.phenomenon .curve:nth-child(16) {
+  transform: rotate(240deg) translateX(80px);
+  animation: circum 4s linear 1600ms infinite;
+}
+.phenomenon .curve:nth-child(17) {
+  transform: rotate(255deg) translateX(80px);
+  animation: circum 4s linear 1700ms infinite;
+}
+.phenomenon .curve:nth-child(18) {
+  transform: rotate(270deg) translateX(80px);
+  animation: circum 4s linear 1800ms infinite;
+}
+.phenomenon .curve:nth-child(19) {
+  transform: rotate(285deg) translateX(80px);
+  animation: circum 4s linear 1900ms infinite;
+}
+.phenomenon .curve:nth-child(20) {
+  transform: rotate(300deg) translateX(80px);
+  animation: circum 4s linear 2000ms infinite;
+}
+.phenomenon .curve:nth-child(21) {
+  transform: rotate(315deg) translateX(80px);
+  animation: circum 4s linear 2100ms infinite;
+}
+.phenomenon .curve:nth-child(22) {
+  transform: rotate(330deg) translateX(80px);
+  animation: circum 4s linear 2200ms infinite;
+}
+.phenomenon .curve:nth-child(23) {
+  transform: rotate(345deg) translateX(80px);
+  animation: circum 4s linear 2300ms infinite;
+}
+.phenomenon .curve:nth-child(24) {
+  transform: rotate(360deg) translateX(80px);
+  animation: circum 4s linear 2400ms infinite;
+}
+
+@keyframes circum {
+  from {
+    transform: rotate(360deg) translateX(80px);
+  }
+  to {
+    transform: rotate(0deg) translateX(80px);
+  }
+}

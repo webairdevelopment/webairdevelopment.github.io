@@ -1,0 +1,1 @@
+// Based on "Outline illustration animation" by Moranart: https://dribbble.com/shots/5748804-Outline-Illustration-animation

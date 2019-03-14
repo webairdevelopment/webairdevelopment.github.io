@@ -1,0 +1,54 @@
+﻿
+  body{
+    background-color: #5f27cd;
+    font-size: 16px;
+  }
+
+@media (min-width: 768px){
+
+  html{
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 767px){
+
+  html{
+    font-size: 50%;
+  }
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.page{
+  min-height: 100vh;
+  display: flex;
+}
+
+.page__demo{
+  margin: auto;  
+}
+
+.page__demo{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 640px;
+  padding: 20px;
+}
+
+.page__hint{
+  display: block;
+  max-width: 26rem;
+  line-height: 1.678;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  
+  color: #fff;
+  text-align: center;
+}

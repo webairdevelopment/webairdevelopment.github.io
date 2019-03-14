@@ -1,0 +1,48 @@
+
+#elRender {
+  width: 40vmin;
+  height: 80vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: thin solid rgba(0, 0, 0, 0.1);
+  background: linear-gradient(rgba(255, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+}
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+}
+body {
+  min-height: 100vh;
+  background-color: #FFFFFF;
+}
+#elBg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(transparent, hsla(0, 0%, 100%, 0.3));
+  transition: all 1s;
+}
+#elStat {
+  position: absolute;
+  width: 100%;
+  color: hsl(0, 0%, 0%);
+  font: 1em/1 monospace;
+  text-align: right;
+}
+#elLvl {
+  font-size: larger;
+}
+#elPct {
+  font-size: smaller;
+}
+#elGain {
+  font-size: smaller;
+  opacity: 1;
+}

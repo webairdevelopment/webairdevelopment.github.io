@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Global variables  */
+
+:root {
+	--font: 'Montserrat', sans-serif;
+	--box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+	--text-shadow: 0 1px 1px rgba(0,0,0,.1);
+	--light-color: hsla(360, 100%, 100%, .85);
+	--seagreen: hsla(149, 29%, 72%, 1); /* #A2CCB6 expressed as hsla  */
+	--sandyyellow: hsla(48, 92%, 85%, 1); /* #FCEEB5 Expressed as hsla  */
+	--peach: hsla(5, 79%, 68%, 1);/* #EE786E Expressed as hsla  */
+}
+
+*, *:before,*:after { box-sizing: border-box}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  margin: auto;
+  font-family: var(--font);
+  line-height: 1.5em;
+  color: var(--light-color);
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+}
+
+p { 
+	overflow-y: scroll;
+	height: 300px;
+	max-width: 300px;
+	margin: 2vh  auto;
+	opacity: 0;
+	box-shadow: var(--box-shadow);
+	text-shadow: var(--text-shadow);
+	animation: fade 2s forwards;
+}
+
+/* Box customization  */
+
+p:nth-child(1) { background:var(--seagreen); border:4.2vh solid var(--seagreen); animation-delay: 300ms}
+p:nth-child(2) {color: rgba(0,0,0,.6); background:var(--sandyyellow); border:4.2vh  solid var(--sandyyellow); animation-delay: 700ms}
+p:nth-child(3) { background:var(--peach); border:4.2vh solid var(--peach); animation-delay: 1200ms}
+
+/* Main scrollbar  */
+
+::-webkit-scrollbar { width: 4vw;max-width: 20px; min-width: 10px}
+::-webkit-scrollbar-track { background:  var(--sandyyellow)}
+ ::-webkit-scrollbar-thumb { background:  var(--seagreen); box-shadow: 0 0 9px rgba(255,255,255,.9), 0 0 25px rgba(255,255,255,.6)}
+ ::-webkit-scrollbar-thumb:hover { background: var(--peach); box-shadow: 0 0 15px var(--light-color), 0 0 35px var(--peach)}
+
+/* Box scrollbar  */
+
+ p::-webkit-scrollbar { width: 2vw; max-width: 20px; min-width: 10px}
+ p::-webkit-scrollbar-track { background: rgba(0,0,0,.1)}
+ p::-webkit-scrollbar-thumb { background: rgba(0,0,0,.3); box-shadow: 0 0 9px rgba(255,255,255,.9), 0 0 25px var(--light-color)}
+
+ p::-webkit-scrollbar-thumb:hover {	background: rgba(0,0,0,.5)}
+ p:nth-child(1)::-webkit-scrollbar-thumb:hover { box-shadow: 0 0 15px var(--sandyyellow), 0 0 35px var(--peach)}
+ p:nth-child(2)::-webkit-scrollbar-thumb:hover { box-shadow: 0 0 15px var(--seagreen), 0 0 35px var(--peach)}
+ p:nth-child(3)::-webkit-scrollbar-thumb:hover { box-shadow: 0 0 15px var(--seagreen), 0 0 35px var(--peach)}
+
+/* Fade in animation  */
+
+@keyframes fade {
+    0% { opacity: 0; filter: blur(20px); transform:scale(4)}
+    40% { opacity: 0; filter: blur(20px); transform:scale(4)}
+    63% { opacity: 1; filter: blur(5px); transform:scale(1.1)}
+    70% { opacity: 1; filter: blur(10px); transform:scale(1)}
+    86% { opacity: 1; filter: blur(0); transform:scale(1)}
+    100% { opacity: 1; filter: blur(0); transform:scale(1)}
+}
+
+/* Grid/ Media Query  */
+
+ @media only screen and (min-width: 60em) {
+
+body {
+	height:100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 80px;
+	max-width: 80%;
+	margin-top: 10vh;
+}
+}
+ 

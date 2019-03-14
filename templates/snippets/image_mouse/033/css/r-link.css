@@ -1,0 +1,6 @@
+.r-link{
+    --uirLinkDisplay: var(--rLinkDisplay, inline-block);
+    --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+    display: var(--uirLinkDisplay);
+    text-decoration: var(--uirLinkTextDecoration);
+}

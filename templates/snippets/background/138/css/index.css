@@ -1,0 +1,35 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: black;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.container {
+  justify-content: center;
+  display: flex;
+  min-height: 500px;
+  width: 80%;
+}
+.container__section {
+  background: #FFF;
+  flex-grow: 1;
+  min-height: 100%;
+  margin: 10px;
+}
+.container__section canvas {
+  height : 100%;
+  width: 100%;
+}
+.container__section:first-child {
+  background: #eb2927;
+}
+.container__section:nth-child(2) {
+  background: #26ff87;
+}
+.container__section:last-child {
+  background: #2400ff;
+}

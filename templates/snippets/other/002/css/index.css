@@ -1,0 +1,114 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	z-index: 10;r
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: hsla(19, 83%, 63%, 0.9);
+	color: white;
+}
+.quote {
+	text-shadow: 0 0 1px #666, 2px -1px 6px #333;
+}
+.saying {
+	max-width: 77%;
+	font-size: 29pt;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	user-select: none;
+}
+.by {
+	margin-top: 10px;
+	font-size: 14pt;
+	text-shadow: 0 0 1px #000;
+}
+
+.prev {
+	position: fixed;
+	height: 100%;
+	background: transparent;
+	left: 0;
+	top: 0;
+	width: 100px;
+	transition: opacity 0.2s;
+}
+.next {
+	position: fixed;
+	height: 100%;
+	background: transparent;
+	right: 0;
+	top: 0;
+	width: 100px;
+	transition: opacity 0.2s;
+}
+.prev,
+.next {
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9729/prev.svg)
+		center no-repeat;
+	background-size: 50px;
+	opacity: 0.25;
+}
+.next {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9729/next.svg);
+}
+.prev:hover,
+.next:hover,
+.arrowright .next,
+.arrowleft .prev {
+	opacity: 1;
+	cursor: pointer;
+	transition: opacity 0.3s;
+}
+
+.index {
+	font-size: 15px;
+	color: #fff;
+	margin-left: 10px;
+	font-style: italic;
+	opacity: 0.8;
+}
+
+a {
+	background: transparent;
+	color: #ff0;
+	text-shadow: 0 0 0 black;
+	text-decoration: none;
+}
+
+.buttons {
+	letter-spacing: 1px;
+	position: fixed;
+	bottom: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 11;
+}
+button {
+	border-width: 0;
+	border-radius: 5px;
+	padding: 5px 10px;
+	width: 80px;
+	background: hsla(19, 83%, 83%, 0.9);
+	transition: box-shadow 0.2s;
+	box-sizing: border-box;
+}
+.copy {
+	margin-left: 20px;
+}
+
+button:hover,
+.r .random,
+.c .copy {
+	box-shadow: 0 0 20px hsla(19, 83%, 23%, 0.9);
+	cursor: pointer;
+	transition: box-shadow 0.1s;
+}
+

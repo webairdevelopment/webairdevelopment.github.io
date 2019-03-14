@@ -1,0 +1,50 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: #1E88E5;
+}
+
+#container {
+  margin: auto;
+}
+#container .total {
+  width: 400px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+#container .total > div {
+  height: 100%;
+  border-radius: 16px;
+  pointer-events: none;
+  position: absolute;
+}
+#container .total .previous {
+  top: 8px;
+  left: 0px;
+  height: 8px;
+  background: #FDD835;
+  width: calc(((100% / 6)*3) - 32px);
+}
+#container .total .current {
+  background: #F44336;
+  width: 24px;
+  top: 0px;
+  left: calc(((100% / 6)*3) - 12px);
+  display: flex;
+}
+#container .total .current span {
+  margin: auto;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bolder;
+  display: none;
+}
+#container .total .next {
+  top: 8px;
+  right: 0px;
+  height: 8px;
+  background: #FDD835;
+  width: calc(((100% / 6)*3) - 32px);
+}

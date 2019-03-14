@@ -1,0 +1,12 @@
+body {
+  overflow: hidden;
+}
+.controls {
+  position: absolute;
+  z-index: 100;
+  margin: 3vmin;
+}
+.controls span {
+  color: white;
+  padding: 0 3vmin 0 5vmin;
+}

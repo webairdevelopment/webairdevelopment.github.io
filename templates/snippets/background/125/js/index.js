@@ -1,0 +1,3 @@
+﻿      snowWorkerConfig = {
+        wind: 3
+      }

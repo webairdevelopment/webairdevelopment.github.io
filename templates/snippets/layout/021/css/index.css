@@ -1,0 +1,81 @@
+
+body {  
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-showcase {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-container {
+    display: block;
+    position: relative;
+}
+
+.link-overlay {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-overlay:hover {
+  color: #000;
+  background-color: #fff;
+  transition: all 0.75s ease-in-out;
+  text-decoration: none;
+}
+
+.works-filter {
+  display: inline-block;
+  text-decoration: none;
+  transition: all .35s ease;
+}
+
+.works-filter:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: all .35s ease;
+}
+
+.works-filter-active {
+  text-decoration: underline;
+  transition: all .35s ease;
+}
+
+.works-filter-active::before {
+  content: "X ";
+  text-transform: none;
+  transition: all .35s ease;
+}
+
+.workItem {
+  display: none;
+}
+
+.show-workItem {
+  display: block;
+  transition: all .35s ease;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay:hover {
+  opacity: 1;
+}

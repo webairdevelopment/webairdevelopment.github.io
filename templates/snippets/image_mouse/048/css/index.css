@@ -1,0 +1,113 @@
+/* Utility to visually hide contextual info */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* Base + Layout */
+html, body {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+h1, h2, {
+  margin: 1rem auto;
+  max-width: 80%;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+/* Form stuff */
+.form-wrapper {
+  display: block;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 40px 20px;
+  margin: 40px 20px;
+  width: 100%;
+  max-width: 30rem;
+}
+
+.form-intro {
+  text-align: center;
+}
+
+.form-message {
+  text-align: center;
+  border: 2px solid currentColor;
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+}
+
+.form-message--success {
+  color: DarkGreen;
+  background-color: Honeydew;
+}
+
+.form-message--error {
+  color: DarkRed;
+  background-color: MistyRose;
+}
+
+.form-message--alert {
+  color: DarkBlue;
+  background-color: Azure;
+}
+
+.form {
+  margin: 2rem 1rem 1rem;
+}
+
+/* Style everything as buttons */
+.button {
+  position: relative;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.button span {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: inherit;
+}
+
+.button input:focus ~ span,
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 1px 3px DodgerBlue;
+}
+
+.button input:checked ~ span {
+  background-color: black;
+  color: white;
+}
