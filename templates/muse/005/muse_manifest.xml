@@ -1,7 +1,7 @@
-<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553342544958">
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553429583819">
   <folder name="css">
     <file name="site_global.css" crc="14225328"/>
-    <file name="index.css" crc="3867007121" ref="index"/>
+    <file name="index.css" crc="518908794" ref="index"/>
     <file name="iefonts_index.css" crc="3790856534" ref="index"/>
   </folder>
   <folder name="scripts">
@@ -26,13 +26,6 @@
     <file name="html5shiv.js" crc="4241844378" ref="index"/>
   </folder>
   <folder name="images">
-    <file name="green-bg.png" crc="3906196488" ref="index">
-      <caption webpage="index" alt=""/>
-    </file>
-    <file name="orange-bg.png" crc="4194313429" ref="index">
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-    </file>
     <file name="testimonials.png" crc="4083760234" seo="true" ref="index">
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
@@ -96,24 +89,28 @@
     <file name="loading.gif" crc="3815509949" ref="index"/>
     <file name="placeholder_small.jpg" crc="481021176" ref="index">
       <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
     </file>
     <file name="placeholder412x266.jpg" crc="3911807650" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="placeholder-u107-fr.jpg" crc="3851787693" ref="index"/>
-    <file name="purple-bg.png" crc="4028653270" ref="index">
-      <caption webpage="index" alt=""/>
-    </file>
     <file name="heart_icon.png" crc="233067463" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="cactus-crop-u1205.jpg" crc="319240051" seo="true" ref="index">
+    <file name="cactus-crop-u1205.jpg" crc="4184070647" seo="true" ref="index">
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="green-bg.jpg" crc="4161215414" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="orange-bg.jpg" crc="4075844827" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="purple-bg.jpg" crc="3771584030" ref="index">
       <caption webpage="index" alt=""/>
     </file>
   </folder>
@@ -129,5 +126,5 @@
     </folder>
     <file name="index.html" crc="4180039533" seo="true" mt="1407282697538" redirect="false"/>
   </folder>
-  <file name="index.html" crc="161251229" seo="true" mt="1553342433284" redirect="true"/>
+  <file name="index.html" crc="331583710" seo="true" mt="1553429561612" redirect="true"/>
 </manifest>

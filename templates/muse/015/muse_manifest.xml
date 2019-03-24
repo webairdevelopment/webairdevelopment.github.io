@@ -1,7 +1,7 @@
-<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553348222155">
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553430829576">
   <folder name="css">
     <file name="site_global.css" crc="3979927687"/>
-    <file name="index.css" crc="368894529" ref="index"/>
+    <file name="index.css" crc="89833543" ref="index"/>
     <file name="iefonts_index.css" crc="315123662" ref="index"/>
   </folder>
   <folder name="scripts">
@@ -80,5 +80,5 @@
       <caption webpage="index" alt=""/>
     </file>
   </folder>
-  <file name="index.html" crc="4074267620" seo="true" mt="1553348191096" redirect="true"/>
+  <file name="index.html" crc="3950357567" seo="true" mt="1553430362367" redirect="true"/>
 </manifest>

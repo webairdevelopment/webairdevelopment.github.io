@@ -1,11 +1,11 @@
-<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553415909753">
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553430026781">
   <folder name="css">
     <file name="site_global.css" crc="83274698"/>
-    <file name="index.css" crc="220601988" ref="index"/>
-    <file name="services.css" crc="3933975670" ref="services"/>
-    <file name="gallery.css" crc="499357209" ref="gallery"/>
-    <file name="about.css" crc="86364110" ref="about"/>
-    <file name="contact.css" crc="4102129889" ref="contact"/>
+    <file name="index.css" crc="3934344404" ref="index"/>
+    <file name="services.css" crc="4069708079" ref="services"/>
+    <file name="gallery.css" crc="238668938" ref="gallery"/>
+    <file name="about.css" crc="4172527258" ref="about"/>
+    <file name="contact.css" crc="263663994" ref="contact"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:about:services:gallery:contact"/>
@@ -38,16 +38,16 @@
     <file name="heart.png" crc="117585526" seo="true" ref="index:about:services:gallery:contact">
       <caption webpage="index" alt=""/>
       <caption webpage="services" alt=""/>
-      <caption webpage="contact" alt=""/>
       <caption webpage="about" alt=""/>
       <caption webpage="gallery" alt=""/>
+      <caption webpage="contact" alt=""/>
     </file>
     <file name="logo.png" crc="77788978" seo="true" ref="index:about:services:gallery:contact">
       <caption webpage="index" alt=""/>
       <caption webpage="services" alt=""/>
-      <caption webpage="contact" alt=""/>
       <caption webpage="about" alt=""/>
       <caption webpage="gallery" alt=""/>
+      <caption webpage="contact" alt=""/>
     </file>
     <file name="placeholder271x204.jpg" crc="4010100260" seo="true" ref="gallery">
       <caption webpage="gallery" alt=""/>
@@ -68,9 +68,9 @@
     <file name="blank.gif" crc="4208392903" ref="gallery"/>
     <file name="loading.gif" crc="3815509949" ref="gallery"/>
   </folder>
-  <file name="index.html" crc="23838876" seo="true" mt="1553415891013" redirect="true"/>
-  <file name="about.html" crc="86635720" seo="true" mt="1553415854018" redirect="true"/>
-  <file name="services.html" crc="88409238" seo="true" mt="1553415812976" redirect="true"/>
-  <file name="gallery.html" crc="62465765" seo="true" mt="1553415767481" redirect="true"/>
-  <file name="contact.html" crc="203617946" seo="true" mt="1553415748844" redirect="true"/>
+  <file name="index.html" crc="506796387" seo="true" mt="1553430017087" redirect="true"/>
+  <file name="about.html" crc="4149148149" seo="true" mt="1553430010888" redirect="true"/>
+  <file name="services.html" crc="3767801784" seo="true" mt="1553430007821" redirect="true"/>
+  <file name="gallery.html" crc="3767506331" seo="true" mt="1553430014021" redirect="true"/>
+  <file name="contact.html" crc="4159238869" seo="true" mt="1553430004410" redirect="true"/>
 </manifest>

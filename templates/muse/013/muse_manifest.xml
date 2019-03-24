@@ -1,7 +1,7 @@
-<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553346956050">
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553430263737">
   <folder name="css">
     <file name="site_global.css" crc="4090320201"/>
-    <file name="index.css" crc="289259005" ref="index"/>
+    <file name="index.css" crc="195211590" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
@@ -53,5 +53,5 @@
       <caption webpage="index" alt=""/>
     </file>
   </folder>
-  <file name="index.html" crc="22307785" seo="true" mt="1553346936339" redirect="true"/>
+  <file name="index.html" crc="448032011" seo="true" mt="1553430228655" redirect="true"/>
 </manifest>

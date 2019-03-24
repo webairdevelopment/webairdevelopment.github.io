@@ -1,4 +1,4 @@
-<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553358168903">
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553433127032">
   <folder name="css">
     <file name="site_global.css" crc="4233371317"/>
     <file name="index.css" crc="355151606" ref="index"/>
@@ -90,5 +90,5 @@
       <caption webpage="index" alt=""/>
     </file>
   </folder>
-  <file name="index.html" crc="95971154" seo="true" mt="1553358161079" redirect="true"/>
+  <file name="index.html" crc="4150403117" seo="true" mt="1553433105780" redirect="true"/>
 </manifest>
