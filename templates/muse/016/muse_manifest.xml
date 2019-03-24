@@ -1,0 +1,123 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553348964837">
+  <folder name="css">
+    <file name="site_global.css" crc="3916683570"/>
+    <file name="contact.css" crc="4030492674" ref="contact"/>
+    <file name="portfolio.css" crc="3933267258" ref="portfolio"/>
+    <file name="iefonts_portfolio.css" crc="4219664612" ref="portfolio"/>
+    <file name="index.css" crc="248535814" ref="index"/>
+    <file name="iefonts_index.css" crc="3812637714" ref="index"/>
+    <file name="about.css" crc="4136861136" ref="about"/>
+    <file name="iefonts_about.css" crc="178574968" ref="about"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:about:portfolio:contact"/>
+    <file name="museutils.js" crc="340535759" ref="index:about:portfolio:contact"/>
+    <file name="whatinput.js" crc="86476730" ref="index:about:portfolio:contact"/>
+    <file name="museconfig.js" crc="4286661555" ref="index:about:portfolio:contact"/>
+    <file name="jquery.musemenu.js" crc="510910590" ref="index:about:portfolio:contact"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index:about:portfolio:contact"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index:about:portfolio"/>
+    <file name="webpro.js" crc="4059564322" ref="index:portfolio:contact"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="index:portfolio"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="index:portfolio"/>
+    <file name="touchswipe.js" crc="4075097462" ref="index:portfolio"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:about:portfolio:contact"/>
+    <file name="require.js" crc="7928878" ref="index:about:portfolio:contact"/>
+    <file name="form_check.php" crc="4020933626" ref="contact"/>
+    <file name="form_throttle.php" crc="4259590256" ref="contact"/>
+    <file name="form_process.php" crc="37464564" ref="contact"/>
+    <file name="form-u919.php" crc="513205697" ref="contact"/>
+  </folder>
+  <folder name="images">
+    <file name="screenshot at mar 25 13-47-03.jpg" crc="4183632926" ref="index:portfolio">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="screenshot at mar 25 13-47-03-u91-r-fr.png" crc="13550669" ref="index:portfolio"/>
+    <file name="screenshot at mar 25 13-47-51-u200-fr.jpg" crc="182090233" ref="index:portfolio"/>
+    <file name="screenshot at mar 25 13-47-51-u200-r-fr.png" crc="75422225" ref="index:portfolio"/>
+    <file name="screenshot at mar 25 13-47-51.jpg" crc="331824616" ref="index:portfolio">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="screenshot at mar 25 13-47-30-u134-fr.jpg" crc="502810534" ref="index:portfolio"/>
+    <file name="screenshot at mar 25 13-47-30-u134-r-fr.png" crc="118351210" ref="index:portfolio"/>
+    <file name="screenshot at mar 25 13-47-30.jpg" crc="391083029" ref="index:portfolio">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="screenshot at mar 25 13-47-13-u195-fr.jpg" crc="4104167139" ref="index:portfolio"/>
+    <file name="screenshot at mar 25 13-47-13-u195-r-fr.png" crc="511833757" ref="index:portfolio"/>
+    <file name="screenshot at mar 25 13-47-13.jpg" crc="246910105" ref="index:portfolio">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="screenshot at mar 25 13-47-38-u112-fr.png" crc="74702172" ref="index:portfolio"/>
+    <file name="screenshot at mar 25 13-47-38-u112-r-fr.png" crc="366887995" ref="index:portfolio"/>
+    <file name="screenshot at mar 25 13-47-38.png" crc="4179682024" ref="index:portfolio">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="screenshot at mar 25 13-47-57.jpg" crc="4262874906" ref="index:portfolio">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="screenshot at mar 25 13-47-57-u215-r-fr.png" crc="17611509" ref="index:portfolio"/>
+    <file name="screenshot at mar 25 13-51-53-u235-fr.jpg" crc="4202205121" ref="index:portfolio"/>
+    <file name="screenshot at mar 25 13-51-53-u235-r-fr.png" crc="256713072" ref="index:portfolio"/>
+    <file name="screenshot at mar 25 13-51-53.jpg" crc="4256073156" ref="index:portfolio">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="screenshot at mar 25 13-47-45.jpg" crc="4102194535" ref="index:portfolio">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="screenshot at mar 25 13-47-45-u226-r-fr.png" crc="54301483" ref="index:portfolio"/>
+    <file name="facebook.png" crc="317936629" ref="index:about:portfolio">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="vimeo.png" crc="523308923" ref="index:about:portfolio">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="twitter.png" crc="4102706121" ref="index:about:portfolio">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="dribbble.png" crc="4050684656" ref="index:about:portfolio">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="skype.png" crc="4267061425" ref="index:about:portfolio">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="heart.png" crc="117585526" seo="true" ref="index:about:portfolio:contact">
+      <caption webpage="index" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="contact" alt=""/>
+    </file>
+    <file name="placeholdersmall.jpg" crc="348018185" ref="about">
+      <caption webpage="about" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="250330259" seo="true" mt="1553348934128" redirect="true"/>
+  <file name="about.html" crc="4169846488" seo="true" mt="1553348903091" redirect="true"/>
+  <file name="portfolio.html" crc="162408447" seo="true" mt="1553348877661" redirect="true"/>
+  <file name="contact.html" crc="3799295121" seo="true" mt="1553348850460" redirect="true"/>
+</manifest>

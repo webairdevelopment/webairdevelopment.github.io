@@ -1,0 +1,85 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553356023901">
+  <folder name="css">
+    <file name="site_global.css" crc="383871894"/>
+    <file name="index.css" crc="3803063313" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4286661555" ref="index"/>
+    <file name="webpro.js" crc="4059564322" ref="index"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="index"/>
+    <file name="touchswipe.js" crc="4075097462" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index"/>
+    <file name="form_check.php" crc="4020933626" ref="index"/>
+    <file name="form_throttle.php" crc="4259590256" ref="index"/>
+    <file name="form_process.php" crc="37464564" ref="index"/>
+    <file name="form-u563.php" crc="4052821753" ref="index"/>
+    <file name="jquery.musemenu.js" crc="510910590" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="39568856" ref="index"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="placeholder.jpg" crc="4051531941" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="badge-u1199.png" crc="5780524" ref="index"/>
+    <file name="qoutes.png" crc="49248888" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="placeholder-u939-fr.png" crc="178079373" ref="index"/>
+    <file name="placeholder-crop-u953.jpg" crc="4044950462" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon4.png" crc="209647003" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon3.png" crc="3961184872" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon2.png" crc="121253092" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon1.png" crc="4197530190" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="placeholder-crop-u959.jpg" crc="3954396607" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="placeholder-crop-u986.jpg" crc="4022107554" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="placeholder-crop-u1054.jpg" crc="4027149732" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="placeholder-crop-u1039.jpg" crc="307373585" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="placeholder-crop-u1050.jpg" crc="526577383" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="heart.png" crc="117585526" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="134634020" seo="true" mt="1553356004832" redirect="true"/>
+</manifest>

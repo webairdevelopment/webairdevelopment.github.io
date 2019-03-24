@@ -1,0 +1,51 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553347806343">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="index.css" crc="238393769" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4286661555" ref="index"/>
+    <file name="jquery.musemenu.js" crc="510910590" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="39568856" ref="index"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="logo.png" crc="3965748" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="pattern-1779.jpg" crc="278963693" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="model-600238_640.jpg" crc="3878957572" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="pattern-acnj.jpg" crc="228677492" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="girls-685778_1280.jpg" crc="3921535527" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="pretty-351884_640.jpg" crc="3998430869" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="girls-602168_640.jpg" crc="4012286284" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="model-600225_640.jpg" crc="127280294" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="heart.png" crc="117585526" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="14463904" seo="true" mt="1553347780294" redirect="true"/>
+</manifest>

@@ -1,0 +1,73 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553350302704">
+  <folder name="css">
+    <file name="site_global.css" crc="4091947754"/>
+    <file name="index.css" crc="353988974" ref="index"/>
+    <file name="iefonts_index.css" crc="3815899400" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4286661555" ref="index"/>
+    <file name="jquery.musemenu.js" crc="510910590" ref="index"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index"/>
+    <file name="webpro.js" crc="4059564322" ref="index"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="index"/>
+    <file name="touchswipe.js" crc="4075097462" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index"/>
+    <file name="form_check.php" crc="4020933626" ref="index"/>
+    <file name="form_throttle.php" crc="4259590256" ref="index"/>
+    <file name="form_process.php" crc="37464564" ref="index"/>
+    <file name="form-u455.php" crc="3972088927" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="39568856" ref="index"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="pattern-4tsm.jpg" crc="521096077" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="coast-curacao-dawn-953.jpg" crc="4111852992" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="dawn-dust-grass-2946.jpg" crc="11067002" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="arleft1.png" crc="1459088" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="arright1.png" crc="269558854" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="architecture-blue-sky-building-563-525x350.jpg" crc="4170436068" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="beach-building-house-2544-527x350.jpg" crc="4291617680" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="bridge-steel-692-528x350.jpg" crc="526913442" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="building-bunker-house-554-525x350.jpg" crc="3963935975" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="building-church-m--laga-cathedral-3625-525x350.jpg" crc="3896974796" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="building-house-overgrown-2619-527x350.jpg" crc="432134901" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="city-taxi-transportation-247-466x350.jpg" crc="66501267" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="heart.png" crc="117585526" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="226888225" seo="true" mt="1553350277698" redirect="true"/>
+</manifest>

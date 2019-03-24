@@ -1,0 +1,50 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553356828067">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="index.css" crc="4209271312" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4286661555" ref="index"/>
+    <file name="webpro.js" crc="4059564322" ref="index"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="index"/>
+    <file name="touchswipe.js" crc="4075097462" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index"/>
+    <file name="form_check.php" crc="4020933626" ref="index"/>
+    <file name="form_throttle.php" crc="4259590256" ref="index"/>
+    <file name="form_process.php" crc="37464564" ref="index"/>
+    <file name="form-u809.php" crc="4130698491" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="39568856" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="placeholder.jpg" crc="4051531941" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="twitter-u1014-fr.png" crc="517821989" ref="index"/>
+    <file name="twitter.png" crc="4102706121" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="facebook-u1015-fr.png" crc="97572149" ref="index"/>
+    <file name="facebook.png" crc="317936629" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="pinterest-u1016-fr.png" crc="3848311787" ref="index"/>
+    <file name="pinterest.png" crc="4214682508" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="placeholder-u1062-fr.jpg" crc="177030342" ref="index"/>
+    <file name="placeholder-u909-fr.jpg" crc="143987005" ref="index"/>
+    <file name="heart.png" crc="117585526" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="3770821611" seo="true" mt="1553356818919" redirect="true"/>
+</manifest>

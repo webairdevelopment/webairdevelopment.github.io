@@ -1,0 +1,51 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553349556720">
+  <folder name="css">
+    <file name="site_global.css" crc="126771498"/>
+    <file name="index.css" crc="3890084557" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4286661555" ref="index"/>
+    <file name="webpro.js" crc="4059564322" ref="index"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="index"/>
+    <file name="touchswipe.js" crc="4075097462" ref="index"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="placeholder.jpg" crc="4051531941" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="placeholder-u701-fr.jpg" crc="205416233" ref="index"/>
+    <file name="placeholder-u225-fr.jpg" crc="3798531174" ref="index"/>
+    <file name="icon2.png" crc="485135402" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon3.png" crc="3913090592" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon4.png" crc="4010705578" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon5.png" crc="3789320247" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon6.png" crc="286849315" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon7.png" crc="411633737" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="heart_icon.png" crc="233067463" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="4172231963" seo="true" mt="1553349531293" redirect="true"/>
+</manifest>

@@ -1,0 +1,123 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="WebAir.tk" resolutions="1x" timestamp="1553349932923">
+  <folder name="css">
+    <file name="site_global.css" crc="226455819"/>
+    <file name="index.css" crc="3898964536" ref="index"/>
+    <file name="nomq_index.css" crc="3895256464" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4286661555" ref="index"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index"/>
+    <file name="webpro.js" crc="4059564322" ref="index"/>
+    <file name="form_check.php" crc="4020933626" ref="index"/>
+    <file name="form_throttle.php" crc="4259590256" ref="index"/>
+    <file name="form_process.php" crc="37464564" ref="index"/>
+    <file name="form-u644.php" crc="3818659802" ref="index"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="index"/>
+    <file name="touchswipe.js" crc="4075097462" ref="index"/>
+    <file name="jquery.museresponsive.js" crc="527716135" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="wired3_filter.jpg" crc="4116307264" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="u927.png" crc="347749268" ref="index"/>
+    <file name="u927-r.png" crc="347749268" ref="index"/>
+    <file name="u938.png" crc="3970004908" ref="index"/>
+    <file name="u938-r.png" crc="3970004908" ref="index"/>
+    <file name="onepage.png" crc="4201634854" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="responsive_icon.png" crc="56504102" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="free_icon.png" crc="3993372265" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="deathtostock_wired6 copia.jpg" crc="4021432469" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="facebook.png" crc="65170122" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="instagram.png" crc="103471249" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="twitter.png" crc="157966522" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="youtube.png" crc="4005067367" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="linkedin.png" crc="3788307392" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u865-4.png" crc="4061431223" ref="index"/>
+    <file name="u9272.png" crc="347749268" ref="index"/>
+    <file name="u927-r2.png" crc="347749268" ref="index"/>
+    <file name="u9382.png" crc="3970004908" ref="index"/>
+    <file name="u938-r2.png" crc="3970004908" ref="index"/>
+    <file name="onepage100x100.png" crc="4201634854" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="responsive_icon100x100.png" crc="3937283520" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="free_icon100x100.png" crc="361681115" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="deathtostock_wired6 copia-u710-fr.jpg" crc="4284894019" ref="index"/>
+    <file name="u865-42.png" crc="3891516308" ref="index"/>
+    <file name="u9273.png" crc="347749268" ref="index"/>
+    <file name="u927-r3.png" crc="347749268" ref="index"/>
+    <file name="u9383.png" crc="3970004908" ref="index"/>
+    <file name="u938-r3.png" crc="3970004908" ref="index"/>
+    <file name="onepage63x63.png" crc="412778108" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="responsive_icon63x63.png" crc="330396396" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="free_icon63x63.png" crc="4095017895" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u865-43.png" crc="4061431223" ref="index"/>
+    <file name="u9274.png" crc="347749268" ref="index"/>
+    <file name="u927-r4.png" crc="347749268" ref="index"/>
+    <file name="u9384.png" crc="3970004908" ref="index"/>
+    <file name="u938-r4.png" crc="3970004908" ref="index"/>
+    <file name="u865-44.png" crc="4061431223" ref="index"/>
+    <file name="onepage35x35.png" crc="464333328" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="responsive_icon35x35.png" crc="3895481440" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="free_icon35x35.png" crc="3963865900" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="352416222" seo="true" mt="1553349926731" redirect="true"/>
+</manifest>
