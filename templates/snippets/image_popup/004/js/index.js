@@ -1,33 +1,22 @@
 
-var gallery = document.querySelector('#gallery');
-var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
-var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
-var resizeAll = function () {
-    var altura = getVal(gallery, 'grid-auto-rows');
-    var gap = getVal(gallery, 'grid-row-gap');
-    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-        var el = item;
-        el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-    });
-};
-gallery.querySelectorAll('img').forEach(function (item) {
-    item.classList.add('byebye');
-    if (item.complete) {
-        console.log(item.src);
+const els = document.querySelectorAll("[type='radio']");
+for (const el of els)
+  el.addEventListener("input", e => reorder(e.target, els));
+reorder(els[0], els);
+
+function reorder(targetEl, els) {
+  const nItems = els.length;
+  let processedUncheck = 0;
+  for (const el of els) {
+    const containerEl = el.nextElementSibling;
+    if (el === targetEl) {//checked radio
+      containerEl.style.setProperty("--w", "100%");
+      containerEl.style.setProperty("--l", "0");
     }
-    else {
-        item.addEventListener('load', function () {
-            var altura = getVal(gallery, 'grid-auto-rows');
-            var gap = getVal(gallery, 'grid-row-gap');
-            var gitem = item.parentElement.parentElement;
-            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-            item.classList.remove('byebye');
-        });
+    else {//unchecked radios
+      containerEl.style.setProperty("--w", `${100/(nItems-1)}%`);
+      containerEl.style.setProperty("--l", `${processedUncheck * 100/(nItems-1)}%`);
+      processedUncheck += 1;
     }
-});
-window.addEventListener('resize', resizeAll);
-gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-    item.addEventListener('click', function () {        
-        item.classList.toggle('full');        
-    });
-});
+  }
+}
